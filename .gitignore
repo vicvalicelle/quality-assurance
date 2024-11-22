@@ -1,0 +1,3 @@
+*.sql
+*.json
+node_modules/
