@@ -1,10 +1,29 @@
 # Sprint 7
-**Assuntos Principais:**
-- Estrutura de projeto com K6
-- Ciclo de vida dos testes
-- Camada de Services (BaseService, BaseRest)
-- Centralizando Checks
-- Constantes com constants.js
+
+<details>
+<summary> Resumo dos dias </summary>
+
+## Dia 1: MasterClass
+- Iniciando projeto base com K6 e Serverest
+- Massa de dados estáticas e dinâmicas
+
+## Dia 2: MasterClass
+- Ciclo de vida dos testes com Setup e Teardown
+
+## Dia 3: MasterClass
+- Camada de serviços com K6
+
+## Dia 4: MasterClass
+- Centralizando as validações com BaseChecks
+
+## Dia 5: MasterClass
+- Configurando Constants e Environment
+
+## Dia 6, 7, 8 e 9: Evolução Challenge
+- Challenge
+- Mentoria
+
+</details>
 
 Essa sprint continuaremos com a ferramenta K6, o ciclo de vida dos testes, como criar seus scripts mais concisos, métricas e organização. Portanto, continuaremos com o planejamento anterior, com algumas mudanças, abordando o planejamento de testes individuais e fluxos nas rotas /usuarios, /login, /produtos e, agora, a rota /carrinhos. Foram revisados os casos de teste e selecionados 5 tipos para cada rota:
 
@@ -68,28 +87,3 @@ Agora, abra o seu terminal e navegue até a pasta onde você salvou o `script.js
 ```
 k6 run script.js
 ```
-
-<details>
-<summary> Resumo dos dias </summary>
-
-## Dia 1: MasterClass
-- Iniciando projeto base com K6 e Serverest
-- Massa de dados estáticas e dinâmicas
-
-## Dia 2: MasterClass
-- Ciclo de vida dos testes com Setup e Teardown
-
-## Dia 3: MasterClass
-- Camada de serviços com K6
-
-## Dia 4: MasterClass
-- Centralizando as validações com BaseChecks
-
-## Dia 5: MasterClass
-- Configurando Constants e Environment
-
-## Dia 6, 7, 8 e 9: Evolução Challenge
-- Challenge
-- Mentoria
-
-</details>

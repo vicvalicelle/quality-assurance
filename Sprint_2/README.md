@@ -1,18 +1,4 @@
-# **Sprint 2**
- 
-# Assuntos principais:
-- User Stories & Issues.
-- Conceitos básicos para testes de API.
-- Testes Estáticos.
-- Tipos de erros comuns.
-- Validações em APIs.
-- Boas práticas.
-- Planejamento de testes.
-- Cobertura de testes.
-- Análise de testes.
-- Mapas mentais e testes.
-- Introdução ao Postman.
-- Ferramentas de apoio ao QA.
+# Sprint 2
 
 ## Dia 1: MasterClass
 - User Stories & Issues: Definition of Ready (DoR)

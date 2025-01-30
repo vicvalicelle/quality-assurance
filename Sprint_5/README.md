@@ -1,10 +1,4 @@
 # Sprint 5
-- Conceitos sobre Performance Testing
-- Tipos de testes de performance - frontend/backend e suas diferenças
-- Teste estático e dinâmico
-- Geração de carga, falhas comuns e planejamento
-- Fundamentos da medição de performance
-- Introdução ao Jmeter
 
 ## Dia 1: MasterClass
 - Planning

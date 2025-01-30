@@ -1,8 +1,6 @@
 # Sprint 4
-- Testes Exploratórios
-- Linguagem de programação Javascript.
-- Test Driven Development.
-- Bibliotecas Mocha e Chai.
+<details>
+<summary> Resumo dos dias </summary>
 
 ## Dia 1 e 2: MasterClass
 - Planning Sprint 4
@@ -21,6 +19,9 @@
 
 ## Dia 8 e 9: MasterClass
 - AWS Partner Acceditation (Business)
+
+
+</details>
 
 # Instalações
 Guia para auxiliar na configuração do ambiente para realizar o TDD (Test Driven Development), utilizando Node.js, Mocha (https://mochajs.org/) e Chai (https://www.chaijs.com/).

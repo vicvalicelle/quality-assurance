@@ -1,11 +1,33 @@
 # Sprint 3
+<details>
+<summary> Resumo dos dias </summary>
 
-* Planejamento e análise de testes;
-* Planejamento de testes de APIs REST;
-* Definition of Done, Definition of Ready & Acceptance Criteria;
-* Gestão de Issues;
-* Gestão de Testes;
-* Execução e criação de testes: avançando no Postman.
+## Dia 1 e 2: MasterClass
+- Planning Sprint 3
+- Refinando conhecimentos de análise e planejamento de testes
+- Curso Udemy: Início rápido em testes de software
+
+## Dia 3: MasterClass
+- DoR
+- DoD
+- Acceptance Criteria
+- Dinâmica
+
+## Dia 4: MasterClass
+- Gestão de Issues
+- Dinâmica
+
+## Dia 5 e 6: MasterClass
+- Risco e Impacto
+- Ciclo de Teste
+- Atividade: Uso/Migração do Jira + Test Cycles
+
+## Dia 7, 8 e 9: Evolução Challenge
+- Exercíos Challenge
+- Mentoria
+
+
+</details>
 
 ## Challenge Sprint 3 - Plano de Teste do ServeRest:
 
@@ -97,29 +119,3 @@ Considerando custo-benefício, eficiência e cobertura de testes, a automação 
 <figure>
   <img src="Testes/ServerRest.png" width="70%">
 </figure>
-
-#### Resumo dos Dias:
-
-##### Dia 1 e 2: MasterClass
-- Planning Sprint 3
-- Refinando conhecimentos de análise e planejamento de testes
-- Curso Udemy: Início rápido em testes de software
-
-##### Dia 3: MasterClass
-- DoR
-- DoD
-- Acceptance Criteria
-- Dinâmica
-
-##### Dia 4: MasterClass
-- Gestão de Issues
-- Dinâmica
-
-##### Dia 5 e 6: MasterClass
-- Risco e Impacto
-- Ciclo de Teste
-- Atividade: Uso/Migração do Jira + Test Cycles
-
-##### Dia 7, 8 e 9: Evolução Challenge
-- Exercíos Challenge
-- Mentoria
