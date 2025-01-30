@@ -1,79 +1,79 @@
-## **Docker, CI/CD e EC2: Um Resumo Completo**
+## **Docker, CI/CD and EC2: A Complete Summary**
 
-### **Docker: Containerização Simples e Eficiente**
+### **Docker: Simple and Efficient Containerization**
 
-**O que é Docker?**
+**What is Docker?**
 
-Docker é uma plataforma de software que permite criar e gerenciar **containers**. Um container é um ambiente isolado que contém tudo o que um aplicativo precisa para rodar: código, runtime, bibliotecas do sistema, configurações etc. Isso significa que você pode empacotar um aplicativo e suas dependências em um único container, garantindo que ele funcione da mesma forma em qualquer ambiente, seja no seu computador local, em um servidor cloud ou em qualquer outro lugar.
+Docker is a software platform that allows you to create and manage **containers** . A container is an isolated environment that contains everything an application needs to run: code, runtime, system libraries, configuration, etc. This means you can package an application and its dependencies into a single container, ensuring that it works the same in any environment, whether it's on your local computer, a cloud server, or anywhere else.
 
-**Por que usar Docker?**
+**Why use Docker?**
 
-- **Portabilidade:** Rodar o mesmo container em diferentes ambientes.
-- **Isolamento:** Cada container tem seu próprio ambiente, evitando conflitos.
-- **Eficiência:** Containers compartilham o kernel do host, economizando recursos.
-- **Escalabilidade:** Criar e destruir containers rapidamente.
+- **Portability:** Running the same container in different environments.
+- **Isolation:** Each container has its own environment, avoiding conflicts.
+- **Efficiency:** Containers share the host kernel, saving resources.
+- **Scalability:** Create and destroy containers quickly.
 
-**Conceitos-chave:**
+**Key concepts:**
 
-- **Imagem Docker:** Um template imutável que contém todas as informações para criar um container.
-- **Container Docker:** Uma instância em execução de uma imagem Docker.
-- **Dockerfile:** Um arquivo de texto que contém as instruções para construir uma imagem Docker.
+- **Docker Image:** An immutable template that contains all the information to create a container.
+- **Docker container:** A running instance of a Docker image.
+- **Dockerfile:** A text file that contains the instructions for building a Docker image.
 
-### **CI/CD: Entrega Contínua e Integração Contínua**
+### **CI/CD: Continuous Delivery and Continuous Integration**
 
-**O que é CI/CD?**
+**What is CI/CD?**
 
-CI/CD é um conjunto de práticas que automatizam o processo de desenvolvimento de software, desde a integração do código até a sua entrega em produção.
+CI/CD is a set of practices that automate the software development process, from code integration to its delivery into production.
 
-- **Integração Contínua (CI):** O código é integrado ao repositório principal com frequência, e cada integração é verificada automaticamente para detectar erros.
-- **Entrega Contínua (CD):** O software é preparado para ser implantado em produção a qualquer momento.
+- **Continuous Integration (CI):** Code is integrated into the main repository frequently, and each integration is automatically checked for errors.
+- **Continuous Delivery (CD):** Software is prepared to be deployed into production at any time.
 
-**Por que usar CI/CD?**
+**Why use CI/CD?**
 
-- **Qualidade:** Detecção precoce de erros.
-- **Velocidade:** Entrega mais rápida de software.
-- **Confiabilidade:** Redução do risco de falhas.
+- **Quality:** Early detection of errors.
+- **Speed:** Faster software delivery.
+- **Reliability:** Reduction of the risk of failures.
 
-**Ferramentas populares:**
+**Popular tools:**
 
-- **Jenkins:** Uma das ferramentas de CI/CD mais antigas e populares.
-- **GitHub Actions:** Uma plataforma de CI/CD integrada ao GitHub.
-- **CircleCI:** Uma plataforma de CI/CD em nuvem.
+- **Jenkins:** One of the oldest and most popular CI/CD tools.
+- **GitHub Actions:** A CI/CD platform integrated with GitHub.
+- **CircleCI:** A cloud-based CI/CD platform.
 
-### **EC2: Computação em Nuvem da Amazon**
+### **EC2: Amazon Cloud Computing**
 
-**O que é EC2?**
+**What is EC2?**
 
-EC2 (Elastic Compute Cloud) é um serviço da Amazon Web Services (AWS) que permite alugar servidores virtuais (instâncias) na nuvem. Você pode escolher o tipo de instância, o sistema operacional e a quantidade de recursos (CPU, memória, armazenamento) que precisa.
+EC2 (Elastic Compute Cloud) is a service from Amazon Web Services (AWS) that allows you to rent virtual servers (instances) in the cloud. You can choose the type of instance, the operating system, and the amount of resources (CPU, memory, storage) you need.
 
-**Por que usar EC2?**
+**Why use EC2?**
 
-- **Flexibilidade:** Ajuste a capacidade computacional conforme a demanda.
-- **Escalabilidade:** Aumente ou diminua o número de instâncias rapidamente.
-- **Pagar por uso:** Pague apenas pelos recursos que utilizar.
+- **Flexibility:** Adjust computing capacity as demand dictates.
+- **Scalability:** Increase or decrease the number of instances quickly.
+- **Pay as you go:** Pay only for the resources you use.
 
-### **Combinando Docker, CI/CD e EC2**
+### **Combining Docker, CI/CD and EC2**
 
-A combinação dessas tecnologias permite criar fluxos de trabalho eficientes e escaláveis para o desenvolvimento e deploy de aplicações.
+The combination of these technologies allows you to create efficient and scalable workflows for developing and deploying applications.
 
-- **CI/CD com Docker:** As etapas de build e teste do CI/CD podem ser automatizadas usando Docker, garantindo que o ambiente de desenvolvimento seja o mesmo que o de produção.
-- **Deploy em EC2:** As imagens Docker geradas pelo CI/CD podem ser deployadas em instâncias EC2, utilizando ferramentas como o ECS (Elastic Container Service) ou o EKS (Elastic Kubernetes Service).
+- **CI/CD with Docker:** CI/CD build and test steps can be automated using Docker, ensuring that the development environment is the same as the production environment.
+- **Deploy on EC2:** Docker images generated by CI/CD can be deployed on EC2 instances, using tools such as ECS (Elastic Container Service) or EKS (Elastic Kubernetes Service).
 
-**Exemplo de fluxo:**
+**Flow example:**
 
-1. Um desenvolvedor faz um commit no código-fonte.
-2. O GitHub Actions (CI/CD) detecta a alteração e inicia um pipeline.
-3. O pipeline constrói uma imagem Docker a partir do Dockerfile.
-4. A imagem Docker é testada automaticamente.
-5. Se os testes passarem, a imagem é enviada para um repositório de imagens Docker (como o ECR).
-6. A imagem é deployada em uma instância EC2 usando o ECS.
+1. A developer commits source code.
+2. GitHub Actions (CI/CD) detects the change and starts a pipeline.
+3. The pipeline builds a Docker image from the Dockerfile.
+4. The Docker image is tested automatically.
+5. If the tests pass, the image is pushed to a Docker image repository (such as ECR).
+6. The image is deployed to an EC2 instance using ECS.
 
-**Benefícios:**
+**Benefits:**
 
-- **Agilidade:** Redução do tempo de desenvolvimento e deploy.
-- **Consistência:** Garantia de que a aplicação funciona da mesma forma em qualquer ambiente.
-- **Escalabilidade:** Facilidade para aumentar ou diminuir a capacidade computacional.
+- **Agility:** Reduction in development and deployment time.
+- **Consistency:** Guarantee that the application works the same way in any environment.
+- **Scalability:** Ease of increasing or decreasing computing capacity.
 
-**Em resumo:**
+**In summary:**
 
-Docker, CI/CD e EC2 são tecnologias complementares que, quando combinadas, permitem criar ambientes de desenvolvimento e produção mais eficientes, escaláveis e confiáveis.
+Docker, CI/CD, and EC2 are complementary technologies that, when combined, allow you to create more efficient, scalable, and reliable development and production environments.

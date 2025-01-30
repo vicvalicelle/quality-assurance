@@ -1,44 +1,42 @@
-16/05/2024
+05/16/2024
 
-# Dia 9: MasterClass
+# Day 9: MasterClass
 
 - CyberSecurity
-- Resumo do Curso: Fundamento da Segurança da Informação
+- Course Summary: Information Security Fundamentals
 
-## Fundamento da Segurança da Informação 
+## Information Security Foundation
 
-A segurança da informação é importante para proteger seus dados e sistemas contra qualquer ameaça digital, contra acesso não autorizado, uso indevido, divulgação, interrupção, modificação, inspeção, gravação ou destruição.
+Information security is important to protect your data and systems against any digital threat, against unauthorized access, misuse, disclosure, interruption, modification, inspection, recording or destruction.
 
-**Pilares da Segurança da Informação:**
+**Pillars of Information Security:**
 
-<figure>
-  <img src="https://blog.neoway.com.br/wp-content/uploads/2022/03/quais-sao-os-tres-pilares-da-seguranca-da-informacao-1024x633.jpg" width="50%">
-</figure>
+<figure>   <img src="https://blog.neoway.com.br/wp-content/uploads/2022/03/quais-sao-os-tres-pilares-da-seguranca-da-informacao-1024x633.jpg" width="50%"> </figure>
 
-**Classificação da Informação:**
+**Information Classification:**
 
-A classificação da informação categoriza informações com base em seu valor, sensibilidade e importância para a organização. Assim aplicando medidas de proteção apropriadas com base na classificação.
+Information classification categorizes information based on its value, sensitivity, and importance to the organization. Then, applying appropriate protective measures based on the classification.
 
-- **Confidencial:** Informações altamente sensíveis que exigem o mais alto nível de proteção, podendo causar danos significativos se forem comprometidas.
-- **Restrita:** Informações sensíveis com acesso limitado a um grupo específico e limitado.
-- **Interna:** Informações relevantes apenas para a organização e seus funcionários.
-- **Pública:** Informações destinadas ao público em geral.
+- **Confidential:** Highly sensitive information that requires the highest level of protection and could cause significant damage if compromised.
+- **Restricted:** Sensitive information with access limited to a specific and limited group.
+- **Internal:** Information relevant only to the organization and its employees.
+- **Public:** Information intended for the general public.
 
-**Engenharia Social:**
+**Social Engineering:**
 
-Técnica de manipulação que explora as vulnerabilidades humanas para obter informações confidenciais.
+Manipulation technique that exploits human vulnerabilities to obtain confidential information.
 
-- **Baiting:** Oferecer algo atraente para induzir a vítima a uma ação perigosa.
-- **Phishing:** Enviar e-mails falsos para obter informações confidenciais.
-- **Dumpster Diving:** Procurar informações valiosas em lixeiras, quando o descarte dessas informações não é feita da forma correta.
+- **Baiting:** Offering something attractive to induce the victim to take dangerous action.
+- **Phishing:** Sending fake emails to obtain confidential information.
+- **Dumpster Diving:** Searching for valuable information in dumpsters when the disposal of that information is not done correctly.
 
-## Dicas de Segurança 🔒: 
+## Safety Tips 🔒:
 
-- **Senhas Fortes:** Utilize senhas complexas, com letras maiúsculas e minúsculas, números e símbolos. Use também um gerenciador de senhas para facilitar o gerenciamento em grande escala.
-- **Autenticação Multifator (MFA):** Adicione uma camada extra de segurança, exigindo um código de confirmação além da senha.
-- **Cuidado com Phishing:** Desconfie de e-mails e mensagens suspeitas. Verifique sempre a autenticidade do remetente antes de clicar em links ou fornecer informações.
-- **Antivírus:** Mantenha seu software de segurança atualizado e realize varreduras regulares.
-- **Software Atualizado:** Mantenha seu sistema operacional, aplicativos e navegadores atualizados com as últimas correções de segurança.
-- **Backups Regulares:** Faça backups de seus dados importantes regularmente para evitar perdas em caso de falhas ou ataques.
-- **Privacidade Online:** Proteja sua privacidade online usando redes privadas virtuais (VPNs) e evitando compartilhar informações pessoais em sites não confiáveis.
-- **Segurança em IA Generativa:**: Medidas de segurança para proteger os sistemas e dados relacionados à inteligência artificial generativa, privando dados sensíveis, com segurança de modelo, controle de acesso, monitoramento, transparência e responsabilidade. Tudo issa ajuda você a estar mais protegido contra ameaças digitais e a poder desfrutar de um ambiente online mais seguro.
+- **Strong Passwords:** Use complex passwords, with upper and lower case letters, numbers and symbols. Also use a password manager to make it easier to manage passwords on a large scale.
+- **Multi-Factor Authentication (MFA):** Add an extra layer of security by requiring a confirmation code in addition to the password.
+- **Beware of Phishing:** Be wary of suspicious emails and messages. Always verify the authenticity of the sender before clicking on links or providing information.
+- **Antivirus:** Keep your security software up to date and perform regular scans.
+- **Updated Software:** Keep your operating system, applications, and browsers updated with the latest security patches.
+- **Regular Backups:** Back up your important data regularly to avoid loss in case of failures or attacks.
+- **Online Privacy:** Protect your online privacy by using virtual private networks (VPNs) and avoiding sharing personal information on untrustworthy websites.
+- **Generative AI Security** : Security measures to protect systems and data related to generative artificial intelligence, including privacy of sensitive data, model security, access control, monitoring, transparency, and accountability. All of this helps you be more protected against digital threats and enjoy a safer online environment.

@@ -1,40 +1,38 @@
 07/05/2024
 
-# Dia 2: Ágil
+# Day 2: Agile
 
 - Planning Sprint 1
-- Resumo do Curso: Fundamentos do SCRUM Agile | Rápido e Prático
+- Course Summary: Agile SCRUM Fundamentals | Quick and Practical
 
-## Fundamentos do SCRUM 💼
+## SCRUM Fundamentals 💼
 
-- **Definição**: Scrum é um framework que ajuda pessoas, times e organizações a gerar valor por meio
-de soluções adaptativas para problemas complexos. Fundamentado em valores como compromisso, foco, abertura, respeito e coragem, e é baseado em transparência, inspeção e adaptação.
+- **Definition** : Scrum is a framework that helps people, teams, and organizations create value through adaptive solutions to complex problems. It is grounded in values such as commitment, focus, openness, respect, and courage, and is based on transparency, inspection, and adaptation.
 
-<figure>
-  <img src="https://fitsmallbusiness.com/wp-content/uploads/2019/05/word-image-384.png" width="70%">
-</figure>
+<figure>   <img src="https://fitsmallbusiness.com/wp-content/uploads/2019/05/word-image-384.png" width="70%"> </figure>
 
-1. **Papéis do Scrum**: 
-   - Product Owner: Responsável por maximizar o valor do produto, definir o rumo do projeto coletando as Histórias de Usuário e registando no Backlog do Produto.
-   - Scrum Master: Responsável por garantir que o Scrum seja compreendido e implementado corretamente, aumentando a eficiência e a qualidade do trabalho da equipe.
-   - Equipe Scrum: Responsáveis por criar o produto, operando para que o Backlog do Produto vire realidade.
+1. **Scrum Roles** :
 
-2. **Eventos do Scrum**: 
-   - Sprint: Um período de tempo fixo durante o qual o trabalho é realizado e um incremento de produto potencialmente entregável é criado.
-   - Sprint Planning: Reunião para planejar o trabalho a ser realizado durante a Sprint.
-   - Daily Scrum: Reunião diária de 15 minutos de sincronização para inspecionar o progresso e adaptar o plano.
-   - Sprint Review: Reuniãorealizada ao final da sprint para revisar o incremento e adaptar o Product Backlog.
-   - Sprint Retrospective: Reunião para refletir sobre a Sprint e identificar melhorias.
+    - Product Owner: Responsible for maximizing the value of the product, defining the direction of the project by collecting User Stories and recording them in the Product Backlog.
+    - Scrum Master: Responsible for ensuring that Scrum is understood and implemented correctly, increasing the efficiency and quality of the team's work.
+    - Scrum Team: Responsible for creating the product, working to make the Product Backlog a reality.
 
-3. **Artefatos do Scrum**:
-   - Product Backlog: Lista priorizada de requisitos, características e necessidades do produto a ser desenvolvido.
-   - Sprint Backlog: Lista de tarefas selecionadas do Product Backlog que devem estar prontas ao final da Sprint.
-   - Incremento: Versão potencialmente entregável do produto após cada Sprint.
+2. **Scrum Events** :
 
-4. **Valores do Scrum**: Scrum promove uma abordagem iterativa e incremental no desenvolvimento de produtos, o que permite uma rápida adaptação às mudanças, sendo alcançado através de iterações curtas, onde o produto é desenvolvido de forma incremental, com um foco específico em entregar valor ao cliente. Importante lembrar também da colaboração entre os membros da equipe e os stakeholders do projeto e uma comunicação aberta e transparente para garantir o alinhamento com os objetivos e prioridades do produto. 
+    - Sprint: A fixed period of time during which work is accomplished and a potentially shippable product increment is created.
+    - Sprint Planning: Meeting to plan the work to be done during the Sprint.
+    - Daily Scrum: Daily 15-minute synchronization meeting to inspect progress and adapt the plan.
+    - Sprint Review: Meeting held at the end of the sprint to review the increment and adapt the Product Backlog.
+    - Sprint Retrospective: Meeting to reflect on the Sprint and identify improvements.
 
-## Metodologias Ágil x Tradicional
+3. **Scrum Artifacts** :
 
-<figure>
-  <img src="https://railsware.com/blog/wp-content/uploads/2021/09/traditional-vs-agile-product-development-360x360.jpg" width="60%">
-</figure>
+    - Product Backlog: Prioritized list of requirements, features and needs of the product to be developed.
+    - Sprint Backlog: List of tasks selected from the Product Backlog that must be completed by the end of the Sprint.
+    - Increment: Potentially shippable version of the product after each Sprint.
+
+4. **Scrum Values** : Scrum promotes an iterative and incremental approach to product development, which allows for rapid adaptation to changes, achieved through short iterations, where the product is developed incrementally, with a specific focus on delivering value to the customer. It is also important to remember collaboration between team members and project stakeholders and open and transparent communication to ensure alignment with product objectives and priorities.
+
+## Agile vs. Traditional Methodologies
+
+<figure>   <img src="https://railsware.com/blog/wp-content/uploads/2021/09/traditional-vs-agile-product-development-360x360.jpg" width="60%"> </figure>

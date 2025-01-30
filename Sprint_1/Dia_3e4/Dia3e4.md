@@ -1,65 +1,65 @@
-08/05/2024 e 09/05/2024
+08/05/2024 and 09/05/2024
 
-# Dia 3 e Dia 4: MasterClass
-- Resumo do curso: Início Rápido em Teste e QA
+# Day 3 and Day 4: MasterClass
 
-## Fundamentos do teste de software: 🖥️
+- Course Summary: Quick Start in Testing and QA
 
-#### Introdução ao Teste de Software:
+## Software Testing Fundamentals: 🖥️
 
-Os defeitos cobram juros, então danos que os bugs podem causar incluem atrasos, prejuízos financeiros e danos à imagem da empresa. Portanto, devem ser tratados o quanto antes.
+#### Introduction to Software Testing:
 
-#### Os 7 fundamentos do teste (ISTQB):
+Defects charge interest, so the damage that bugs can cause includes delays, financial losses, and damage to the company's image. Therefore, they must be addressed as soon as possible.
 
-1. **Teste demonstra a presença de defeitos**: Embora o teste identifique defeitos, não pode garantir que não haverá mais nenhum.
-2. **Teste exaustivo não é possível**: É impraticável testar todas as combinações possíveis, portanto, é necessário focar em casos triviais e, principalmente, em riscos e prioridades, utilizando uma análise de prioridades.
-3. **Teste antecipado**: Iniciar o teste o mais cedo possível é fundamental, pois é mais econômico identificar e corrigir defeitos no início do ciclo de desenvolvimento. Descobrir problemas mais tarde pode ser muito mais caro.
-4. **Agrupamento de defeitos**: Geralmente, a maioria dos defeitos está concentrada em pequenos módulos do software. Embora eles possam estar distribuídos de forma heterogênea, é comum que defeitos semelhantes estejam agrupados em áreas específicas.
-5. **Paradoxo do pesticida**: Testes repetidos podem não encontrar novos defeitos, então é essencial revisitar e atualizar os testes com frequência para aumentar a chance de identificar mais erros.
-6. **Teste depende do contexto**: A quantidade e a abordagem dos testes dependem do contexto do projeto, incluindo os riscos envolvidos. Projetos com mais riscos geralmente exigem mais testes.
-7. **A ilusão da ausência de erros**: Um software pode parecer não ter erros, mas isso não garante que atenda exatamente ao que o cliente pediu. É importante garantir que o software não apenas funcione corretamente, mas também atenda às necessidades e expectativas do cliente.
+#### The 7 Fundamentals of Testing (ISTQB):
 
-#### Teste x Qualidade:
+1. **Testing demonstrates the presence of defects** : Although testing identifies defects, it cannot guarantee that there will be no more.
+2. **Exhaustive testing is not possible** : It is impractical to test all possible combinations, so it is necessary to focus on trivial cases and, mainly, on risks and priorities, using a priority analysis.
+3. **Early testing** : Starting testing as early as possible is critical, as it is more cost-effective to identify and fix defects early in the development cycle. Discovering problems later can be much more expensive.
+4. **Defect clustering** : Typically, most defects are concentrated in small modules of the software. Although they may be distributed heterogeneously, it is common for similar defects to be clustered in specific areas.
+5. **Pesticide Paradox** : Repeated testing may not find new defects, so it is essential to revisit and update testing frequently to increase the chance of identifying more errors.
+6. **Testing is context-dependent** : The amount and approach of testing depends on the context of the project, including the risks involved. Projects with more risk generally require more testing.
+7. **The illusion of error-free** software: A software may appear to be error-free, but that does not guarantee that it will do exactly what the customer asked for. It is important to ensure that the software not only works properly, but also meets the customer's needs and expectations.
 
-O teste visa encontrar bugs no produto, enquanto o QA trabalha para melhorar o processo e, assim, o produto e prevenindo a reincidência de erros. 
+#### Testing vs. Quality:
 
-#### Erro x Defeito x Falha:
+Testing aims to find bugs in the product, while QA works to improve the process and thus the product and prevent errors from recurring.
 
-Erros são reconhecidos pela pessoa que o comete, defeitos são esses erros encontrados por terceiros e falhas ocorrem quando os defeitos não são encontrados e corrigidos e acabam sendo executados ou chegam ao cliente.
+#### Error x Defect x Failure:
 
-#### Tipos de Testes (ISO 25010):
+Errors are recognized by the person who makes them, defects are those errors found by third parties and failures occur when defects are not found and corrected and end up being executed or reaching the customer.
 
-<figure>
-  <img src="https://www.impresa24web.it/dev/wp-content/uploads/2020/03/iso-quality-software-768x645.jpg" width="70%">
-</figure>
+#### Types of Tests (ISO 25010):
 
-1. Adequação Funcional: Testa se o software faz o que deveria fazer, olhando para a completude, correção e adequação.
+<figure>   <img src="https://www.impresa24web.it/dev/wp-content/uploads/2020/03/iso-quality-software-768x645.jpg" width="70%"> </figure>
 
-2. Usabilidade: Avalia a facilidade de uso do software, considerando aspectos como aprendizado, operação, navegação, acessiblidade e estética.
+1. Functional Adequacy: Tests whether the software does what it is supposed to do, looking at completeness, correctness and adequacy.
 
-3. Compatibilidade: Verifica se o software é compatível e pode se comunicar com outros sistemas ou ambientes.
+2. Usability: Evaluates the ease of use of the software, considering aspects such as learning, operation, navigation, accessibility and aesthetics.
 
-4. Confiança: Avalia a capacidade do software de prevenir falhas antes que aconteçam, sua disponibilidade e tolerância a falhas, bem como sua capacidade de recuperação.
+3. Compatibility: Checks whether the software is compatible and can communicate with other systems or environments.
 
-5. Eficiência: Examina o desempenho do software, sua utilização de recursos e sua capacidade de atender às demandas.
+4. Reliability: Evaluates the software's ability to prevent failures before they happen, its availability and fault tolerance, as well as its ability to recover.
 
-6. Manutenibilidade: Analisa a facilidade com que o software pode ser modificado, reutilizado, analisado e testado.
+5. Efficiency: Examines the software's performance, its resource utilization, and its ability to meet demands.
 
-7. Portabilidade: Avalia a capacidade do software de funcionar em diferentes contextos e sua facilidade de adaptação, instalação e substituição.
+6. Maintainability: Analyzes how easily the software can be modified, reused, analyzed, and tested.
 
-8. Segurança: Verifica se o software atende a requisitos de segurança, incluindo confidencialidade, integridade, autenticidade e responsabilidade.
+7. Portability: Assesses the software's ability to function in different contexts and its ease of adaptation, installation and replacement.
 
-### Testes Automatizados x Testes Manuais:
-1. **Testes Automatizados**:
-    - São executados por ferramentas de automação, como scripts ou frameworks de teste.
-    - São repetitivos e consistentes, o que ajuda a identificar regressões (manter o que já está correto, mesmo quando novas funcionalidades são adicionadas).
-    - Cobrem cenários específicos e são úteis para testar funcionalidades estáveis.
-    - Benefícios: velocidade, consistência e escalabilidade.
-2. **Testes Manuais**:
-    - Realizados por testadores humanos.
-    - São exploratórios e adaptáveis, adequados para testar novas funcionalidades e mudanças.
-    - Incluem testes de confirmação (verificação de defeitos corrigidos).
-    - Benefícios: capacidade de avaliar a experiência do usuário, criatividade e intuição.
-    - Limitações: lentidão, inconsistência e dificuldade em cobrir todos os cenários.
-    
-Quanto maior a cobertura de testes (automatizados ou manuais), mais rápido os defeitos podem ser identificados.
+8. Security: Verifies that the software meets security requirements, including confidentiality, integrity, authenticity, and accountability.
+
+### Automated Testing vs Manual Testing:
+
+1. **Automated Tests** :
+    - They are executed by automation tools, such as scripts or testing frameworks.
+    - They are repetitive and consistent, which helps identify regressions (keeping what is already correct, even when new features are added).
+    - They cover specific scenarios and are useful for testing stable features.
+    - Benefits: speed, consistency and scalability.
+2. **Manual Tests** :
+    - Performed by human testers.
+    - They are exploratory and adaptable, suitable for testing new features and changes.
+    - They include confirmation tests (verification of corrected defects).
+    - Benefits: Ability to assess user experience, creativity, and intuition.
+    - Limitations: slowness, inconsistency and difficulty in covering all scenarios.
+
+The greater the test coverage (automated or manual), the faster defects can be identified.

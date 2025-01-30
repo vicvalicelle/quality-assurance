@@ -1,121 +1,125 @@
 # Sprint 3
 <details>
-<summary> Resumo dos dias </summary>
+<summary>Summary of days</summary>
 
-## Dia 1 e 2: MasterClass
+## Day 1 and 2: MasterClass
+
 - Planning Sprint 3
-- Refinando conhecimentos de análise e planejamento de testes
-- Curso Udemy: Início rápido em testes de software
+- Refining test planning and analysis knowledge
+- Udemy Course: Quick Start in Software Testing
 
-## Dia 3: MasterClass
-- DoR
+## Day 3: MasterClass
+
+- Pain
 - DoD
 - Acceptance Criteria
-- Dinâmica
+- Dynamics
 
-## Dia 4: MasterClass
-- Gestão de Issues
-- Dinâmica
+## Day 4: MasterClass
 
-## Dia 5 e 6: MasterClass
-- Risco e Impacto
-- Ciclo de Teste
-- Atividade: Uso/Migração do Jira + Test Cycles
+- Issue Management
+- Dynamics
 
-## Dia 7, 8 e 9: Evolução Challenge
-- Exercíos Challenge
-- Mentoria
+## Day 5 and 6: MasterClass
 
+- Risk and Impact
+- Test Cycle
+- Activity: Jira Usage/Migration + Test Cycles
+
+## Day 7, 8 and 9: Evolution Challenge
+
+- Challenge Exercises
+- Mentoring
 
 </details>
 
-## Challenge Sprint 3 - Plano de Teste do ServeRest:
 
-### Resumo:
+## Challenge Sprint 3 - ServeRest Test Plan:
 
-O plano de teste da aplicação ServeRest abrange a validação da funcionalidade de login, gerenciamento de produtos e cadastro de vendedores da API do Marketplace ServeRest, garantindo que seja possível cadastrar e editar perfis dos vendedores, uma autenticação segura dos vendedores e o acesso e operações de gerenciamento de produtos.
+### Summary:
 
-### Estratégia:
+The ServeRest application test plan covers the validation of the login, product management and seller registration functionality of the ServeRest Marketplace API, ensuring that it is possible to register and edit seller profiles, secure seller authentication and product management access and operations.
 
-- Análise dos Critérios e Criação de Casos de Teste: Uma lista de casos de teste que abrangem todos os critérios de aceitação e cenários além do Swagger.
-- Preparação do Ambiente de Testes: Configurar o Postman, o banco de dados de testes e usar o Swagger.
-- Execução dos Testes: Executar cada caso de teste no Postman, verificar as respostas da API e documentar resultados no Jira.
-- Análise dos Resultados e Relatório: Analisar os resultados dos testes e sugerir melhorias
+### Strategy:
 
-### Análise da API pelas Rotas (/usuarios, /login, /produtos):
+- Criteria Analysis and Test Case Creation: A list of test cases that cover all acceptance criteria and scenarios beyond Swagger.
+- Preparing the Test Environment: Configure Postman, the test database and use Swagger.
+- Test Execution: Run each test case in Postman, verify API responses, and document results in Jira.
+- Results Analysis and Reporting: Analyze test results and suggest improvements
 
-**Rotas de Usuários:**
+### API Analysis by Routes (/users, /login, /products):
 
-* Cenário 1: Cadastro de Usuário (Vendedor)
-    - CT01: Cadastro de usuário com sucesso
-    - CT02: Cadastro de usuário com falha  
-* Cenário 2: Atualização de Usuário
-    - CT03: Atualização de usuário existente com sucesso
-    - CT04: Atualização de usuário inexistente (criação de novo usuário)
-    - CT05: Atualização de usuário com falha
-* Cenário 3: Busca de Usuários
-    - CT06: Listagem dos usuários
-    - CT07: Busca de usuário por ID
-* Cenário 4: Exclusão de Usuário
-    - CT08: Exclusão de usuário existente com sucesso
-    - CT09: Exclusão de usuário inexistente
-    - CT010: Exclusão de usuário existente com carrinho
+**User Routes:**
 
-**Rotas de Login:**
+- Scenario 1: User Registration (Seller)
+    - CT01: User registration successful
+    - CT02: User registration failed
+- Scenario 2: User Update
+    - CT03: Update existing user successfully
+    - CT04: Update of non-existent user (creating new user)
+    - CT05: User update failed
+- Scenario 3: User Search
+    - CT06: List of users
+    - CT07: User search by ID
+- Scenario 4: User Deletion
+    - CT08: Successful deletion of existing user
+    - CT09: Deletion of non-existent user
+    - CT010: Deleting existing user with cart
 
-* Cenário: Autenticação de Usuário
-    - CT01: Login com email e senha válidos
-    - CT02: Login com email válido e senha em branco
-    - CT03: Login com email válido e senha incorreta
-    - CT04: Login com email em branco e senha válida
-    - CT05: Login com email e senha em branco
-    - CT06: Login com email em formato inválido e senha válida
-    - CT07: Login com email válido e senha com menos de 5 caracteres
-    - CT08: Login com email válido e senha com mais de 10 caracteres
-    - CT09: Login com email de usuário não cadastrado
+**Login Routes:**
 
-**Rotas de Produtos:**
+- Scenario: User Authentication
+    - CT01: Login with valid email and password
+    - CT02: Login with valid email and blank password
+    - CT03: Login with valid email and incorrect password
+    - CT04: Login with blank email and valid password
+    - CT05: Login with blank email and password
+    - CT06: Login with invalid email format and valid password
+    - CT07: Login with valid email and password with less than 5 characters
+    - CT08: Login with valid email and password with more than 10 characters
+    - CT09: Login with email of unregistered user
 
-* Cenário 1: Cadastrar Produto
-    - CT01: Criar produto com sucesso (autenticado)
-    - CT02: Criar produto com nome duplicado (autenticado)
-    - CT03: Criar produto sem autenticação
-    - CT04: Criar produto com dados inválidos (autenticado)
-    - CT05: Criar produto não sendo administrador
-* Cenário 2: Atualizar Produto
-    - CT06: Atualizar produto existente com sucesso (autenticado)
-    - CT07: Atualizar produto inexistente (autenticado)
-    - CT08: Atualizar produto com nome duplicado (autenticado)
-    - CT09: Atualizar produto sem autenticação
-    - CT10: Atualizar produto com dados inválidos (autenticado)
-    - CT11: Atualizar produto não sendo administrador
-* Cenário 3: Listar Produtos (GET /produtos)
-    - CT12: Listar todos os produtos
-    - CT13: Listar produtos com ID válido
-    - CT14: Listar produtos com ID inválido
-* Cenário 4: Deletar Produto (DELETE /produtos/{id})
-    - CT15: Deletar produto existente com sucesso (autenticado)
-    - CT16: Deletar produto inexistente (autenticado)
-    - CT17: Deletar produto em carrinho (autenticado)
-    - CT18: Deletar produto sem autenticação
-    - CT19: Deletar produto não sendo adminstrador
+**Product Routes:**
 
-**Testes Candidatos à Automação:**
+- Scenario 1: Register Product
+    - CT01: Create product successfully (authenticated)
+    - CT02: Create product with duplicate name (authenticated)
+    - CT03: Create product without authentication
+    - CT04: Create product with invalid data (authenticated)
+    - CT05: Create a product without being an administrator
+- Scenario 2: Update Product
+    - CT06: Update existing product successfully (authenticated)
+    - CT07: Update non-existent product (authenticated)
+    - CT08: Update product with duplicate name (authenticated)
+    - CT09: Update product without authentication
+    - CT10: Update product with invalid data (authenticated)
+    - CT11: Update product without being an administrator
+- Scenario 3: List Products (GET /products)
+    - CT12: List all products
+    - CT13: List products with valid ID
+    - CT14: List products with invalid ID
+- Scenario 4: Delete Product (DELETE /products/{id})
+    - CT15: Delete existing product successfully (authenticated)
+    - CT16: Delete non-existent product (authenticated)
+    - CT17: Delete product from cart (authenticated)
+    - CT18: Delete product without authentication
+    - CT19: Delete product without being an administrator
 
-Considerando custo-benefício, eficiência e cobertura de testes, a automação desses testes trará vantagens significativas em relação aos testes manuais:
+**Candidate Tests for Automation:**
 
-- Teste de fluxo principal: Deve ser testado com frequência para garantir que essas funcionalidades básicas estejam funcionando corretamente a cada nova versão da API. Como CT01 (Login), CT01 (Produtos), CT01 (Usuários) e outros.
-- Testes repetitivos: Casos que envolvem testar diversas combinações de dados inválidos. A automação permite executar esses testes de forma rápida e precisa, garantindo que todas as validações sejam testadas e que as regras de negócio sejam aplicadas corretamente. Como o CT02 e CT05 (Usuários) que envolvem testar diversas combinações de dados inválidos.
-- Testes com grande volume de dados: Os que podem envolver um grande volume de dados, tornando a verificação manual trabalhosa e demorada. Como CT06 (Usuários) e CT12 (Produtos).
+Considering cost-benefit, efficiency and test coverage, automating these tests will bring significant advantages over manual testing:
 
-**Ferramentas:**
+- Core Flow Testing: This should be tested frequently to ensure that these core functionalities are working correctly with each new API release. Such as CT01 (Login), CT01 (Products), CT01 (Users), and others.
+- Repetitive testing: Cases that involve testing several combinations of invalid data. Automation allows you to run these tests quickly and accurately, ensuring that all validations are tested and that business rules are applied correctly. Such as CT02 and CT05 (Users) that involve testing several combinations of invalid data.
+- Tests with large volumes of data: Those that may involve a large volume of data, making manual verification laborious and time-consuming. Such as CT06 (Users) and CT12 (Products).
 
-- Postman: Para testes manuais exploratórios e criação de coleções de testes.
-- Swagger: Para gerar documentação como base para casos de teste iniciais.
-- Xmind: Para a criação de mapas mentais para análise
-- Jira: Para organização do planejamento de testes.
+**Tools:**
 
-### [Mapa Mental](MapaMental_ServerRest.xmind)
-<figure>
-  <img src="Testes/ServerRest.png" width="70%">
-</figure>
+- Postman: For manual exploratory testing and creating test collections.
+- Swagger: To generate documentation as a basis for initial test cases.
+- Xmind: For creating mind maps for analysis
+- Jira: For organizing test planning.
+
+### [Mind Map](MapaMental_ServerRest.xmind)
+
+<figure>   <img src="Testes/ServerRest.png" width="70%"> </figure>

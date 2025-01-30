@@ -1,83 +1,38 @@
-# Curso Quality Assurance (QA)
+05/13/2024
 
-Este repositório contém os conceitos, práticas e exemplos adquiridos durante as sprints do curso de Quality Assurance (QA).
+# Day 6: MasterClass
 
-## Tópicos abordados:
+- Fundamentals of Software Testing (Back-End)
+- Test pyramid
 
-- Introdução ao QA e sua importância.
-- Testes manuais e automatizados.
-- Ferramentas de QA como K6, Postman e JMeter.
-- Metodologias ágeis (Scrum e QA).
+### Fundamentals of Back-end Software Testing:
 
-## Estrutura do Repositório
+- Back-end software testing is crucial to ensuring the quality and robustness of applications.
+- It occurs in parallel with the development cycle, anticipating errors and increasing the quality of the final product.
 
-### Sprint 1:
-- Comunicação em projetos
-- Como criar bons READMEs para repositórios versionados
-- Matriz de Eisenhower
-- Fundamentos de agilidade
-- Organização em equipes
-- O QA Ágil
-- Fundamentos de Teste (back-end)
-- Pirâmide de testes
-- Myers e o princípio de Pareto
-- Fundamentos de CyberSecurity
+## Test Pyramid:
 
-### Sprint 2:
-- User Stories & Issues
-- Conceitos básicos para testes de API
-- Testes Estáticos
-- Tipos de erros comuns
-- Validações em APIs
-- Boas práticas
-- Planejamento de testes
-- Cobertura de testes
-- Análise de testes
-- Mapas mentais e testes
-- Introdução ao Postman
-- Ferramentas de apoio ao QA
+<figure>   <img src="https://1ee1ed924b.cbaul-cdnwnd.com/e5c4fe4592bf06fe7ef86a0e80f403f0/200000021-8d3c58d3c8/700/Test-Pyramid-Eximia-1024x765.png?ph=1ee1ed924b" width="50%"> </figure>
 
-### Sprint 3:
-- Planejamento e análise de testes
-- Planejamento de testes de APIs REST
-- Definition of Done, Definition of Ready & Acceptance Criteria
-- Gestão de Issues
-- Gestão de Testes
-- Execução e criação de testes: avançando no Postman
+The testing pyramid is a strategy for distributing the different types of tests in relation to their quantity and complexity. It defines testing levels and how many tests should be performed in each one. The base of the pyramid consists of unit tests, followed by integration tests and, at the top, end-to-end (E2E) tests.
 
-### Sprint 4:
-- Testes Exploratórios
-- Linguagem de programação Javascript
-- Test Driven Development
-- Bibliotecas Mocha e Chai
+1. **Unit Tests** :
 
-### Sprint 5:
-- Conceitos sobre Performance Testing
-- Tipos de testes de performance - frontend/backend e suas diferenças
-- Teste estático e dinâmico
-- Geração de carga, falhas comuns e planejamento
-- Fundamentos da medição de performance
-- Introdução ao Jmeter
+    - Performed in the smallest testable unit of code in the application, regardless of integration.
+    - They are small, quick and simple to make and maintain.
+    - They use "fake" objects to isolate the unit of code under test.
+    - They are important because they are quick to run and clearly identify where the problems are if they fail.
 
-### Sprint 6:
-- Primeiro contato com K6
-- Thresholds
-- Validações com K6
-- K6 CLI
+2. **Integration Tests** :
 
-### Sprint 7:
-- Estrutura de projeto com K6
-- Ciclo de vida dos testes
-- Camada de Services (BaseService, BaseRest)
-- Centralizando Checks
-- Constantes com constants.js
+    - They test integrated modules to ensure they work correctly together.
+    - They are more time-consuming and complex than unit tests, but simpler and faster than E2E tests.
+    - Ensure that integrated functionality is still operating as expected.
 
-### Sprint 8:
-- Docker
-- CI/CD (Continuous Integration/Continuous Deployment) 
-- EC2 (Elastic Compute Cloud)
-- Integração entre Docker, CI/CD e EC2 
-- Trabalho Final
+3. **End-to-End (E2E) Testing** :
 
-### Trabalho Final
-O trabalho final consistiu em realizar uma análise e testes completos de uma API, incluindo tanto **testes manuais** quanto **testes automatizados**. A API foi fornecida como parte do curso e possuía várias funcionalidades e endpoints que precisavam ser validados para garantir seu correto funcionamento.
+    - They simulate the complete application environment and verify that the expected behavior occurs.
+    - They run in controlled environments and can be difficult to write and time-consuming to run.
+    - They cover the main flows of the application and can identify not-so-trivial failures.
+
+A solid foundation of unit tests is crucial to ensure system stability and maintainability, while user interface tests should be used sparingly due to their fragility and maintenance cost, as well as the need for different types of tests to achieve comprehensive and effective coverage.

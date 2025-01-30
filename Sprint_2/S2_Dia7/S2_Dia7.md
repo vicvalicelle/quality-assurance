@@ -1,61 +1,62 @@
-# Dia 7: MasterClass
+# Day 7: MasterClass
 
-- Análise HTTP e API REST
-- Mapa Mental
-- Atividade Complementar
+- HTTP and REST API Analysis
+- Mind Map
+- Complementary Activity
 
-## Análise HTTP e API REST
+## HTTP and REST API Analysis
 
-* **Análise Crítica da Documentação**
+- **Critical Analysis of Documentation**
 
-    1. **Estrutura e Organização**
-    2. **Clareza e Objetividade**
-    3. **Completude:** Todos os endpoints, métodos (GET, POST, PUT, DELETE, etc.), parâmetros, tipos de dados e códigos de resposta estão documentados? Há exemplos de requisições e respostas?
-    4. **Consistência**
-    5. **Acurácia:** As informações na documentação estão corretas e atualizadas?
+    1. **Structure and Organization**
+    2. **Clarity and Objectivity**
+    3. **Completeness:** Are all endpoints, methods (GET, POST, PUT, DELETE, etc.), parameters, data types, and response codes documented? Are there sample requests and responses?
+    4. **Consistency**
+    5. **Accuracy:** Is the information in the documentation correct and up to date?
 
-* **Verificação de Pendências e Erros**
+- **Checking for Pending Issues and Errors**
 
-    1. **Endpoints não Documentados:** Compare a documentação com a implementação real da API. Há endpoints que não estão na documentação?
-    2. **Parâmetros Faltantes:** Verificar se todos os parâmetros necessários para cada endpoint estão documentados, incluindo seus tipos, se são obrigatórios ou opcionais e seus valores padrão.
-    3. **Erros de Tipagem:** Verificar se os tipos de dados dos parâmetros e das respostas estão corretos e correspondem à implementação.
-    4. **Exemplos Incorretos:** Teste os exemplos fornecidos na documentação para garantir que funcionam como esperado.
-    5. **Códigos de Resposta Incompletos:** Verificar se todos os códigos de resposta possíveis para cada endpoint estão documentados, incluindo os códigos de erro e suas descrições.
+    1. **Undocumented Endpoints:** Compare the documentation with the actual API implementation. Are there endpoints that are not in the documentation?
+    2. **Missing Parameters:** Verify that all required parameters for each endpoint are documented, including their types, whether they are required or optional, and their default values.
+    3. **Typing Errors:** Check that the data types of the parameters and responses are correct and correspond to the implementation.
+    4. **Incorrect Examples:** Test the examples provided in the documentation to ensure they work as expected.
+    5. **Incomplete Response Codes:** Verify that all possible response codes for each endpoint are documented, including error codes and their descriptions.
 
-* A partir da análise da documentação, você pode criar uma **lista priorizada de validações de backend**:
+- From your analysis of the documentation, you can create a **prioritized list of backend validations** :
 
-    1. **Validação de Parâmetros:**
-        - Verificar se os parâmetros obrigatórios estão presentes.
-        - Validar os tipos de dados dos parâmetros.
-        - Verificar se os valores dos parâmetros estão dentro das faixas aceitáveis.
-    2. **Validação de Regras de Negócio:**
-        - Implementar as regras de negócio específicas da aplicação, como verificação de permissões, consistência de dados, etc.
-    3. **Tratamento de Erros e Testes de Segurança:**
-        - Garantir que todos os erros possíveis sejam tratados e que mensagens de erro claras e informativas sejam retornadas e identificar vulnerabilidades.
+    1. **Parameter Validation:**
+        - Check if mandatory parameters are present.
+        - Validate the data types of the parameters.
+        - Check if the parameter values are within acceptable ranges.
+    2. **Business Rules Validation:**
+        - Implement application-specific business rules such as permission checking, data consistency, etc.
+    3. **Error Handling and Security Testing:**
+        - Ensure that all possible errors are handled and that clear and informative error messages are returned and identify vulnerabilities.
 
-## Mapa Mental (API)
+## Mind Map (API)
 
-Criar um mapa mental da API pode te ajudar a visualizar a estrutura, funcionalidades e cenários de uso da API. Use cores para facilitar a visualização, mantenha o mapa mental atualizado e o utilize como guia para a criação dos scripts de teste.
+Creating a mind map of your API can help you visualize the structure, functionality, and usage scenarios of your API. Use colors to make it easier to visualize, keep your mind map up to date, and use it as a guide for creating test scripts.
 
-*  Análise de Funcionalidades e Mapeamento de Cenários:
-    1. Identifique todos os endpoints da API.
-    2. Liste os métodos HTTP de cada endpoint.
-    3. Detalhe os parâmetros de entrada para cada endpoint, incluindo seus tipos e se são obrigatórios ou opcionais.
-    4. Enumere os códigos de resposta esperados para cada tipo de requisição.
-    5. Mapeie os principais fluxos de usuário que envolvem a API.
+- Functionality Analysis and Scenario Mapping:
 
-* Mapeamento para Automação Web:
+    1. Identify all API endpoints.
+    2. List the HTTP methods of each endpoint.
+    3. Detail the input parameters for each endpoint, including their types and whether they are required or optional.
+    4. List the expected response codes for each type of request.
+    5. Map out the main user flows involving the API.
 
-    1. Identifique elementos que interagem com a API.
-    2. Descreva as interações do usuário com esses elementos.
-    3. Defina as validações a serem utilizadas na interface após as chamadas à API.
+- Mapping for Web Automation:
 
-* Mapeamento para Automação de APIs:
+    1. Identify elements that interact with the API.
+    2. Describe user interactions with these elements.
+    3. Define the validations to be used in the interface after API calls.
 
-    1. Escolha uma ferramenta de automação de testes.
-    2. Crie scripts de teste que cubram os fluxos de usuário mapeados.
-    3. Inclua asserções nos scripts para verificar os códigos de resposta.
+- Mapping for API Automation:
 
-## Atividade Complementar:
+    1. Choose a test automation tool.
+    2. Create test scripts that cover the mapped user flows.
+    3. Include assertions in your scripts to verify response codes.
 
-Monte o mapa mental da API Serverest (foco nas User Stories selecionadas para a Sprint atual). Procure mantê-lo organizado e rico em informações. Você pode indicar a necessidade de dados para a requisição, a resposta esperada em cada operação, as toras e verbos que exigem autenticação caso aplicável, etc.
+## Complementary Activity:
+
+Create a Serverest API mind map (focus on the User Stories selected for the current Sprint). Try to keep it organized and rich in information. You can indicate the data required for the request, the expected response for each operation, the logs and verbs that require authentication if applicable, etc.

@@ -1,167 +1,176 @@
-# Dia 8: MasterClass
+# Day 8: MasterClass
 
-- Ferramentas para teste API
-- Curso Udemy: Introdução ao Postman
-- Atividade
+- API Testing Tools
+- Udemy Course: Introduction to Postman
+- Activity
 
-## Ferramentas para teste manual
+## Tools for manual testing
 
-- **Postman:** Uma plataforma para desenvolvimento e teste de APIs. Permite criar requisições, organizar coleções, automatizar testes, gerar documentação, entre outras funções.
-- **Insomnia:** Também focada em testes de APIs REST. Oferece recursos como criação de ambientes, testes automatizados e geração de código para diferentes linguagens.
+- **Postman:** A platform for developing and testing APIs. It allows you to create requests, organize collections, automate tests, generate documentation, among other functions.
+- **Insomnia:** Also focused on REST API testing. It offers features such as environment creation, automated testing and code generation for different languages.
 
-## Ferramentas para teste automatizado
+## Tools for automated testing
 
-- **Rest-Assured:** Uma biblioteca Java poderosa e flexível para testes. Facilita a criação de testes legíveis e concisos, com suporte a diferentes formatos de dados e validações.
-- **HTTParty:** Uma biblioteca Ruby útil para testes de APIs REST. Oferece uma sintaxe amigável e integração com outras ferramentas de teste Ruby.
+- **Rest-Assured:** A powerful and flexible Java testing library. Makes it easy to create readable and concise tests, supporting different data formats and validations.
+- **HTTParty:** A useful Ruby library for testing REST APIs. Offers a friendly syntax and integration with other Ruby testing tools.
 
-## Ferramenta para teste de carga
+## Load testing tool
 
-- **JMeter:** Uma ferramenta open-source que permite simular um grande número de usuários acessando uma aplicação, medir tempos de resposta, identificar gargalos e analisar resultados detalhados.
-- **K6:** Uma ferramenta com foco em scripts em JavaScript e execução em nuvem. É fácil de usar, escalável e oferece relatórios em tempo real.
+- **JMeter:** An open-source tool that allows you to simulate a large number of users accessing an application, measure response times, identify bottlenecks and analyze detailed results.
+- **K6:** A tool focused on JavaScript scripting and cloud execution. It is easy to use, scalable and offers real-time reporting.
 
-## Introdução ao Postman
+## Introduction to Postman
 
-Oferece um ambiente completo para criar, enviar, testar e documentar requisições HTTP para suas APIs.
+Provides a complete environment for creating, sending, testing, and documenting HTTP requests to your APIs.
 
-**Vantagens do Postman:**
+**Advantages of Postman:**
 
-- Interface Intuitiva
-- Testes Simplificados
-- Coleções e Ambientes
-- Automação de Teste
-- Documentação Automática
-- Integração com Ferramentas Externas
+- Intuitive Interface
+- Simplified Tests
+- Collections and Environments
+- Test Automation
+- Automatic Documentation
+- Integration with External Tools
 
-**Request e Query Parameters:**
+**Request and Query Parameters:**
 
-- Request Parameters: Informações enviadas no corpo da requisição para APIs que utilizam métodos POST, PUT ou PATCH.
-- Query Parameters: Informações adicionadas ao final da URL da requisição para APIs que utilizam o método GET. São utilizados para filtrar, ordenar ou paginar resultados.
+- Request Parameters: Information sent in the request body to APIs that use POST, PUT or PATCH methods.
+- Query Parameters: Information added to the end of the request URL for APIs that use the GET method. They are used to filter, sort or page results.
 
-**Variáveis:**
+**Variables:**
 
-O Postman permite criar e utilizar variáveis para armazenar valores que podem ser reutilizados em diferentes partes das suas requisições.
+Postman allows you to create and use variables to store values that can be reused in different parts of your requests.
 
-**Testes Automatizados:**
+**Automated Tests:**
 
-O Postman permite escrever scripts de teste para automatizar a verificação das respostas das suas APIs. Você pode validar códigos de status, verificar o conteúdo da resposta, medir tempos de resposta e mais.
+Postman lets you write test scripts to automate the verification of responses from your APIs. You can validate status codes, check response content, measure response times, and more.
 
-## Atividade
+## Activity
 
-Deve realizar suas primeiras requisições utilizando a API https://serverest.dev/ como base de estudos.
+You must make your first requests using the API https://serverest.dev/ as a study base.
 
-Para esta atividade é desejado que você:
+For this activity it is expected that you:
 
-1) Crie uma requisição Get para validar o retorno de usuários através da API;
+1. Create a Get request to validate user feedback via the API;
 
-        Método: GET
-        URL: http://localhost:3000/usuarios
-        Resultado Esperado: Status HTTP 200
-        Corpo da resposta: Lista de usuários
+    ```
+     Método: GET
+     URL: http://localhost:3000/usuarios
+     Resultado Esperado: Status HTTP 200
+     Corpo da resposta: Lista de usuários
+    ```
 
-- Resultado Obtido:
-![alt text](Imagens/image.png)
+- Result Obtained:![alt text](Imagens/image.png)
 
-2) Crie uma requisição Post para cadastrar um novo usuário através da API;
+1. Create a Post request to register a new user through the API;
 
-        Método: POST
-        URL: http://localhost:3000/usuarios
-        Body:
-            Nome: monica
-            Email: monica@email.com
-            Senha: 123456
-            Administrador: true
-        Resultado Esperado: Status HTTP 201
-        Corpo da resposta: Cadastro com sucesso
+    ```
+     Método: POST
+     URL: http://localhost:3000/usuarios
+     Body:
+         Nome: monica
+         Email: monica@email.com
+         Senha: 123456
+         Administrador: true
+     Resultado Esperado: Status HTTP 201
+     Corpo da resposta: Cadastro com sucesso
+    ```
 
-- Resultado Obtido:
-![alt text](Imagens/image-1.png)
+- Result Obtained:![alt text](Imagens/image-1.png)
 
-3) Crie uma requisição Get para validar o retorno de um usuário apenas através da API (pode utilizar os IDs dos usuários que vocês irão criar);
+1. Create a Get request to validate the return of a user only through the API (you can use the IDs of the users you will create);
 
-        Método: GET
-        URL: http://localhost:3000/usuarios/{_id}
-        Dados de Entrada:
-            ID do usuário: MEeOhgLGIoUeLkqo
-        Resultado Esperado: Status HTTP 200 (OK)
-        Corpo da resposta: Dados do usuário
+    ```
+     Método: GET
+     URL: http://localhost:3000/usuarios/{_id}
+     Dados de Entrada:
+         ID do usuário: MEeOhgLGIoUeLkqo
+     Resultado Esperado: Status HTTP 200 (OK)
+     Corpo da resposta: Dados do usuário
+    ```
 
-- Resultado Obtido:
-![alt text](Imagens/image-3.png)
+- Result Obtained:![alt text](Imagens/image-3.png)
 
-4) Crie cenários alternativos no cadastro de usuários, explore possíveis erros que podem ocorrer e mapeie as requisições através do Postman;
+1. Create alternative scenarios when registering users, explore possible errors that may occur and map requests through Postman;
 
-        Método: POST
-        URL: http://localhost:3000/usuarios
-        Body:
-            Nome: magali
-            Email: magali@email.com
-            Senha: 1234
-            Administrador: true
-        Resultado Esperado: Status HTTP 400
-        Corpo da resposta: Senha fora dos padrões
+    ```
+     Método: POST
+     URL: http://localhost:3000/usuarios
+     Body:
+         Nome: magali
+         Email: magali@email.com
+         Senha: 1234
+         Administrador: true
+     Resultado Esperado: Status HTTP 400
+     Corpo da resposta: Senha fora dos padrões
+    ```
 
-- Resultado Obtido:
-![alt text](Imagens/image-4.png)
+- Result Obtained:![alt text](Imagens/image-4.png)
 
-        Método: POST
-        URL: http://localhost:3000/usuarios
-        Body:
-            Nome: 
-            Email: cebolinha@email.com
-            Senha: 123456
-            Administrador: true
-        Resultado Esperado: Status HTTP 400
-        Corpo da resposta: Nome precisa estar preenchido
+    ```
+      Método: POST
+      URL: http://localhost:3000/usuarios
+      Body:
+          Nome:
+          Email: cebolinha@email.com
+          Senha: 123456
+          Administrador: true
+      Resultado Esperado: Status HTTP 400
+      Corpo da resposta: Nome precisa estar preenchido
+    ```
 
-- Resultado Obtido:
-![alt text](Imagens/image-5.png)
+- Result Obtained:![alt text](Imagens/image-5.png)
 
-5) Crie cenários alternativos na atualização de usuários, explore possíveis erros que podem ocorrer e mapeie as requisições através do Postman;
+1. Create alternative scenarios when updating users, explore possible errors that may occur and map requests through Postman;
 
-        Método: PUT
-        URL: http://localhost:3000/usuarios/:_id
-        ID: 0uxuPY0cbmQhpEz1
-        Body:
-            Nome: 
-            Email: 
-            Senha: 
-            Administrador: 
-        Resultado Esperado: Status HTTP 400
-        Corpo da resposta: Campos precisam estar preenchidos.
+    ```
+     Método: PUT
+     URL: http://localhost:3000/usuarios/:_id
+     ID: 0uxuPY0cbmQhpEz1
+     Body:
+         Nome:
+         Email:
+         Senha:
+         Administrador:
+     Resultado Esperado: Status HTTP 400
+     Corpo da resposta: Campos precisam estar preenchidos.
+    ```
 
-- Resultado Obtido:
-![alt text](Imagens/image-6.png)
+- Result Obtained:![alt text](Imagens/image-6.png)
 
-        Método: PUT
-        URL: http://localhost:3000/usuarios/:_id
-        ID: 0uxuPY0cbmQhpEz1
-        Body:
-            Nome: "Fulano da Silva"
-            Email: "abacate@gmail.com"
-            Senha: "teste"
-            Administrador: "true"
-        Resultado Esperado: Status HTTP 400
-        Corpo da resposta: Email deve ser valido.
+    ```
+      Método: PUT
+      URL: http://localhost:3000/usuarios/:_id
+      ID: 0uxuPY0cbmQhpEz1
+      Body:
+          Nome: "Fulano da Silva"
+          Email: "abacate@gmail.com"
+          Senha: "teste"
+          Administrador: "true"
+      Resultado Esperado: Status HTTP 400
+      Corpo da resposta: Email deve ser valido.
+    ```
 
-- Resultado Obtido:
-![alt text](Imagens/image-7.png)
+- Result Obtained:![alt text](Imagens/image-7.png)
 
-6) Crie cenários alternativos na exclusão de usuários, explore possíveis erros que podem ocorrer e mapeie as requisições através do Postman.
+1. Create alternative scenarios for deleting users, explore possible errors that may occur and map requests through Postman.
 
-        Método: DELETE
-        URL: http://localhost:3000/usuarios:_id
-        ID: 0uxuPY0cbmQhpEz
-        Resultado Esperado: Status HTTP 200
-        Corpo da resposta: Id inválido
+    ```
+     Método: DELETE
+     URL: http://localhost:3000/usuarios:_id
+     ID: 0uxuPY0cbmQhpEz
+     Resultado Esperado: Status HTTP 200
+     Corpo da resposta: Id inválido
+    ```
 
-- Resultado Obtido:
-![alt text](Imagens/image-8.png)
+- Result Obtained:![alt text](Imagens/image-8.png)
 
-        Método: DELETE
-        URL: http://localhost:3000/:_id
-        ID: 0uxuPY0cbmQhpEz1
-        Resultado Esperado: Status HTTP 400
-        Corpo da resposta: Usuário com carrinho cadastrado
+    ```
+      Método: DELETE
+      URL: http://localhost:3000/:_id
+      ID: 0uxuPY0cbmQhpEz1
+      Resultado Esperado: Status HTTP 400
+      Corpo da resposta: Usuário com carrinho cadastrado
+    ```
 
-Resultado Obtido:
-![alt text](Imagens/image-9.png)
+Result Obtained:![alt text](Imagens/image-9.png)

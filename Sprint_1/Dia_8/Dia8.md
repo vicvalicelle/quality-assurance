@@ -1,147 +1,149 @@
-15/05/2024
+05/15/2024
 
-# Dia 8: MasterClass
+# Day 8: MasterClass
 
 - NoSQL
-- Exercícios práticos de NoSQL
+- Practical NoSQL exercises
 
 # NoSQL (Not Only SQL):
 
-NoSQL ao contrário do tradicional banco de dados relacional esse oferece modelos de dados mais flexíveis, escalabilidade horizontal e diferentes modelos de dados, como documentos, colunas, chave-valor e grafos.
+NoSQL, unlike traditional relational databases, offers more flexible data models, horizontal scalability, and different data models, such as documents, columns, key-value, and graphs.
 
-<figure>
-  <img src="https://www.scylladb.com/wp-content/uploads/nosql-design-principles-diagram-768x500.png" width="70%">
-</figure>
+<figure>   <img src="https://www.scylladb.com/wp-content/uploads/nosql-design-principles-diagram-768x500.png" width="70%"> </figure>
 
-Principais comandos em MQL (MongoDB Query Language) para interagir com um banco de dados MongoDB para manipular dados de forma eficaz e eficiente:
+Main commands in MQL (MongoDB Query Language) to interact with a MongoDB database to manipulate data effectively and efficiently:
 
-1. **Inserir Documento:**
-   ```
-   db.colecao.insertOne({ campo1: valor1, campo2: valor2 })
-   ```
+1. **Insert Document:**
 
-2. **Consultar Documentos:**
-   ```
-   db.colecao.find({ campo: valor })
-   ```
+    ```
+    db.colecao.insertOne({ campo1: valor1, campo2: valor2 })
+    ```
 
-3. **Atualizar Documento:**
-   ```
-   db.colecao.updateOne(
-     { campo: valor },
-     { $set: { novoCampo: novoValor } }
-   )
-   ```
+2. **Consult Documents:**
 
-4. **Excluir Documento:**
-   ```
-   db.colecao.deleteOne({ campo: valor })
-   ```
+    ```
+    db.colecao.find({ campo: valor })
+    ```
 
-5. **Contar Documentos:**
-   ```
-   db.colecao.countDocuments({ campo: valor })
-   ```
+3. **Update Document:**
 
-6. **Projetar Resultados:**
-   ```
-   db.colecao.find({ campo: valor }, { campo: 1, _id: 0 })
-   ```
+    ```
+    db.colecao.updateOne(
+      { campo: valor },
+      { $set: { novoCampo: novoValor } }
+    )
+    ```
 
-# Exercício Prático:
+4. **Delete Document:**
 
-O site https://www.humongous.io/app/playground/mongodb/new foi utilizado como "compilador" das queries NoSQL, usando as collections de dados bson_usuarios.json e bson_produtos.json .
+    ```
+    db.colecao.deleteOne({ campo: valor })
+    ```
 
-Após colar o Json de usuários, com base nos usuários listados, você deve:
+5. **Count Documents:**
 
-1) Realizar uma consulta que conte o número de registros existentes.
+    ```
+    db.colecao.countDocuments({ campo: valor })
+    ```
+
+6. **Design Results:**
+
+    ```
+    db.colecao.find({ campo: valor }, { campo: 1, _id: 0 })
+    ```
+
+# Practical Exercise:
+
+The website https://www.humongous.io/app/playground/mongodb/new was used as a "compiler" for the NoSQL queries, using the data collections bson_usuarios.json and bson_produtos.json .
+
+After pasting the users Json, based on the listed users, you should:
+
+1. Perform a query that counts the number of existing records.
 
     ![alt text](Imagens/image-1.png)
 
-    - Resultado:
+    - Result:
 
         ![alt text](Imagens/image-2.png)
-        
 
-2) Realizar uma consulta para alterar o usuário com o nome "Teste Start" para "Teste Finish".
+2. Perform a query to change the user named "Teste Start" to "Teste Finish".
 
     ![alt text](Imagens/image.png)
 
-    - Resultado:
+    - Result:
 
         ![alt text](Imagens/image-3.png)
 
-3) Realizar uma consulta para encontrar o usuário com o nome "Bruce Wayne".
+3. Perform a query to find the user named "Bruce Wayne".
 
     ![alt text](Imagens/image-4.png)
 
-    - Resultado:
+    - Result:
 
         ![alt text](Imagens/image-5.png)
 
-4) Realizar uma consulta para encontrar o usuário com o e-mail "ghost_silva@fantasma.com".
+4. Perform a query to find the user with the email "ghost_silva@fantasma.com".
 
     ![alt text](Imagens/image-6.png)
 
-    - Resultado:
+    - Result:
 
         ![alt text](Imagens/image-7.png)
 
-5) Realizar uma consulta para deletar o usuário com e-mail "peterparker@marvel.com".
+5. Perform a query to delete the user with email "peterparker@marvel.com".
 
     ![alt text](Imagens/image-8.png)
 
-    - Resultado:
+    - Result:
 
         ![alt text](Imagens/image-9.png)
 
+After pasting the products Json, based on the listed products, you should:
 
-Após colar o Json de produtos, com base nos produtos listados, você deve:
-
-1) Realizar uma consulta que apresente produtos com descrição vazia;
+1. Perform a query that displays products with an empty description;
 
     ![alt text](Imagens/image-10.png)
 
-    - Resultado:
+    - Result:
 
         ![alt text](Imagens/image-11.png)
 
-2) Realizar uma consulta que apresente produtos com a categoria "games";
+2. Perform a query that presents products with the "games" category;
 
     ![alt text](Imagens/image-12.png)
 
-    - Resultado:
+    - Result:
 
         ![alt text](Imagens/image-13.png)
 
-3) Realizar uma consulta que apresente produtos com preço "0";
+3. Perform a query that displays products with a price of "0";
 
     ![alt text](Imagens/image-14.png)
 
-    - Resultado:
+    - Result:
 
         ![alt text](Imagens/image-15.png)
 
-4) Realizar uma consulta que apresente produtos com o preço maior que "100.00";
+4. Perform a query that displays products with a price greater than "100.00";
 
     ![alt text](Imagens/image-16.png)
 
-    - Resultado:
+    - Result:
 
         ![alt text](Imagens/image-17.png)
 
-5) Realizar uma consulta que apresente produtos com o preço entre "1000.00" e "2000.00";
+5. Perform a query that displays products with prices between "1000.00" and "2000.00";
 
     ![alt text](Imagens/image-18.png)
 
-    - Resultado:
+    - Result:
 
         ![alt text](Imagens/image-19.png)
 
-6) Realizar uma consulta que apresente produtos em que o nome contenha a palavra "jogo".
+6. Perform a query that displays products whose name contains the word "game".
 
     ![alt text](Imagens/image-20.png)
 
-    - Resultado:
-    
+    - Result:
+
         ![alt text](Imagens/image-21.png)

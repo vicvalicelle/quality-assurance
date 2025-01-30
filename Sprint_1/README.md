@@ -1,41 +1,50 @@
 # Sprint 1
 
-## Dia 1: Ágil
-- Reunião Onboarding do Programa de Bolsas
-- Reunião Kick-off do Programa de Bolsas
-- Organização
-- Git e GitLab
+## Day 1: Agile
+
+- Scholarship Program Onboarding Meeting
+- Scholarship Program Kick-off Meeting
+- Organization
+- Git and GitLab
 - README
 
-## Dia 2: Ágil
+## Day 2: Agile
+
 - Planning Sprint 1
-- Resumo do curso: Fundamentos do SCRUM Agile | Rápido e Prático
+- Course Summary: Agile SCRUM Fundamentals | Fast and Practical
 
-## Dia 3 e 4: MasterClass
-- Resumo do curso: Início Rápido em Teste e QA
+## Day 3 and 4: MasterClass
 
-## Dia 5: MasterClass
-- Fundamentos do teste de software + Myers e o princípio de pareto
-- Bate-papo - PB - PerfMechs - Como gerar qualidade nos projetos?
-- Dinâmica em grupo com: Vitor de Farias Belger, Jorge Soares de Carvalho e Edgar Rodrigues Lutterbach Neto
+- Course Summary: Quick Start in Testing and QA
 
-## Dia 6: MasterClass
-- Fundamentos do teste de software (Back-End)
-- Pirâmide de teste
+## Day 5: MasterClass
 
-## Dia 7: MasterClass
+- Fundamentals of Software Testing + Myers and the Pareto Principle
+- Chat - PB - PerfMechs - How to generate quality in projects?
+- Group dynamics with: Vitor de Farias Belger, Jorge Soares de Carvalho and Edgar Rodrigues Lutterbach Neto
+
+## Day 6: MasterClass
+
+- Fundamentals of Software Testing (Back-End)
+- Test pyramid
+
+## Day 7: MasterClass
+
 - SQL
-- Exercício prático de SQL
+- Practical SQL Exercise
 
-## Dia 8: MasterClass
+## Day 8: MasterClass
+
 - NoSQL
-- Exercícios práticos de NoSQL
+- Practical NoSQL exercises
 
-## Dia 9: MasterClass
+## Day 9: MasterClass
+
 - CyberSecurity
-- Resumo do Curso: Fundamento da Segurança da Informação
+- Course Summary: Information Security Fundamentals
 
-## Dia 10: Ágil
-- Apresentação Exercícios & Versionamento
+## Day 10: Agile
+
+- Presentation Exercises &amp; Versioning
 - Review Sprint 1
 - Planning Sprint 2

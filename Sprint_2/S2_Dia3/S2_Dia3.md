@@ -1,113 +1,114 @@
-# Dia 3: MasterClass
+# Day 3: MasterClass
 
-- Validações e boas práticas em testes de API
-- Tipos de erros
+- Validations and best practices in API testing
+- Types of errors
 
-## Validações para realizar APIs
+## Validations to perform APIs
 
-São cruciais para garantir a segurança, confiabilidade e o bom funcionamento da aplicação.
+They are crucial to ensure the security, reliability and proper functioning of the application.
 
-**Validações Essenciais:**
+**Essential Validations:**
 
-1. **Validação do Status Code:**
-    - Verifica se a API retorna o status code correto para cada requisição.
-2. **Validação do Response Body:**
-    - Valida os tipos de dados de cada campo.
-    - Verifica se os campos obrigatórios estão presentes e se os valores estão dentro dos limites esperados.
-3. **Validação dos Headers:**
-    - Verifica os cabeçalhos de resposta.
-    - Valida os cabeçalhos de autenticação.
-4. **Validação de Regras de Negócio:**
-    - Implemente validações específicas das regras de negócio da aplicação.
+1. **Status Code Validation:**
+    - Checks whether the API returns the correct status code for each request.
+2. **Response Body Validation:**
+    - Validates the data types of each field.
+    - Checks if required fields are present and if values are within expected limits.
+3. **Header Validation:**
+    - Checks the response headers.
+    - Validates authentication headers.
+4. **Business Rules Validation:**
+    - Implement specific validations of the application's business rules.
 
-## Boas práticas para testar APIs
+## Best practices for testing APIs
 
-**1. Entender o Projeto:**
+**1. Understand the Project:**
 
-- Objetivo da API.
-- Público-Alvo.
-- Fluxos de Trabalho e cenários possíveis.
-- Dependências com outras aplicações.
+- API Purpose.
+- Target Audience.
+- Workflows and possible scenarios.
+- Dependencies with other applications.
 
-**2. Documentação:**
+**2. Documentation:**
 
-- Clara e Atualizada.
-- Ferramentas de Documentação.
+- Clear and Up to Date.
+- Documentation Tools.
 
-**3. Validação.**
+**3. Validation.**
 
-**4. Segurança:**
+**4. Security:**
 
-- Autenticação e Autorização.
-- Validação de Entrada.
-- Proteção contra Ataques.
-- Testes de Segurança.
+- Authentication and Authorization.
+- Input Validation.
+- Protection against Attacks.
+- Security Testing.
 
-## Como fazer testes funcionais em APIs Rest
+## How to perform functional testing on Rest APIs
 
-Testes funcionais focam em verificar se a API atende aos requisitos funcionais e se os endpoints retornam as respostas corretas para as requisições.
+Functional tests focus on verifying that the API meets the functional requirements and that the endpoints return the correct responses to the requests.
 
-1. **Identificar os Cenários de Teste:**
-    - Mapear os principais fluxos de trabalho da API.
-    - Definir os diferentes casos de uso, como um usuário não autenticado tentando acessar um recurso restrito, etc.
-    - Considerar os limites e valores extremos dos parâmetros de entrada.
-2. **Criar os Casos de Teste:**
-    - Para cada cenário de teste, crie um caso de teste que descreva:
-        - A requisição a ser enviada.
-        - A resposta esperada.
-        - As respostas a serem verificadas.
-3. **Escolher a Ferramenta de Teste.**
-<figure>
-  <img src="https://www.business2community.com/wp-content/uploads/2020/10/eb3e27e7-api-testing-2.png" width="50%">
-</figure>
+1. **Identify Test Scenarios:**
+    - Map out the main API workflows.
+    - Define the different use cases, such as an unauthenticated user trying to access a restricted resource, etc.
+    - Consider the limits and extreme values of the input parameters.
+2. **Create the Test Cases:**
+    - For each test scenario, create a test case that describes:
+        - The request to be sent.
+        - The expected answer.
+        - The answers to be checked.
+3. **Choose Test Tool.**
 
-4. **Implementar os Testes.**
-5. **Executar os Testes:**
-    - Execute os testes regularmente.
-    - Analise os resultados dos testes e corrija os erros encontrados.
+<figure>   <img src="https://www.business2community.com/wp-content/uploads/2020/10/eb3e27e7-api-testing-2.png" width="50%"> </figure>
 
-## Tipos de erros (Back-End)
+1. **Implement the Tests.**
+2. **Run the Tests:**
+    - Run tests regularly.
+    - Analyze the test results and correct any errors found.
 
-A classificação dos erros de back-end é crucial para direcionar os esforços de correção e priorizar os testes. 
+## Error Types (Back-End)
 
-**1. Gravidade: Crítica, Prioridade: Urgente, Risco: Alto:** Impedem completamente o funcionamento da aplicação, tornando-a inutilizável. Requer correção imediata antes de qualquer outra atividade.
+Classifying backend errors is crucial for directing remediation efforts and prioritizing testing.
 
-**2. Gravidade: Alta, Prioridade: Alta, Risco: Alto:**
+**1. Severity: Critical, Priority: Urgent, Risk: High:** Completely prevents the application from functioning, making it unusable. Requires immediate correction before any other activity.
 
-Afetam funcionalidades importantes, geram resultados incorretos ou comprometem a usabilidade. Deve ser corrigido com alta prioridade, antes do lançamento ou em uma atualização urgente.
+**2. Severity: High, Priority: High, Risk: High:**
 
-**3. Gravidade: Média, Prioridade: Alta, Risco: Médio:**
+Affects important functionality, generates incorrect results, or compromises usability. Should be fixed with high priority, either before release or in an urgent update.
 
-Geram resultados inesperados em funcionalidades específicas ou afetam a performance. Devem ser corrigidos, mas podem ser adiados em casos excepcionais.
+**3. Severity: Medium, Priority: High, Risk: Medium:**
 
-**4. Gravidade: Baixa, Prioridade: Média, Risco: Baixo:**
+They generate unexpected results in specific functionalities or affect performance. They should be fixed, but can be postponed in exceptional cases.
 
-Problemas que afetam apenas uma pequena parte. Podem ser corrigidos em versões futuras ou em conjunto com outros.
+**4. Severity: Low, Priority: Medium, Risk: Low:**
 
-**5. Gravidade: Baixa, Prioridade: Baixa, Risco: Baixo:**
+Issues that affect only a small part. They may be fixed in future releases or together with others.
 
-Geralmente estéticos ou pequenas inconsistências que não afetam a funcionalidade ou a usabilidade. Podem ser corrigidos em versões futuras, se houver tempo e recursos disponíveis.
+**5. Severity: Low, Priority: Low, Risk: Low:**
 
-**Erros Causados por Documentação:**
+Usually cosmetic or minor inconsistencies that do not affect functionality or usability. They may be fixed in future versions if time and resources are available.
 
-A documentação é fundamental para o processo de desenvolvimento e teste de software, e erros nessa área podem gerar problemas significativos. Ex.: Documentação incompleta, desatualizada, ambígua, incorreta e até mal organizada.
+**Errors Caused by Documentation:**
 
-**Impacto:**
-- Aumento do Tempo de Teste.
-- Atraso na Entrega.
-- Aumento do Custo.
-- Diminuição da Qualidade.
+Documentation is essential to the software development and testing process, and errors in this area can generate significant problems. For example: incomplete, outdated, ambiguous, incorrect and even poorly organized documentation.
 
-**Erros de Massa de Dados em QA:**
+**Impact:**
 
-**Impacto:**
-- Problemas de Desempenho.
-- Falhas na Aplicação.
-- Vulnerabilidades de Segurança.
-- Dificuldade em Reproduzir Erros.
+- Increased Test Time.
+- Delayed Delivery.
+- Increased Cost.
+- Decrease in Quality.
 
-### ARTICULANDO SABERES:
+**Mass Data Errors in QA:**
 
-A partir dos tipos apresentados na lição (e indo além), como você e sua equipe poderiam atuar preventivamente sobre cada um deles?
+**Impact:**
 
-Através de uma documentação detalhada e atualizada, ambientes de teste realistas, automatizando teste para garantir que sejam executados de forma consistente em diferentes ambientes e com um monitoramento contínuo do ambiente de teste e de produção para identificar e corrigir rapidamente quaisquer problemas. Assim garantindo a eficácia dos testes e a qualidade do software final.
+- Performance Issues.
+- Application Failures.
+- Security Vulnerabilities.
+- Difficulty in Reproducing Errors.
+
+### ARTICULATING KNOWLEDGE:
+
+Based on the types presented in the lesson (and going further), how could you and your team act preventively on each of them?
+
+Through detailed and up-to-date documentation, realistic test environments, automating tests to ensure they are executed consistently across different environments, and continuous monitoring of the test and production environment to quickly identify and correct any problems. This ensures the effectiveness of the tests and the quality of the final software.

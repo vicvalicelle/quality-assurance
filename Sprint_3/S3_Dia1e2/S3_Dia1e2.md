@@ -1,77 +1,75 @@
-# Dia 1 e 2: MasterClass
+# Day 1 and 2: MasterClass
 
 - Planning Sprint 3
-- Refinando conhecimentos de análise e planejamento de testes
-- Curso Udemy: Início rápido em testes de software
+- Refining test planning and analysis knowledge
+- Udemy Course: Quick Start in Software Testing
 
-### **Atitudes do Profissional da Qualidade:**
+### **Attitudes of the Quality Professional:**
 
-- Foco na melhoria, pensamento analítico, resolução de problemas, visão sistêmica, comunicação eficaz, proatividade e iniciativa.
-- **Produtividade:** Otimizar processos, eliminar desperdícios e solucionar problemas contribuindo diretamente para o aumento da produtividade.
-- **Fluxo Contínuo:** Melhoria contínua e a eliminação de gargalos nos processos no fluxo de trabalho, evitando interrupções e atrasos.
-- **Kanban:** Metodologia visual de gestão do trabalho facilitando a organização das tarefas e a priorização das atividades.
-<figure>
-  <img src="https://th.bing.com/th/id/R.03571b09064eb6f6a0fcadcf85a26b67?rik=NNazjYwAuCgEHg&riu=http%3a%2f%2fwww.novida.com.br%2fwp-content%2fuploads%2f2018%2f07%2fKanban.png&ehk=Aa5HQaU4BP51aTvNXrXdQR3OjWel%2fitsRR%2fiww5jKZQ%3d&risl=&pid=ImgRaw&r=0" width="50%">
-</figure>
+- Focus on improvement, analytical thinking, problem solving, systemic vision, effective communication, proactivity and initiative.
+- **Productivity:** Optimize processes, eliminate waste and solve problems, directly contributing to increased productivity.
+- **Continuous Flow:** Continuous improvement and elimination of bottlenecks in workflow processes, avoiding interruptions and delays.
+- **Kanban:** Visual work management methodology facilitating the organization of tasks and the prioritization of activities.
 
-- **Pomodoro:** Promove um gerenciamento do tempo, com ciclos de trabalho focado e pausas regulares, evitar a procrastinação e aumentar a produtividade individual.
-<figure>
-  <img src="https://static.vecteezy.com/system/resources/previews/011/065/110/original/the-pomodoro-technique-clipart-pomodoro-method-chart-watercolor-style-illustration-isolated-on-white-background-pomodoro-time-management-technique-kitchen-timer-pomodoro-technique-poster-vector.jpg" width="50%">
-</figure>
+<figure>   <img src="https://th.bing.com/th/id/R.03571b09064eb6f6a0fcadcf85a26b67?rik=NNazjYwAuCgEHg&amp;riu=http%3a%2f%2fwww.novida.com.br%2fwp-content%2fuploads%2f2018%2f07%2fKanban.png&amp;ehk=Aa5HQaU4BP51aTvNXrXdQR3OjWel%2fitsRR%2fiww5jKZQ%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0" width="50%"> </figure>
 
-### **Planejamento de Teste:**
+- **Pomodoro:** Promotes time management, with cycles of focused work and regular breaks, avoiding procrastination and increasing individual productivity.
 
-- **Negociando um Acordo Flexível e de Valor:** Definir claramente o escopo dos testes, os objetivos de qualidade, os recursos disponíveis e os prazos, comunicação transparente, estar preparado para ajustar o plano de teste conforme as necessidades do projeto evoluem e priorizar testes que trarão maior benefício ao produto e aos usuários
-- **Plano de Teste:** Documento que descreve a estratégia de teste, os tipos de teste a serem realizados, os recursos necessários e os critérios de aceitação.
-- **Mapa Mental:** Ferramenta visual para organizar ideias e informações, útil para o planejamento de testes.
-- **Requisitos Funcionais e Não Funcionais:** Descrições das funcionalidades que o software deve ter (funcionais) e dos atributos de qualidade que ele deve apresentar (não funcionais), como desempenho, segurança e usabilidade.
-- **Estórias de Usuários:** Descrições de como um usuário interage com o software para alcançar um objetivo específico.
-- **Pre-game:** Reunião de planejamento antes do início de um sprint, onde a equipe define os objetivos e as tarefas a serem realizadas.
-- **Product Backlog:** Lista priorizada de funcionalidades e melhorias a serem implementadas no produto.
-- **Sprint:** Período de tempo (geralmente de 1 a 4 semanas) durante o qual a equipe trabalha para entregar um conjunto de funcionalidades.
-- **Sprint Backlog:** Lista de tarefas a serem realizadas durante um sprint.
-- **Épicos:** Grandes blocos de trabalho que podem ser divididos em User Stories menores.
-- **Features:** Funcionalidades específicas do software.
-- **Gerenciamento de Riscos:**
-    - **Análise de Riscos:** Identificação, avaliação e priorização dos riscos que podem afetar o projeto.
-    - **Matriz de Risco:** Ferramenta visual para avaliar a probabilidade e o impacto dos riscos.
-    - **Planning Poker:** Técnica para estimar o esforço necessário para completar uma tarefa.
-    - **Histórico dos Riscos:** Registro dos riscos identificados, suas avaliações e as ações tomadas para mitigá-los.
-- **Priorização de Testes:**
-    - **Análise de Pareto:** Técnica para identificar os 20% dos problemas que causam 80% dos impactos, permitindo focar nos testes mais importantes.
-    - **Priorização por Impulso:** Priorizar os testes com base na intuição e experiência da equipe.
-    - **Priorização por Atração:** Priorizar os testes com base no valor que eles trarão para o negócio e para os usuários.
-    - **Análise da Cauda Longa:** Considerar os testes que, embora individualmente tenham baixo impacto, podem ter um impacto significativo quando combinados.
+<figure>   <img src="https://static.vecteezy.com/system/resources/previews/011/065/110/original/the-pomodoro-technique-clipart-pomodoro-method-chart-watercolor-style-illustration-isolated-on-white-background-pomodoro-time-management-technique-kitchen-timer-pomodoro-technique-poster-vector.jpg" width="50%"> </figure>
 
-### **Análise, Modelagem e Implementação de Testes**
+### **Test Planning:**
 
-**1. Análise de Teste:**
+- **Negotiating a Flexible and Valuable Agreement:** Clearly define the scope of testing, quality objectives, available resources and deadlines, communicate transparently, be prepared to adjust the test plan as project needs evolve, and prioritize tests that will bring the greatest benefit to the product and users.
+- **Test Plan:** Document that describes the testing strategy, the types of testing to be performed, the resources required, and the acceptance criteria.
+- **Mind Map:** Visual tool for organizing ideas and information, useful for test planning.
+- **Functional and Non-Functional Requirements:** Descriptions of the functionalities that the software must have (functional) and the quality attributes that it must present (non-functional), such as performance, security and usability.
+- **User Stories:** Descriptions of how a user interacts with the software to achieve a specific goal.
+- **Pre-game:** Planning meeting before the start of a sprint, where the team defines the objectives and tasks to be performed.
+- **Product Backlog:** Prioritized list of features and improvements to be implemented in the product.
+- **Sprint:** A period of time (usually 1 to 4 weeks) during which the team works to deliver a set of features.
+- **Sprint Backlog:** List of tasks to be accomplished during a sprint.
+- **Epics:** Large blocks of work that can be broken down into smaller User Stories.
+- **Features:** Specific software functionalities.
+- **Risk Management:**
+    - **Risk Analysis:** Identification, evaluation and prioritization of risks that may affect the project.
+    - **Risk Matrix:** Visual tool to assess the probability and impact of risks.
+    - **Planning Poker:** Technique for estimating the effort required to complete a task.
+    - **Risk History:** Record of identified risks, their assessments and the actions taken to mitigate them.
+- **Test Prioritization:**
+    - **Pareto Analysis:** Technique to identify the 20% of problems that cause 80% of the impacts, allowing you to focus on the most important tests.
+    - **Impulse Prioritization:** Prioritize tests based on the team's intuition and experience.
+    - **Prioritization by Attraction:** Prioritize tests based on the value they will bring to the business and users.
+    - **Long Tail Analysis:** Consider tests that, although individually have low impact, can have a significant impact when combined.
 
-- **O que é:** É o processo de estudar os requisitos do software, as funcionalidades a serem testadas, os riscos envolvidos, quais tipos de teste são necessários e quais são os critérios de sucesso.
-    - Revisar requisitos.
-    - Identificar funcionalidades críticas e áreas de risco.
-    - Definir os objetivos dos testes.
-    - Criar uma lista de perguntas a serem respondidas pelos testes.
+### **Test Analysis, Modeling and Implementation**
 
-**2. Modelagem de Teste:**
+**1. Test Analysis:**
 
-- **O que é:** É o processo de criar modelos que representem os testes a serem executados. Organizar e estruturar os testes de forma lógica e eficiente.
-    - **Cenários:** Descrições de situações de uso do software, incluindo ações do usuário e respostas esperadas do sistema.
-    - **Suítes de Teste:** Conjuntos de casos de teste relacionados, agrupados por funcionalidade ou objetivo.
-    - **Casos de Teste:** Descrições detalhadas de um teste específico, incluindo os passos a serem seguidos, os dados de entrada, as ações esperadas e os critérios de sucesso.
+- **What it is:** It is the process of studying the software requirements, the functionalities to be tested, the risks involved, what types of testing are necessary and what the success criteria are.
+    - Review requirements.
+    - Identify critical functionality and risk areas.
+    - Define the objectives of the tests.
+    - Create a list of questions to be answered by the tests.
 
-**3. Implementação de Teste:**
+**2. Test Modeling:**
 
-- **O que é:** É o processo de criar e executar os testes propriamente ditos. Verificar se funciona conforme o esperado e identificar possíveis defeitos.
-    - Escrever scripts de teste (automatizados ou manuais).
-    - Executar os testes e registrar os resultados.
-    - Reportar os defeitos encontrados.
+- **What it is:** It is the process of creating models that represent the tests to be executed. Organizing and structuring the tests in a logical and efficient way.
+    - **Scenarios:** Descriptions of software usage situations, including user actions and expected system responses.
+    - **Test Suites:** Sets of related test cases, grouped by functionality or objective.
+    - **Test Cases:** Detailed descriptions of a specific test, including the steps to be followed, the input data, the expected actions, and the success criteria.
 
-**Cenário:**
+**3. Test Implementation:**
 
-- **Ambiente:** O contexto técnico em que o software será executado.
-- **Situações:** Variações do cenário que podem afetar o comportamento do software.
+- **What it is:** It is the process of creating and executing the tests themselves. Verifying that it works as expected and identifying possible defects.
+    - Write test scripts (automated or manual).
+    - Run the tests and record the results.
+    - Report any defects found.
 
-**Testes Unitários:**
+**Scenario:**
 
-- Testes que verificam o funcionamento de pequenas unidades de código (funções, métodos, classes) isoladamente. Garantindo que cada unidade funcione corretamente antes de integrá-la ao sistema completo.
+- **Environment:** The technical context in which the software will run.
+- **Situations:** Variations in the scenario that can affect the behavior of the software.
+
+**Unit Tests:**
+
+- Tests that verify the functioning of small units of code (functions, methods, classes) in isolation. Ensuring that each unit works correctly before integrating it into the complete system.

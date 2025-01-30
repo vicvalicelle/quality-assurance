@@ -1,26 +1,32 @@
 # Sprint 5
 
-## Dia 1: MasterClass
+## Day 1: MasterClass
+
 - Planning
-- Testes de Performance
+- Performance Tests
 
-## Dia 2: Ágil
-- Vídeo: Por que eu deveria testar a performance da minha API?
-- Vídeo: Lições Aprendidas e Processo de Teste de Performance
-- Seção 10 do curso da udemy: JMeter - Testes de performance
+## Day 2: Agile
 
-## Dia 3: MasterClass
-- Princípios, tipos de testes, geração de carga e falhas comuns dos testes de performance
-- Curso da udemy: JMeter - Testes de performance
+- Video: Why should I test my API performance?
+- Video: Lessons Learned and Performance Testing Process
+- Section 10 of the Udemy course: JMeter - Performance Testing
 
-## Dia 4 e 5: MasterClass
-- Atividade mandatória
-- Grupo 2: Isabelle, Gabriel Knust, Enzo, Kaue e Victoria.
+## Day 3: MasterClass
 
-## Dia 6: MasterClass
+- Principles, types of tests, load generation and common failures of performance tests
+- Udemy Course: JMeter - Performance Testing
+
+## Day 4 and 5: MasterClass
+
+- Mandatory activity
+- Group 2: Isabelle, Gabriel Knust, Enzo, Kaue and Victoria.
+
+## Day 6: MasterClass
+
 - AWS Partner Accreditation (Well-Architected)
 
-## Dia 7, 8 e 9: Evolução Challenge
-- Evolução do Challenge
-- Mentoria
-- Plano de Teste de Performance e Execução dos Testes
+## Day 7, 8 and 9: Evolution Challenge
+
+- Challenge Evolution
+- Mentoring
+- Performance Test Plan and Test Execution

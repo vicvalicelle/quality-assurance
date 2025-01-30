@@ -1,28 +1,27 @@
-14/05/2024
+05/14/2024
 
-# Dia 7: MasterClass
+# Day 7: MasterClass
+
 - SQL
-- Exercício prático de SQL
+- Practical SQL Exercise
 
 # SQL
 
-SQL (Structured Query Language) é uma linguagem de programção utilizada para gerenciar e manipular bancos de dados relacionais, mantendo a estrutura e também podendo incluir, excluir, modificar e pesquisar informações das tabelas desses bancos de dados.
+SQL (Structured Query Language) is a programming language used to manage and manipulate relational databases, maintaining the structure and also being able to include, delete, modify and search information from the tables of these databases.
 
-Subconjuntos da Linguagem SQL:
+Subsets of the SQL Language:
 
-<figure>
-  <img src="https://lh6.googleusercontent.com/N3nCjYeLaw030Jy9key4fOaAu_LKnzp8RCOmLlumwp0tc-hymIycnbzuhQXlisl-uo0hbTCzo7_QU3gTxBpqbaU5op08D_7ib4MHQJPhqbHAyjFsE8tVZLoZrYZ69P2Ick_LU6Mc" width="50%">
-</figure>
+<figure>   <img src="https://lh6.googleusercontent.com/N3nCjYeLaw030Jy9key4fOaAu_LKnzp8RCOmLlumwp0tc-hymIycnbzuhQXlisl-uo0hbTCzo7_QU3gTxBpqbaU5op08D_7ib4MHQJPhqbHAyjFsE8tVZLoZrYZ69P2Ick_LU6Mc" width="50%"> </figure>
 
-## Principais Comandos SQL:
+## Main SQL Commands:
 
-1. **CREATE DATABASE**: Cria um novo banco de dados.
+1. **CREATE DATABASE** : Creates a new database.
 
     ```sql
     CREATE DATABASE nome_do_banco_de_dados;
     ```
 
-2. **CREATE TABLE**: Cria uma nova tabela dentro do banco de dados.
+2. **CREATE TABLE** : Creates a new table within the database.
 
     ```sql
     CREATE TABLE nome_da_tabela (
@@ -32,145 +31,166 @@ Subconjuntos da Linguagem SQL:
     );
     ```
 
-3. **INSERT INTO**: Insere novos registros em uma tabela existente.
+3. **INSERT INTO** : Inserts new records into an existing table.
 
     ```sql
     INSERT INTO nome_da_tabela (coluna1, coluna2, ...) VALUES (valor1, valor2, ...);
     ```
 
-4. **SELECT**: Recupera dados de uma ou mais tabelas.
+4. **SELECT** : Retrieves data from one or more tables.
 
     ```sql
     SELECT coluna1, coluna2 FROM nome_da_tabela WHERE condição;
     ```
 
-5. **UPDATE**: Atualiza dados existentes em uma tabela.
+5. **UPDATE** : Updates existing data in a table.
 
     ```sql
     UPDATE nome_da_tabela SET coluna1 = novo_valor WHERE condição;
     ```
 
-6. **DELETE**: Exclui registros de uma tabela.
+6. **DELETE** : Deletes records from a table.
 
     ```sql
     DELETE FROM nome_da_tabela WHERE condição;
     ```
 
-7. **ALTER TABLE**: Altera a estrutura de uma tabela existente.
+7. **ALTER TABLE** : Changes the structure of an existing table.
 
     ```sql
     ALTER TABLE nome_da_tabela ADD coluna tipo_de_dado;
     ```
 
-8. **DROP TABLE**: Exclui uma tabela existente.
+8. **DROP TABLE** : Deletes an existing table.
 
     ```sql
     DROP TABLE nome_da_tabela;
     ```
 
-9. **CREATE INDEX**: Cria um índice em uma coluna de uma tabela para otimizar a pesquisa.
+9. **CREATE INDEX** : Creates an index on a column of a table to optimize searching.
 
     ```sql
     CREATE INDEX index_nome ON nome_da_tabela (coluna);
     ```
 
-10. **JOIN**: Combina dados de duas ou mais tabelas com base em uma condição relacionada.
+10. **JOIN** : Combines data from two or more tables based on a related condition.
 
     ```sql
     SELECT * FROM tabela1 INNER JOIN tabela2 ON tabela1.coluna = tabela2.coluna;
     ```
 
-# Exercícios: ✏️
+# Exercises: ✏️
 
-**Exercitando SQL**
+**Exercising SQL**
 
-Utilizando o site https://sqliteonline.com/ como "compilador" das queries SQL do arquivo **database_challenge.sql** .
+Using the website https://sqliteonline.com/ as a "compiler" for the SQL queries in the **database_challenge.sql** file.
 
-Com base na tabela de **Usuários**, você deve:
+Based on the **Users** table, you should:
 
-1) Realizar uma consulta que conte o número de registros na tabela.
+1. Perform a query that counts the number of records in the table.
+
     ```sql
     SELECT COUNT(*) FROM usuarios;
     ```
-    - Resposta: 
+
+    - Response:
 
         ![alt text](Imagens/image-22.png)
 
-2) Realizar uma consulta para encontrar o usuário com o id 10.
+2. Perform a query to find the user with id 10.
+
     ```sql
     SELECT * FROM usuarios WHERE id = 10;
     ```
-    - Resposta: 
+
+    - Response:
 
         ![alt text](Imagens/image-23.png)
 
-3) Realizar uma consulta para encontrar o usuário com o nome "Bruce Wayne".
+3. Perform a query to find the user named "Bruce Wayne".
+
     ```sql
     SELECT * FROM usuarios WHERE nome = 'Bruce Wayne';
     ```
-    - Resposta: 
+
+    - Response:
 
         ![alt text](Imagens/image-24.png)
 
-4) Realizar uma consulta para encontrar o usuário com o e-mail "ghost_silva@fantasma.com".
+4. Perform a query to find the user with the email "ghost_silva@fantasma.com".
+
     ```sql
     SELECT * FROM usuarios WHERE email = 'ghost_silva@fantasma.com';
     ```
-    - Resposta: 
+
+    - Response:
 
         ![alt text](Imagens/image-25.png)
 
-5) Realizar uma consulta para deletar o usuário com e-mail "peterparker@marvel.com".
+5. Perform a query to delete the user with email "peterparker@marvel.com".
+
     ```sql
     DELETE FROM usuarios WHERE email = 'peterparker@marvel.com';
     ```
 
-Com base na tabela de **Produtos**, você deve:
+Based on the **Products** table, you should:
 
-1) Realizar uma consulta que apresente produtos com descrição vazia;
+1. Perform a query that displays products with an empty description;
+
     ```sql
     SELECT * FROM produtos WHERE descricao = '';
     ```
-    - Resposta: 
+
+    - Response:
 
         ![alt text](Imagens/image-26.png)
 
-2) Realizar uma consulta que apresente produtos com a categoria "games";
+2. Perform a query that presents products with the "games" category;
+
     ```sql
     SELECT * FROM produtos WHERE categoria = 'games';
     ```
-    - Resposta: 
+
+    - Response:
 
         ![alt text](Imagens/image-27.png)
 
-3) Realizar uma consulta que apresente produtos com preço "0";
+3. Perform a query that displays products with a price of "0";
+
     ```sql
     SELECT * FROM produtos WHERE preco = 0;
     ```
-    - Resposta: 
+
+    - Response:
 
         ![alt text](Imagens/image-28.png)
 
-4) Realizar uma consulta que apresente produtos com o preço maior que "100.00";
+4. Perform a query that displays products with a price greater than "100.00";
+
     ```sql
     SELECT * FROM produtos WHERE preco > 100.00;
     ```
-    - Resposta: 
+
+    - Response:
 
         ![alt text](Imagens/image-29.png)
 
-5) Realizar uma consulta que apresente produtos com o preço entre "1000.00" e "2000.00";
+5. Perform a query that displays products with prices between "1000.00" and "2000.00";
+
     ```sql
     SELECT * FROM produtos WHERE preco BETWEEN 1000.00 AND 2000.00;
     ```
-    - Resposta: 
+
+    - Response:
 
         ![alt text](Imagens/image-30.png)
 
-6) Realizar uma consulta que apresente produtos em que o nome contenha a palavra "jogo";
+6. Perform a query that displays products whose name contains the word "game";
+
     ```sql
     SELECT * FROM produtos WHERE nome LIKE '%jogo%';
     ```
-    - Resposta: 
-    
+
+    - Response:
+
         ![alt text](Imagens/image-31.png)

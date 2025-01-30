@@ -1,158 +1,150 @@
 06/05/2024
 
-# Dia 1: Ágil
+# Day 1: Agile
 
-- Reunião Onboarding do Programa de Bolsas
-- Reunião Kick-off do Programa de Bolsas
-- Organização
-- Git e GitLab
+- Scholarship Program Onboarding Meeting
+- Scholarship Program Kick-off Meeting
+- Organization
+- Git and GitLab
 - README
 
-## Organização
+## Organization
 
-#### Matriz de Eisenhower
+#### Eisenhower Matrix
 
-O que é?
-A Matriz de Eisenhower é uma ferramenta de gestão do tempo que ajuda as pessoas a priorizarem suas tarefas em 4 quadrantes com base na importância e na urgência:
+What is it? The Eisenhower Matrix is a time management tool that helps people prioritize their tasks into 4 quadrants based on importance and urgency:
 
-<figure>
-  <img src="https://3.bp.blogspot.com/-jdBrguSJ1rs/W00Cc_zcTrI/AAAAAAAAfC8/xyDYrqALgJ8IB3qJQCHWRL8CjYVta9qDgCLcBGAs/s1600/3d0deff4-fb45-4f15-8128-4a309803781a-original.jpeg" width="60%">
-</figure>
+<figure>   <img src="https://3.bp.blogspot.com/-jdBrguSJ1rs/W00Cc_zcTrI/AAAAAAAAfC8/xyDYrqALgJ8IB3qJQCHWRL8CjYVta9qDgCLcBGAs/s1600/3d0deff4-fb45-4f15-8128-4a309803781a-original.jpeg" width="60%"> </figure>
 
-##### Para que serve?
+##### What is it for?
 
-A matriz ajuda as pessoas a gerenciarem seu tempo de forma mais eficiente, concentrando-se nas tarefas que realmente importam e eliminando aquelas que são desnecessárias ou que podem ser adiadas.
+The matrix helps people manage their time more efficiently by focusing on the tasks that really matter and eliminating those that are unnecessary or can be postponed.
 
-##### Como construir?
+##### How to build?
 
-1. Liste todas as suas tarefas.
-2. Classifique cada tarefa com base em sua importância e urgência.
-3. Distribua nos quadrantes correspondentes: importante e urgente, importante mas não urgente, urgente mas não importante, não importante e não urgente.
-4. Priorize as tarefas de acordo com os quadrantes, começando pelas importantes e urgentes.
-5. Programe tarefas importantes mas não urgentes para o futuro, delegue tarefas urgentes mas não importantes, e elimine ou adie tarefas não importantes e não urgentes.
+1. List all your tasks.
+2. Rank each task based on its importance and urgency.
+3. Distribute into the corresponding quadrants: important and urgent, important but not urgent, urgent but not important, not important and not urgent.
+4. Prioritize tasks according to the quadrants, starting with the important and urgent ones.
+5. Schedule important but non-urgent tasks for the future, delegate urgent but non-important tasks, and eliminate or postpone unimportant and non-urgent tasks.
 
-# Git e GitLab
+# Git and GitLab
 
 ## Git
 
-<figure>
-  <img src="https://static.javatpoint.com/tutorial/git/images/why-git.png" width="50%">
-</figure>
+<figure>   <img src="https://static.javatpoint.com/tutorial/git/images/why-git.png" width="50%"> </figure>
 
-O Git é um sistema distribuído para controle de versão de código-fonte e colaboração em projetos de desenvolvimento de software. Registra todas as mudanças feitas no código-fonte de um projeto, evitando que algo importante se perca no meio do caminho.
+Git is a distributed system for source code version control and collaboration on software development projects. It records all changes made to a project's source code, preventing anything important from getting lost along the way.
 
-Ele é Opensource, possuí controle de versão de qualquer tipo de arquivo, histórico de alterações e rastreabilidade, facilidade de restauração e um desenvolvimento paralelo podendo criar versões diferentes de uma mesma coisa e podendo até mesclar essas ramificações.
+It is Opensource, has version control of any type of file, change history and traceability, easy restoration and parallel development, allowing you to create different versions of the same thing and even merge these branches.
 
+**Installation** : First, you need to install Git on your system (https://git-scm.com/downloads).
 
-**Instalação**: Primeiro, você precisa instalar o Git no seu sistema (https://git-scm.com/downloads).
-
-**Configuração inicial**: Depois de instalar o Git, você precisa configurar seu nome de usuário e endereço de e-mail. Isso serve para saber quem está realizando essas mudanças e ter controle de acesso do repositório:
+**Initial setup** : After installing Git, you need to set up your username and email address. This is to know who is making changes and to have access control over the repository:
 
 ```
 git config --global user.name "nome"
 git config --global user.email "seu@email.com"
 ```
 
-### Comandos Principais:
+### Main Commands:
 
-1. **git init**: Inicia um novo repositório Git no diretório atual, com nenhum, um ou vários arquivos dentro.
+1. **git init** : Starts a new Git repository in the current directory, with none, one, or multiple files inside.
 
-2. **git add [nome do arquivo]**: Adiciona arquivos ao stage, preparando-os para serem commitados.
+2. **git add [filename]** : Adds files to the stage, preparing them for commit.
 
-3. **git add .** ou **git add -A** ou **git add --all**: Adiciona **TODOS** arquivos ao stage, preparando-os para serem commitados.
+3. **git add .** or **git add -A** or **git add --all** : Adds **ALL** files to the stage, preparing them for commit.
 
-4. **git status**: Mostra o estado atual do seu repositório Git, incluindo quais arquivos foram modificados, quais estão no stage e quais não estão sendo rastreados pelo Git.
+4. **git status** : Shows the current state of your Git repository, including which files have been modified, which are staged, and which are not being tracked by Git.
 
-5. **git clone**: Clona um repositório Git existente para o seu diretório local.
+5. **git clone** : Clones an existing Git repository to your local directory.
 
-6. **git commit -m " "**: Cria um novo commit com os arquivos no stage e uma mensagem associada.
+6. **git commit -m " "** : Creates a new commit with the staged files and an associated message.
 
-7. **git diff**: Mostra as diferenças entre as alterações no seu diretório de trabalho e o stage.
+7. **git diff** : Shows the differences between changes in your working directory and the stage.
 
-8. **git diff --cached** ou **git diff --staged**: Mostra as diferenças entre as alterações dos arquivos preparados x comitados.
+8. **git diff --cached** or **git diff --staged** : Shows the differences between changes in staged vs. committed files.
 
-9. **git log**: Mostra o histórico de commits do seu repositório, exibindo informações como o autor do commit, a data e hora do commit e a mensagem associada.
+9. **git log** : Shows the commit history of your repository, displaying information such as the commit author, the date and time of the commit, and the associated message.
 
-10. **git branch**: Lista todas as branchs no repositório local.
+10. **git branch** : Lists all branches in the local repository.
 
-11. **git branch [nome da branch]**: Cria a branch.
+11. **git branch [branch name]** : Creates the branch.
 
-12. **git checkout**: Muda para a branch especificada.
+12. **git checkout** : Switches to the specified branch.
 
-13. **git push**: Envia os commits locais para um repositório remoto.
+13. **git push** : Pushes local commits to a remote repository.
 
-14. **git pull**: Atualiza seu repositório local com as alterações do repositório remoto.
+14. **git pull** : Updates your local repository with changes from the remote repository.
 
-15. **git merge**: Combina os commits de uma branch na branch atual.
+15. **git merge** : Combines the commits from one branch into the current branch.
 
-<figure>
-  <img src="https://cdn.nulab.com/learn-wp/app/uploads/2022/09/14212531/git_workflow_002.png" width="60%">
-</figure>
+<figure>   <img src="https://cdn.nulab.com/learn-wp/app/uploads/2022/09/14212531/git_workflow_002.png" width="60%"> </figure>
 
-### Outros Comandos:
- 
-#### Comandos de informações e configurações:
+### Other Commands:
 
-- **git --version**: Mostra a versão do Git instalada.
-- **git config --list**: Lista todas as configurações do Git.
-- **git config --global core.editor "code --wait"**: Define o editor padrão para o Visual Studio Code.
-- **git config --global init.defaultBranch main**: Muda o nome padrão da branch principal para "main".
+#### Information and settings commands:
 
-#### Comandos de visualização de logs:
+- **git --version** : Shows the version of Git installed.
+- **git config --list** : Lists all Git configurations.
+- **git config --global core.editor "code --wait"** : Sets the default editor for Visual Studio Code.
+- **git config --global init.defaultBranch main** : Changes the default name of the main branch to "main".
 
-- **git log --oneline**: Mostra o hash e a mensagem de cada commit em uma linha.
-- **git log -N**: Mostra os últimos N commits.
-- **git log --stat**: Mostra a lista de commits e os arquivos modificados.
+#### Log viewing commands:
 
-#### Comandos de manipulação de commits:
+- **git log --oneline** : Shows the hash and message of each commit on one line.
+- **git log -N** : Shows the last N commits.
+- **git log --stat** : Shows the list of commits and modified files.
 
-- **git commit --amend**: Permite fazer correções em um commit anterior.
-- **git checkout <commit_hash>**: Volta para o estado do projeto em um commit específico.
-- **git checkout master**: Volta para a branch principal.
+#### Commit manipulation commands:
 
-#### Comandos de manipulação de branches:
+- **git commit --amend** : Allows you to make corrections to a previous commit.
+- **git checkout &lt;commit_hash&gt;** : Go back to the project state at a specific commit.
+- **git checkout master** : Goes back to the main branch.
 
-- **git checkout -b <nome_da_branch>**: Cria e muda para uma nova branch.
-- **git checkout -f <nome_da_branch>**: Desfaz as alterações rastreadas e muda para uma branch.
-- **git branch -d <nome_da_branch>**: Deleta uma branch localmente.
-- **git branch -D <nome_da_branch>**: Força a deleção de uma branch local.
-- **git branch -m <novo_nome>**: Renomeia a branch localmente.
-- **git branch --no-merged**: Lista as branches não mergiadas.
-- **git branch --merged**: Lista as branches já mergiadas.
+#### Branch manipulation commands:
 
-#### Comandos de gerenciamento remoto:
+- **git checkout -b &lt;branch_name&gt;** : Creates and switches to a new branch.
+- **git checkout -f &lt;branch_name&gt;** : Undoes tracked changes and switches to a branch.
+- **git branch -d &lt;branch_name&gt;** : Delete a branch locally.
+- **git branch -D &lt;branch_name&gt;** : Forces deletion of a local branch.
+- **git branch -m &lt;new_name&gt;** : Renames the branch locally.
+- **git branch --no-merged** : Lists unmerged branches.
+- **git branch --merged** : Lists the branches that have already been merged.
 
-- **git remote -v**: Mostra as URLs do repositório remoto.
-- **git remote add origin <URL_do_repositorio>**: Adiciona um repositório remoto.
-- **git remote set-url origin <nova_URL>**: Atualiza a URL do repositório remoto.
-- **git push --set-upstream origin <nome_da_branch>**: Mapeia a branch local para o repositório remoto.
-- **git push --delete origin <nome_da_branch>**: Apaga uma branch do repositório remoto.
+#### Remote management commands:
 
-#### Comandos de merge:
+- **git remote -v** : Shows remote repository URLs.
+- **git remote add origin &lt;repository_URL&gt;** : Adds a remote repository.
+- **git remote set-url origin &lt;new_URL&gt;** : Updates the URL of the remote repository.
+- **git push --set-upstream origin &lt;branch_name&gt;** : Maps the local branch to the remote repository.
+- **git push --delete origin &lt;branch_name&gt;** : Deletes a branch from the remote repository.
 
-- **git merge <nome_da_branch>**: Mescla as alterações de uma branch na branch atual.
-- **git merge --abort**: Cancela o merge em caso de conflitos.
+#### Merge commands:
 
+- **git merge &lt;branch_name&gt;** : Merges changes from a branch into the current branch.
+- **git merge --abort** : Cancel the merge in case of conflicts.
 
 # GitLab 🦊
 
-É uma plataforma centralizadora de repositórios Git, permitindo hospedar projetos públicos ou privados.
+It is a centralizing platform for Git repositories, allowing you to host public or private projects.
 
-Os repositórios podem ser criados com nome, descrição e visualização. O README fornece informações sobre o repositório.
+Repositories can be created with a name, description, and view. The README provides information about the repository.
 
-Recursos como star, observe, fork e o pull request permitem salvar e interagir com projetos de outras pessoas. Issues, milestones e labels ajudam no gerenciamento de problemas e marcos do projeto.
+Features like star, observe, fork, and pull request allow you to save and interact with other people's projects. Issues, milestones, and labels help you manage issues and project milestones.
 
 # README
-O README é um arquivo importante em um repositório. Ele fornece informações essenciais sobre o projeto para os usuários, ajudando-os a entender do que se trata o projeto e como começar a usá-lo. Geralmente, o README inclui:
 
-**Título e Descrição**: Uma breve descrição do projeto e seu propósito.
+The README is an important file in a repository. It provides essential information about the project to users, helping them understand what the project is about and how to get started using it. Typically, the README includes:
 
-**Instalação e Uso**: Instruções sobre como instalar e usar o projeto.
+**Title and Description** : A brief description of the project and its purpose.
 
-**Demonstração**: Se possível, exemplos de código ou imagens que demonstram o funcionamento do projeto.
+**Installation and Usage** : Instructions on how to install and use the project.
 
-**Contribuição**: Informações sobre como os usuários podem contribuir para o projeto, como regras para pull requests e guidelines de contribuição.
+**Demo** : If possible, code examples or images that demonstrate how the project works.
 
-**Licença**: A licença de código aberto que o projeto utiliza.
+**Contribution** : Information about how users can contribute to the project, such as rules for pull requests and contribution guidelines.
 
-**Suporte**: Informações de contato do mantenedor do projeto ou links para canais de suporte.
+**License** : The open source license the project uses.
+
+**Support** : Contact information for the project maintainer or links to support channels.

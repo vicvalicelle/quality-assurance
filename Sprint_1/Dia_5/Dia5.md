@@ -1,127 +1,135 @@
 10/05/2024
 
-# Dia 5: MasterClass
+# Day 5: MasterClass
 
-- Fundamentos do teste de software + Myers e o princípio de pareto
-- Bate-papo - PB - PerfMechs - Como gerar qualidade nos projetos?
-- Dinâmica em Grupo
+- Fundamentals of Software Testing + Myers and the Pareto Principle
+- Chat - PB - PerfMechs - How to generate quality in projects?
+- Group Dynamics
 
-## Fundamentos do teste de software + Myers e o princípio de pareto
+## Fundamentals of Software Testing + Myers and the Pareto Principle
 
-**Fundamentos do Teste:**
-- Gerar qualidade no produto significa garantir que as solicitações sejam atendidas, tomando decisões confiáveis, encontrando defeitos e reduzindo riscos.
-- Teste é a execução do software para identificar falhas, a depuração é a correção desses defeitos e o teste de confirmação verifica se foi resolvido.
-- Eficácia e eficiência do teste são cruciais para melhorar a qualidade do produto e garantir que os requisitos sejam atendidos.
-- Mais qualidade leva a uma produção mais rápida e, consequentemente, a uma maior produtividade.
-- Diretrizes para testes incluem boa cobertura alinhada com requisitos e boas práticas.
+**Test Fundamentals:**
 
-**Fatores Contextuais:**
-- Incluem níveis e tipos de testes, restrições operacionais, ciclo de vida do desenvolvimento, normas existentes e riscos do produto e do projeto.
+- Generating quality in the product means ensuring that requests are met, making reliable decisions, finding defects and reducing risks.
+- Testing is the execution of software to identify faults, debugging is the correction of those faults, and confirmation testing verifies that they have been resolved.
+- Test effectiveness and efficiency are crucial to improving product quality and ensuring requirements are met.
+- Higher quality leads to faster production and, consequently, higher productivity.
+- Testing guidelines include good coverage aligned with requirements and best practices.
 
+**Contextual Factors:**
 
-### Atividades de Teste
+- They include levels and types of testing, operational constraints, development life cycle, existing standards, and product and project risks.
 
-**Monitoramento e Controle de Teste:** Supervisão contínua do progresso do teste e implementação de medidas corretivas conforme necessário.
+### Testing Activities
 
-1. **Planejamento:**
-   - Definir os propósitos e abordagens do teste, identificando os objetivos a serem alcançados.
-   - Determinar o escopo do teste, incluindo quais partes do sistema serão testadas.
-   - Estabelecer métricas de teste para medir a eficácia e a qualidade dos testes.
-   - Detalhar o plano de teste, incluindo cronograma, recursos necessários e responsabilidades.
+**Test Monitoring and Control:** Continuous supervision of test progress and implementation of corrective measures as necessary.
 
-2. **Análise:**
-   - Identificar as situações que devem ser testadas.
-   - Determinar o que será testado, incluindo funcionalidades específicas, requisitos e cenários de uso.
-   - Elaborar scripts de teste detalhados que descrevam os passos a serem seguidos e os dados a serem utilizados durante o teste.
-   - Desenvolver casos de teste com base nos requisitos e cenários identificados.
+1. **Planning:**
 
-3. **Modelagem:**
-   - Estabelecer o objetivo do teste.
-   - Descrever o estado inicial do sistema antes da execução dos testes.
-   - Definir os dados de entrada necessários para cada caso de teste, bem como os passos a serem seguidos durante a execução.
-   - Especificar os resultados esperados para cada caso de teste.
-   - Identificar pré-condições e pós-condições para os testes.
-   - Projetar o ambiente de teste, incluindo hardware, software e ferramentas necessárias.
+    - Define the purposes and approaches of the test, identifying the objectives to be achieved.
+    - Determine the scope of testing, including which parts of the system will be tested.
+    - Establish testing metrics to measure the effectiveness and quality of testing.
+    - Detail the test plan, including schedule, required resources, and responsibilities.
 
-4. **Implementação:**
-   - Criar scripts de teste automatizados, quando aplicável.
-   - Preparar os dados necessários para os testes e garantir que estejam disponíveis no ambiente de teste.
-   - Desenvolver uma suite de teste abrangente que cubra todos os casos de teste identificados.
+2. **Analysis:**
 
-5. **Execução:**
-   - Realizar os testes seguindo os scripts e casos de teste estabelecidos.
-   - Coletar evidências durante a execução dos testes, incluindo registros de resultados e quaisquer anomalias encontradas.
-   - Comparar os resultados obtidos durante os testes com os resultados esperados.
-   - Comunicar quaisquer defeitos encontrados à equipe de desenvolvimento para correção.
-   - Registrar os resultados dos testes para análise posterior.
-   - Realizar testes de confirmação para verificar se os defeitos foram corrigidos corretamente e testes de regressão para garantir que as alterações não introduziram novos problemas.
+    - Identify the situations that should be tested.
+    - Determine what will be tested, including specific functionality, requirements, and usage scenarios.
+    - Develop detailed test scripts that describe the steps to be followed and the data to be used during testing.
+    - Develop test cases based on identified requirements and scenarios.
 
-7. **Conclusão:**
-   - Lançar o software após a conclusão bem-sucedida dos testes.
-   - Verificar relatórios de defeitos fechados para garantir que todos os problemas identificados tenham sido resolvidos.
-   - Consolidar métricas de encerramento dos testes para avaliar o desempenho e a qualidade dos testes realizados.
-   - Analisar lições aprendidas durante o processo de teste e identificar áreas para melhorias futuras.
-   - Implementar melhorias nos processos de teste para aumentar a maturidade e eficácia dos testes.
+3. **Modeling:**
 
-**Psicologia dos Testes:**
-- Problemas entre desenvolvedores e testadores podem surgir, devendo ser discutido com respeito, sensibilidade e atenção ao fornecer feedback e discutir falhas.
+    - Establish the purpose of the test.
+    - Describe the initial state of the system before running the tests.
+    - Define the input data required for each test case, as well as the steps to be followed during execution.
+    - Specify the expected results for each test case.
+    - Identify preconditions and postconditions for testing.
+    - Design the test environment, including necessary hardware, software, and tools.
 
-**Processo de Assegurar Testes Eficazes:**
- > “Testar é analisar um programa com a intenção de descobrir erros e defeitos.” - Myers.
+4. **Implementation:**
 
-- O Princípio de Pareto sugere que aproximadamente 80% dos erros são usualmente encontrados em 20% dos módulos do sistema. Onde a menor parte dos recursos é responsável pela maior parte dos resultados. Assim, se um defeito é encontrado em um modulo, as chances de haver outros defeitos são grandes.
+    - Create automated test scripts where applicable.
+    - Prepare the data needed for testing and ensure it is available in the test environment.
+    - Develop a comprehensive test suite that covers all identified test cases.
 
-<figure>
-  <img src="https://th.bing.com/th/id/OIP.BGP9uhjtn-NLp1jTrNzAUQHaEB?rs=1&pid=ImgDetMain" width="50%">
-</figure>
+5. **Execution:**
 
-# Dinâmica em grupo:
+    - Perform tests following established scripts and test cases.
+    - Collect evidence during test execution, including records of results and any anomalies found.
+    - Compare the results obtained during testing with the expected results.
+    - Report any defects found to the development team for correction.
+    - Record test results for later analysis.
+    - Perform confirmation testing to verify that defects were fixed correctly and regression testing to ensure that changes did not introduce new problems.
 
-Grupo 5:
+6. **Conclusion:**
+
+    - Release the software after successful completion of testing.
+    - Review closed defect reports to ensure all identified issues have been resolved.
+    - Consolidate test closure metrics to assess the performance and quality of tests performed.
+    - Analyze lessons learned during the testing process and identify areas for future improvements.
+    - Implement improvements in testing processes to increase testing maturity and effectiveness.
+
+**Test Psychology:**
+
+- Issues between developers and testers may arise and should be discussed with respect, sensitivity, and care when providing feedback and discussing bugs.
+
+**Process of Ensuring Effective Testing:**
+
+> “Testing is analyzing a program with the intention of discovering errors and defects.” - Myers.
+
+- The Pareto Principle suggests that approximately 80% of errors are usually found in 20% of the system modules. Where the smallest part of the resources is responsible for the largest part of the results. Thus, if a defect is found in one module, the chances of there being other defects are high.
+
+<figure>   <img src="https://th.bing.com/th/id/OIP.BGP9uhjtn-NLp1jTrNzAUQHaEB?rs=1&amp;pid=ImgDetMain" width="50%"> </figure>
+
+# Group dynamics:
+
+Group 5:
+
 - Victoria Yasmin Azevedo Valicelle
-- Vitor de Farias Belger
+- Victor Belger
 - Jorge Soares de Carvalho
 - Edgar Rodrigues Lutterbach Neto
 
-## Como gerar qualidade nos projetos?
+## How to generate quality in projects?
 
-**Atribuições do QA:**
+**QA Duties:**
 
-- **Planejamento e Definição de Requisitos:**
-    - Analisar e validar requisitos.
-    - Definir critérios de aceitação.
-    - Escrever casos de teste.
-- **Implementação e Desenvolvimento:**
-    - Revisar código.
-    - Testar durante o desenvolvimento (TDD).
-    - Automatizar testes.
-- **Testes:**
-    - Executar testes manuais e automatizados.
-    - Reportar bugs.
-    - Analisar a causa raiz dos problemas.
-- **Lançamento e Monitoramento:**
-    - Participar da fase de pré-lançamento.
-    - Monitorar a qualidade em produção.
-    - Sugerir melhorias contínuas.
-- **Cultura de Qualidade:**
-    - Promover a cultura de qualidade na equipe.
-    - Colaborar com outras equipes.
-    - Aprender e se adaptar.
-- **Ferramentas e Metodologias:**
-    - Ferramentas de gerenciamento e automação de testes.
-    - Metodologias de teste ágil e baseadas em risco.
+- **Planning and Requirements Definition:**
+    - Analyze and validate requirements.
+    - Define acceptance criteria.
+    - Write test cases.
+- **Implementation and Development:**
+    - Review code.
+    - Testing during development (TDD).
+    - Automate tests.
+- **Tests:**
+    - Perform manual and automated tests.
+    - Report bugs.
+    - Analyze the root cause of problems.
+- **Launch and Monitoring:**
+    - Participate in the pre-launch phase.
+    - Monitor quality in production.
+    - Suggest continuous improvements.
+- **Quality Culture:**
+    - Promote a culture of quality within the team.
+    - Collaborate with other teams.
+    - Learn and adapt.
+- **Tools and Methodologies:**
+    - Test management and automation tools.
+    - Agile and risk-based testing methodologies.
 
-**Exemplo prático no desenvolvimento de um app mobile de banco:**
+**Practical example in the development of a mobile banking app:**
 
-O QA garante a qualidade do app mobile de banco através de:
+QA ensures the quality of the bank's mobile app through:
 
-- **Análise:**
-    - Contextos do projeto, requisitos funcionais, plataformas suportadas, segurança e público-alvo.
-- **Automação:**
-    - Criação de scripts automatizados para testes críticos (login, transações, consultas).
+- **Analysis:**
+    - Project contexts, functional requirements, supported platforms, security and target audience.
+- **Automation:**
+    - Creation of automated scripts for critical tests (login, transactions, queries).
 - **Feedback:**
-    - Estabelecimento de comunicação contínua com o time de desenvolvimento para identificar falhas e sugerir melhorias na UX.
+    - Establishing continuous communication with the development team to identify flaws and suggest improvements in the UX.
 
-**Conclusão:**
+**Conclusion:**
 
-O QA é um profissional essencial para o sucesso de qualquer projeto de software. Através de sua expertise e proatividade, o QA garante a entrega de produtos de alta qualidade que atendem às necessidades dos clientes e contribuem para o crescimento da empresa.
+QA is an essential professional for the success of any software project. Through their expertise and proactivity, QA ensures the delivery of high-quality products that meet customer needs and contribute to the company's growth.

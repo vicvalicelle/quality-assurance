@@ -1,92 +1,93 @@
-# Dia 5 e 6: MasterClass
-- Risco e Impacto
-- Ciclo de Teste
-- Atividade: Uso/Migração do Jira + Test Cycles
+# Day 5 and 6: MasterClass
 
-## Risco e Impacto
+- Risk and Impact
+- Test Cycle
+- Activity: Jira Usage/Migration + Test Cycles
 
-A análise de risco e impacto permite otimizar recursos e garantir a qualidade do produto final. A aplicação de testes baseados em riscos direciona os esforços para áreas críticas, maximizando a eficiência do processo.
+## Risk and Impact
 
-**Identificação de Riscos**
+Risk and impact analysis allows you to optimize resources and ensure the quality of the final product. Applying risk-based testing directs efforts to critical areas, maximizing process efficiency.
 
-- Reuniões com stakeholders: Coletar informações para identificar preocupações e áreas de risco.
-- Histórico de falhas: Analisar defeitos em versões anteriores ou projetos similares para identificar padrões e potenciais problemas.
-- Estratégia inside-out: Começar pelos componentes internos do software e identificar os riscos associados a cada um.
-- Estratégia outside-in: Analisar o software da perspectiva do usuário, identificando riscos relacionados às funcionalidades e à experiência do usuário.
-- Avaliação da complexidade da aplicação: Áreas mais complexas tendem a ter maior risco.
+**Risk Identification**
 
-**Matriz de Risco**
+- Stakeholder meetings: Gather information to identify concerns and areas of risk.
+- Failure History: Analyze defects in previous versions or similar projects to identify patterns and potential problems.
+- Inside-out strategy: Start with the internal components of the software and identify the risks associated with each one.
+- Outside-in strategy: Analyze the software from the user's perspective, identifying risks related to functionality and user experience.
+- Assessment of application complexity: More complex areas tend to have greater risk.
 
-Após identificar os riscos, é fundamental priorizá-los para determinar quais exigem atenção imediata. A matriz de risco cruza a probabilidade de ocorrência de um risco com o impacto que ele teria caso ocorresse, facilitando a tomada de decisões e a alocação de recursos.
+**Risk Matrix**
 
-<figure>
-  <img src="https://blog.aevo.com.br/wp-content/uploads/2021/07/Matriz-de-risco-e-impacto.jpg" width="60%">
-</figure>
+Once risks have been identified, it is essential to prioritize them to determine which ones require immediate attention. The risk matrix cross-references the probability of a risk occurring with the impact it would have if it did occur, facilitating decision-making and resource allocation.
 
-Os riscos que se posicionam nos quadrantes superiores direitos da matriz (alta probabilidade e alto impacto) são os mais críticos e devem ser priorizados.
+<figure>   <img src="https://blog.aevo.com.br/wp-content/uploads/2021/07/Matriz-de-risco-e-impacto.jpg" width="60%"> </figure>
 
-**Definição de Estratégias de Mitigação**
+Risks that are positioned in the upper right quadrants of the matrix (high probability and high impact) are the most critical and should be prioritized.
 
-- Testes específicos: Desenvolver casos de teste que foquem nos riscos priorizados.
-- Revisão de código: Realizar revisões para identificar e corrigir problemas que possam levar aos riscos.
-- Redesign: Em casos extremos, pode ser necessário redesenhar partes do software para eliminar ou reduzir riscos.
+**Definition of Mitigation Strategies**
 
-**Prós e Contras da Aplicação de Testes Baseados em Riscos**
+- Specific tests: Develop test cases that focus on prioritized risks.
+- Code review: Perform reviews to identify and fix issues that could lead to risks.
+- Redesign: In extreme cases, it may be necessary to redesign parts of the software to eliminate or reduce risks.
 
-Prós:
-- Foco nos testes mais importantes.
-- Evita testes desnecessários.
-- Aumenta a probabilidade de encontrar e corrigir defeitos críticos.
+**Pros and Cons of Applying Risk-Based Testing**
 
-Contras:
-- Risco de negligenciar áreas de baixo risco
-- Os valores atribuídos aos riscos podem ser subjetivos, por isso é necessário discutir com o time os valores propostos
+Pros:
 
-**Riscos x Incertezas**
+- Focus on the most important tests.
+- Avoid unnecessary testing.
+- Increases the likelihood of finding and fixing critical defects.
 
-- Riscos: Eventos indesejáveis com probabilidade e impacto conhecidos.
-- Incertezas: Eventos que podem afetar o projeto, mas cuja probabilidade e impacto são desconhecidos.
+Cons:
 
-Enquanto os riscos podem ser gerenciados com estratégias de mitigação, as incertezas exigem monitoramento constante e adaptação do plano.
+- Risk of neglecting low-risk areas
+- The values assigned to risks can be subjective, so it is necessary to discuss the proposed values with the team.
 
-## **Ciclo de Teste**
+**Risks x Uncertainties**
 
-O ciclo de teste de software garante a qualidade e confiabilidade do software, desde a análise inicial até a entrega final.
+- Risks: Undesirable events with known probability and impact.
+- Uncertainties: Events that may affect the project, but whose probability and impact are unknown.
 
-**Fases do Ciclo de Teste**
+While risks can be managed with mitigation strategies, uncertainties require constant monitoring and adaptation of the plan.
 
-1. **Análise e Validação:** Garantir que os requisitos do software sejam claros, testáveis e que uma estratégia de teste adequada seja definida.
-2. **Planejamento:** Determinar a ordem de execução dos testes, alinhar as entregas do desenvolvimento com os testes e identificar dependências entre os testes.
-3. **Detalhamento:** Especificar os passos de execução de cada teste, decidir quais testes serão automatizados e garantir que a ordem de execução seja lógica e eficiente.
-4. **Ambiente:** Configurar o ambiente de teste para replicar o ambiente de produção o mais fielmente possível.
-5. **Execução:** Executar os testes de acordo com o plano de teste, documentar os resultados e identificar defeitos.
-6. **Reporte:** Resultados dos testes, incluindo os defeitos encontrados e os testes que não foram executados.
+## **Test Cycle**
 
-**Importância da Gestão do Ciclo de Vida dos Testes**
+The software testing cycle ensures the quality and reliability of the software, from initial analysis to final delivery.
 
-- Identificação e correção de defeitos antes da entrega ao usuário final.
-- Prevenção de retrabalho e correções tardias.
-- Aumento da eficiência.
-- Maior confiança no software.
+**Test Cycle Phases**
 
-**Modelos de Ciclo de Vida**
+1. **Analysis and Validation:** Ensure that software requirements are clear, testable and that an appropriate testing strategy is defined.
+2. **Planning:** Determine the order in which tests will be executed, align development deliverables with tests, and identify dependencies between tests.
+3. **Detailing:** Specify the execution steps for each test, decide which tests will be automated, and ensure that the execution order is logical and efficient.
+4. **Environment:** Set up the test environment to replicate the production environment as closely as possible.
+5. **Execution:** Execute tests according to the test plan, document the results, and identify defects.
+6. **Report:** Test results, including defects found and tests that were not performed.
 
-- Modelo cascata: Abordagem linear e sequencial, em que cada fase é concluída antes de iniciar a próxima.
-- Modelo em V: Enfatiza a relação entre desenvolvimento e teste, com testes planejados em paralelo ao desenvolvimento.
-- Modelo scrum: O software é desenvolvido e testado em ciclos repetitivos, com feedback e melhorias a cada iteração.
+**Importance of Test Lifecycle Management**
 
-**Níveis de Teste**
+- Identification and correction of defects before delivery to the end user.
+- Prevention of rework and late corrections.
+- Increased efficiency.
+- Greater confidence in the software.
 
-- **Teste de componente:** Testa unidades individuais de código (funções, módulos) isoladamente.
-- **Teste de integração:** Testa a interação entre componentes integrados.
-- **Teste de sistema:** Testa o sistema completo, incluindo todas as funcionalidades e componentes integrados.
-- **Teste de aceite:** Testa se o sistema atende aos requisitos do usuário e está pronto para ser usado em produção.
+**Life Cycle Models**
 
-**Tipos de Teste**
+- Waterfall model: Linear and sequential approach, in which each phase is completed before starting the next.
+- V-model: Emphasizes the relationship between development and testing, with testing planned in parallel with development.
+- Scrum model: Software is developed and tested in repetitive cycles, with feedback and improvements at each iteration.
 
-- **Teste funcional:** Verifica se o software funciona conforme o esperado, atendendo aos requisitos funcionais.
-- **Teste não funcional:** Avalia aspectos não funcionais do software, como desempenho, usabilidade, etc.
-- **Teste de caixa preta:** Testa o software sem conhecimento do código interno, focando nas entradas e saídas.
-- **Teste de caixa branca:** Testa o software com conhecimento do código interno, focando na lógica e estrutura do código.
-- **Reteste:** Repete um teste que falhou após a correção de um defeito.
-- **Teste de regressão:** Testa se as alterações no software não introduziram novos defeitos em funcionalidades já testadas.
+**Test Levels**
+
+- **Component testing:** Tests individual units of code (functions, modules) in isolation.
+- **Integration testing:** Tests the interaction between integrated components.
+- **System Testing:** Tests the complete system, including all functionalities and integrated components.
+- **Acceptance testing:** Tests whether the system meets user requirements and is ready to be used in production.
+
+**Test Types**
+
+- **Functional testing:** Verifies that the software works as expected, meeting the functional requirements.
+- **Non-functional testing:** Evaluates non-functional aspects of the software, such as performance, usability, etc.
+- **Black box testing:** Tests the software without knowledge of the internal code, focusing on the inputs and outputs.
+- **White box testing:** Tests the software with knowledge of the internal code, focusing on the logic and structure of the code.
+- **Retest:** Repeats a failed test after a defect has been fixed.
+- **Regression testing:** Tests whether changes to the software have not introduced new defects into previously tested features.

@@ -1,75 +1,76 @@
-# Dia 1: MasterClass
+# Day 1: MasterClass
+
 - Planning
-- Testes de Performance
+- Performance Tests
 
-## Testes de Performance 
+## Performance Tests
 
-Os testes de performance avaliam como um sistema se comporta sob diferentes cargas de trabalho. Garantem que a aplicação atenda aos requisitos não funcionais, proporcionando uma experiência satisfatória e evitando problemas como lentidão, travamentos e indisponibilidade.
+Performance testing evaluates how a system behaves under different workloads. It ensures that the application meets non-functional requirements, providing a satisfactory experience and avoiding problems such as slowness, crashes and unavailability.
 
-### Requisitos Não Funcionais:
+### Non-Functional Requirements:
 
-Enquanto os requisitos funcionais definem o que o sistema deve fazer, os requisitos não funcionais descrevem como ele deve fazer, o comportamento da aplicação.
+While functional requirements define what the system should do, non-functional requirements describe how it should do it, the behavior of the application.
 
-- Desempenho
-- Disponibilidade
-- Usabilidade
-- Confiabilidade
-- Segurança.
-- Interoperatividade.
+- Performance
+- Availability
+- Usability
+- Reliability
+- Security.
+- Interoperability.
 
-### O que é Performance?
+### What is Performance?
 
-Performance é a medida de quão bem um sistema realiza suas funções, o seu desempenho, seja em velocidade, capacidade de resposta e eficiência do sistema sob diferentes condições de carga, prevenindo problemas e evitando retrabalhos.
+Performance is the measure of how well a system performs its functions, its performance, whether in speed, responsiveness and system efficiency under different load conditions, preventing problems and avoiding rework.
 
-A performance afeta diretamente a experiência do usuário e o sucesso do negócio. Problemas de performance podem gerar perdas financeiras, produtividade, interrupção de negócios, problemas de responsabilidade legal e danos à reputação da empresa.
+Performance directly impacts user experience and business success. Performance issues can result in financial losses, productivity losses, business interruptions, legal liability issues, and damage to a company’s reputation.
 
-### Tipos
+### Types
 
-Existem diversos tipos de testes de performance e em geral o objetivo é medir desempenho, capacidade, confiabilidade, disponibilidade, escalabilidade e resiliência. Eliminando obstáculos de desempenho e compreender melhores configurações e necessidades da aplicação para atender esses requisitos de performance.
+There are several types of performance tests and in general the objective is to measure performance, capacity, reliability, availability, scalability and resilience. Eliminating performance obstacles and understanding better application configurations and needs to meet these performance requirements.
 
-- Teste de carga: Avalia o comportamento do sistema sob um aumento de carga (usuários simultâneos, quantidade de registros, etc).
-- Teste de capacidade: Avalia e descobre o limite da aplicação (aumento de carga por um limite de tempo).
-- Teste de escalabilidade: Avalia a capacidade do sistema de expandir.
-- Teste de estresse: Avalia o comportamento do sistema sob carga de trabalho extrema, próximo ou superior ao limite.
-- Teste de pico: Avalia o comportamento do sistema sob picos repentinos de carga.
-- Teste de resistência: Avalia o comportamento do sistema sob carga de trabalho por um longo período.
-- Teste de concorrência: Avalia impacto na aplicação em execuções simultâneas.
+- Load test: Evaluates the behavior of the system under increased load (simultaneous users, number of records, etc.).
+- Capacity Test: Evaluates and discovers the application limit (increased load for a time limit).
+- Scalability Test: Evaluates the system's ability to expand.
+- Stress test: Evaluates the behavior of the system under extreme workload, close to or above the limit.
+- Peak test: Evaluates system behavior under sudden load peaks.
+- Endurance test: Evaluates the behavior of the system under workload for a long period.
+- Concurrency testing: Assesses the impact on the application in simultaneous executions.
 
-### Métricas
+### Metrics
 
-- Tempo de resposta: Tempo médio, mínimo e máximo que o sistema leva para responder a uma solicitação.
-- Throughput: Quantidade de registros por uma unidade de tempo.
-- Latência: Atraso que uma solicitação leva para ser trasnmitida de uma ponta a outra.
-- Utilização de recursos: Porcentagem de CPU, memória, disco e rede utilizada pelo sistema.
+- Response time: Average, minimum and maximum time that the system takes to respond to a request.
+- Throughput: Number of records per unit of time.
+- Latency: Delay that a request takes to be transmitted from one end to the other.
+- Resource utilization: Percentage of CPU, memory, disk and network used by the system.
 
-### Falhas Comuns
+### Common Failures
 
-- Resposta lenta sob níveis de carga.
-- Resposta degradada ao longo do tempo.
-- tratamento inadequado de erros sob carga pesada ou acima do limite.
+- Slow response under load levels.
+- Response degrades over time.
+- improper error handling under heavy load or over limit.
 
-### Skills Necessárias
+### Required Skills
 
 Hard Skills:
 
-- Conhecimento de bancos de dados.
-- Conceitos de teste de performance.
-- Conhecer a arquitetura da aplicação
-- Analisar métricas para construção do relatório
-- Conhecer alguma linguagem para o script
-- Monitoramento
+- Knowledge of databases.
+- Performance testing concepts.
+- Know the application architecture
+- Analyze metrics to build the report
+- Know some language for scripting
+- Monitoring
 
 Soft Skills:
 
-- Habilidade de comunicação.
-- Flexibilidade.
-- Resiliência.
-- Cooperação.
+- Communication skills.
+- Flexibility.
+- Resilience.
+- Cooperation.
 
-### Processos do Teste de Performance
+### Performance Testing Processes
 
-1. Planejamento: Definir objetivos dos testes, identificar cenários de teste e as métricas a serem coletadas.
-2. Criação de scripts de teste: Automatizar a execução dos cenários de teste.
-3. Execução dos testes: Executar os scripts de teste em um ambiente controlado.
-4. Análise dos resultados: Analisar os dados coletados e identificar problemas de performance.
-5. Relatório dos resultados: Documentar os resultados dos testes para que sejam solucionados.
+1. Planning: Define test objectives, identify test scenarios and metrics to be collected.
+2. Creating test scripts: Automate the execution of test scenarios.
+3. Test execution: Run the test scripts in a controlled environment.
+4. Analysis of results: Analyze the collected data and identify performance problems.
+5. Reporting results: Document test results so they can be addressed.

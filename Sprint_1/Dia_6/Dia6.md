@@ -1,35 +1,38 @@
-13/05/2024
+05/13/2024
 
-# Dia 6: MasterClass
-- Fundamentos do teste de software (Back-End)
-- Pirâmide de teste
+# Day 6: MasterClass
 
-### Fundamentos do Teste de Software no Back-end:
-   - O teste de software no back-end é crucial para garantir a qualidade e a robustez das aplicações.
-   - Ele ocorre em paralelo com o ciclo de desenvolvimento, antecipando erros e aumentando a qualidade do produto final.
+- Fundamentals of Software Testing (Back-End)
+- Test pyramid
 
-## Pirâmide de Testes:
+### Fundamentals of Back-end Software Testing:
 
-<figure>
-  <img src="https://1ee1ed924b.cbaul-cdnwnd.com/e5c4fe4592bf06fe7ef86a0e80f403f0/200000021-8d3c58d3c8/700/Test-Pyramid-Eximia-1024x765.png?ph=1ee1ed924b" width="50%">
-</figure>
+- Back-end software testing is crucial to ensuring the quality and robustness of applications.
+- It occurs in parallel with the development cycle, anticipating errors and increasing the quality of the final product.
 
-A pirâmide de testes é uma estratégia para distribuir os diferentes tipos de testes em relação à sua quantidade e complexidade. Define níveis de teste e quantos deveriam ser feitos em cada um. A base da pirâmide consiste em testes de unidade, seguidos por testes de integração e, no topo, testes end-to-end (E2E).
+## Test Pyramid:
 
-1. **Testes de Unidade**:
-   - Realizados na menor unidade de código testável da aplicação, independentemente da integração.
-   - São pequenos, rápidos e simples de fazer e manter.
-   - Utilizam objetos "falsos" para isolar a unidade de código em teste.
-   - São importantes porque são rápidos de rodar e identificam claramente onde estão os problemas se falharem.
+<figure>   <img src="https://1ee1ed924b.cbaul-cdnwnd.com/e5c4fe4592bf06fe7ef86a0e80f403f0/200000021-8d3c58d3c8/700/Test-Pyramid-Eximia-1024x765.png?ph=1ee1ed924b" width="50%"> </figure>
 
-2. **Testes de Integração**:
-   - Testam módulos integrados para garantir que funcionem corretamente em conjunto.
-   - São mais demorados e complexos que os testes de unidade, mas mais simples e rápidos que os testes E2E.
-   - Garantem que as funcionalidades integradas ainda estejam operando conforme o esperado.
+The testing pyramid is a strategy for distributing the different types of tests in relation to their quantity and complexity. It defines testing levels and how many tests should be performed in each one. The base of the pyramid consists of unit tests, followed by integration tests and, at the top, end-to-end (E2E) tests.
 
-3. **Testes End-to-End (E2E)**:
-   - Simulam o ambiente completo da aplicação e verificam se o comportamento esperado ocorre.
-   - São executados em ambientes controlados e podem ser difíceis de escrever e demorados para serem executados.
-   - Cobrem os fluxos principais da aplicação e podem identificar falhas não tão triviais.
+1. **Unit Tests** :
 
-Uma base sólida de testes unitários é crucial para garantir a estabilidade e a manutenibilidade do sistema, enquanto os testes de interface do usuário devem ser usados com moderação devido à sua fragilidade e custo de manutenção, além da necessidade de diferentes tipos de testes para obter uma cobertura abrangente e eficaz.
+    - Performed in the smallest testable unit of code in the application, regardless of integration.
+    - They are small, quick and simple to make and maintain.
+    - They use "fake" objects to isolate the unit of code under test.
+    - They are important because they are quick to run and clearly identify where the problems are if they fail.
+
+2. **Integration Tests** :
+
+    - They test integrated modules to ensure they work correctly together.
+    - They are more time-consuming and complex than unit tests, but simpler and faster than E2E tests.
+    - Ensure that integrated functionality is still operating as expected.
+
+3. **End-to-End (E2E) Testing** :
+
+    - They simulate the complete application environment and verify that the expected behavior occurs.
+    - They run in controlled environments and can be difficult to write and time-consuming to run.
+    - They cover the main flows of the application and can identify not-so-trivial failures.
+
+A solid foundation of unit tests is crucial to ensure system stability and maintainability, while user interface tests should be used sparingly due to their fragility and maintenance cost, as well as the need for different types of tests to achieve comprehensive and effective coverage.

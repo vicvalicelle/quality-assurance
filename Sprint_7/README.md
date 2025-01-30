@@ -1,89 +1,105 @@
+
 # Sprint 7
 
 <details>
-<summary> Resumo dos dias </summary>
+<summary>Summary of days</summary>
 
-## Dia 1: MasterClass
-- Iniciando projeto base com K6 e Serverest
-- Massa de dados estáticas e dinâmicas
+## Day 1: MasterClass
 
-## Dia 2: MasterClass
-- Ciclo de vida dos testes com Setup e Teardown
+- Starting base project with K6 and Serverest
+- Static and dynamic data sets
 
-## Dia 3: MasterClass
-- Camada de serviços com K6
+## Day 2: MasterClass
 
-## Dia 4: MasterClass
-- Centralizando as validações com BaseChecks
+- Test Lifecycle with Setup and Teardown
 
-## Dia 5: MasterClass
-- Configurando Constants e Environment
+## Day 3: MasterClass
 
-## Dia 6, 7, 8 e 9: Evolução Challenge
+- Service layer with K6
+
+## Day 4: MasterClass
+
+- Centralizing validations with BaseChecks
+
+## Day 5: MasterClass
+
+- Setting Constants and Environment
+
+## Day 6, 7, 8 and 9: Evolution Challenge
+
 - Challenge
-- Mentoria
+- Mentoring
 
 </details>
 
-Essa sprint continuaremos com a ferramenta K6, o ciclo de vida dos testes, como criar seus scripts mais concisos, métricas e organização. Portanto, continuaremos com o planejamento anterior, com algumas mudanças, abordando o planejamento de testes individuais e fluxos nas rotas /usuarios, /login, /produtos e, agora, a rota /carrinhos. Foram revisados os casos de teste e selecionados 5 tipos para cada rota:
 
 
-| **Teste**       | **Options**                                                                                                                                                          | **Thresholds**                                                                                       |
-|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| **Spike Test**  | `stages: [{ duration: '10s', target: 50 }, { duration: '3s', target: 500 } { duration: '10s', target: 50 }],`                                                                                         | `'http_req_duration': ['max < 500'], 'http_req_failed': ['rate<0.01'],`                              |
-| **Stress Test** | `stages: [{ duration: '1m', target: 100 },{ duration: '1m', target: 200 },{ duration: '1m', target: 300 },{ duration: '1m', target: 500 },{ duration: '5m', target: 0 }],` | `'http_req_duration': ['max < 500'], 'http_req_failed': ['rate<0.05'],`                              |
-| **Soak Test**   | ` stages: [{{ duration: '2m', target: 300 }, { duration: '4m', target: 400 }, { duration: '2m', target: 0 },`                                                                                                                                           | `'http_req_duration': ['p(95)<300'], 'http_req_failed': ['rate<0.01'],`                              |
-| **Load Test**   | `stages: [{ duration: '1m', target: 100 }, { duration: '1m', target: 100 }, { duration: '1m', target: 0 }],`                                                         | `'http_req_duration': ['p(95)<300'], 'http_reqs': ['rate>100'], 'http_req_failed': ['rate<0.01'],`   |
-| **Smoke Test**  | `vus: 1, duration: '1s', iterations: 1, `                                                                   | `'checks': ['rate>0.99'], 'http_req_duration': ['p(100)<1000'], 'http_req_failed': ['rate<0.01'],`                               |
+This sprint we will continue with the K6 tool, the test lifecycle, how to create more concise scripts, metrics and organization. Therefore, we will continue with the previous planning, with some changes, addressing the planning of individual tests and flows in the /users, /login, /products and, now, the /carts route. The test cases were reviewed and 5 types were selected for each route:
 
-## **Testando sua API com k6:**
+**Test** | **Options** | **Thresholds**
+--- | --- | ---
+**Spike Test** | `stages: [{ duration: '10s', target: 50 }, { duration: '3s', target: 500 } { duration: '10s', target: 50 }],` | `'http_req_duration': ['max < 500'], 'http_req_failed': ['rate<0.01'],`
+**Stress Test** | `stages: [{ duration: '1m', target: 100 },{ duration: '1m', target: 200 },{ duration: '1m', target: 300 },{ duration: '1m', target: 500 },{ duration: '5m', target: 0 }],` | `'http_req_duration': ['max < 500'], 'http_req_failed': ['rate<0.05'],`
+**Soak Test** | ` stages: [{{ duration: '2m', target: 300 }, { duration: '4m', target: 400 }, { duration: '2m', target: 0 },` | `'http_req_duration': ['p(95)<300'], 'http_req_failed': ['rate<0.01'],`
+**Load Test** | `stages: [{ duration: '1m', target: 100 }, { duration: '1m', target: 100 }, { duration: '1m', target: 0 }],` | `'http_req_duration': ['p(95)<300'], 'http_reqs': ['rate>100'], 'http_req_failed': ['rate<0.01'],`
+**Smoke Test** | `vus: 1, duration: '1s', iterations: 1, ` | `'checks': ['rate>0.99'], 'http_req_duration': ['p(100)<1000'], 'http_req_failed': ['rate<0.01'],`
 
-### Pré-requisitos
+## **Testing your API with k6:**
 
-### **1. Node.js e npm**
+### Prerequisites
 
-- **Baixe o instalador:** Vá para https://nodejs.org/ e baixe o instalador para o seu sistema operacional (Windows, macOS ou Linux).
-- **Execute o instalador:** Abra o arquivo e siga as instruções na tela.
-- **Verifique a instalação:** Abra o seu terminal (Prompt de Comando no Windows, Terminal no macOS ou Linux) e digite os seguintes comandos para checar se está tudo certo:
+### **1. Node.js and npm**
+
+- **Download the installer:** Go to https://nodejs.org/ and download the installer for your operating system (Windows, macOS, or Linux).
+- **Run the installer:** Open the file and follow the on-screen instructions.
+- **Verify the installation:** Open your terminal (Command Prompt on Windows, Terminal on macOS or Linux) and type the following commands to check if everything is ok:
+
 ```
 node -v
 ```
+
 ```
 npm -v
 ```
 
-# **Instalação do k6 no Windows**
+# **Installing k6 on Windows**
 
-1. **Instalar usando o Chocolatey**:
-- Primeiro, instale o Chocolatey;
-    1. Abra o PowerShell com permissões de administrador.
-    2. Execute o comando a seguir para instalar o Chocolatey:
-        
+1. **Install using Chocolatey** :
+
+- First, install Chocolatey;
+
+    1. Open PowerShell with administrator permissions.
+
+    2. Run the following command to install Chocolatey:
+
         ```powershell
         Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('<https://community.chocolatey.org/install.ps1>'))
         ```
-        
-- Depois de instalar o Chocolatey, instale o k6:
-    1. No PowerShell com permissões de administrador, execute:
-        
+
+- After installing Chocolatey, install k6:
+
+    1. In PowerShell with administrator permissions, run:
+
         ```powershell
         choco install k6
         ```
 
-- Verifique a instalação: No seu terminal para checar se está tudo certo, digite:
+- Verify the installation: In your terminal to check if everything is correct, type:
+
 ```
 k6 --version
 ```
 
-## **Rodando os testes**
+## **Running the tests**
 
-### **1. Escreva o seu script de teste**
+### **1. Write your test script**
 
- Crie um arquivo chamado `script.js`
+Create a file called `script.js`
 
-### **2. Execute o teste**
+### **2. Run the test**
 
-Agora, abra o seu terminal e navegue até a pasta onde você salvou o `script.js`. Em seguida, execute:
+Now, open your terminal and navigate to the folder where you saved `script.js` . Then, run:
+
 ```
 k6 run script.js
 ```

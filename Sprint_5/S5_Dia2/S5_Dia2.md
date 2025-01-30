@@ -1,125 +1,126 @@
-# Dia 2: Ágil
-- Vídeo: Por que eu deveria testar a performance da minha API?
-- Vídeo: Lições Aprendidas e Processo de Teste de Performance
-- Seção 10 do curso da udemy: JMeter - Testes de performance
+# Day 2: Agile
 
-### **Por que Testar a Performance da API?**
+- Video: Why should I test my API performance?
+- Video: Lessons Learned and Performance Testing Process
+- Section 10 of the Udemy course: JMeter - Performance Testing
 
-Testar a performance da API é necessária para garantir que funcione de forma eficiente e confiável sob diferentes condições de carga.
+### **Why Test API Performance?**
 
-**O que são Requisitos Não Funcionais e Teste de Performance?**
+Testing API performance is necessary to ensure that it works efficiently and reliably under different load conditions.
 
-- Requisitos Não Funcionais (RNF): Características de um sistema que não estão diretamente relacionadas à sua funcionalidade principal.
-- Teste de Performance: Identifica gargalos de performance, problemas de escalabilidade e garante que a API atenda aos RNFs definidos.
+**What are Non-Functional Requirements and Performance Testing?**
 
-**Quando Testar a Performance?**
+- Non-Functional Requirements (NFR): Characteristics of a system that are not directly related to its main functionality.
+- Performance Testing: Identifies performance bottlenecks, scalability issues and ensures that the API meets the defined NFRs.
 
-Devem ser realizados em todas as fases do desenvolvimento de software, permitindo que os problemas de performance sejam identificados e corrigidos o mais rapidamente possível, evitando retrabalho e custos adicionais.
+**When to Test Performance?**
 
-Negligenciar os requisitos de performance pode levar a vários problemas, incluindo:
+They must be carried out at all stages of software development, allowing performance problems to be identified and corrected as quickly as possible, avoiding rework and additional costs.
 
-- Experiência do usuário ruim.
-- Danos à reputação da empresa.
-- Custos de correção elevados.
+Neglecting performance requirements can lead to several problems, including:
 
-Enquanto ao testar a performance você:
+- Bad user experience.
+- Damage to the company's reputation.
+- High correction costs.
 
-- Previne problemas.
-- Direciona uma melhor arquitetura para atender as necessidades de negócio.
-- Evita retrabalhos.
-- Zela pala reputação da aplicação.
-- Não causa danos aos clientes/usuários
-- Garante responsabilidade legal.
+While testing performance you:
 
-### **Lições Aprendidas e Processo de Teste de Performance:**
+- Prevents problems.
+- Drives better architecture to meet business needs.
+- Avoids rework.
+- Take care of the application's reputation.
+- Does not cause harm to customers/users
+- Ensures legal liability.
 
-1. Planejamento:
-    - Defina metas e objetivos claros para o teste de performance.
-    - Crie um plano de teste detalhado que inclua os cenários de teste, a carga esperada e os recursos necessários.
-    - Garanta que todos estejam alinhados com os objetivos e expectativas do teste.
-2. Antecipe:
-    - Identifique os gargalos de performance em potencial antes de iniciar os testes.
-    - Analise a arquitetura do sistema.
+### **Lessons Learned and Performance Testing Process:**
+
+1. Planning:
+    - Set clear goals and objectives for the performance test.
+    - Create a detailed test plan that includes test scenarios, expected load, and required resources.
+    - Ensure everyone is aligned on the test goals and expectations.
+2. Anticipate:
+    - Identify potential performance bottlenecks before you start testing.
+    - Analyze the system architecture.
 3. Backup:
-    - Faça backups regulares. Isso permitirá que você restaure o sistema para um estado anterior caso algo dê errado durante os testes.
-4. Ambiente Similar ao de Produção:
-    - Crie um ambiente de teste que seja o mais próximo possível do ambiente de produçã.
-5. Cenários de Teste Específicos:
-    - Defina cenários de teste com diferentes tipos de usuários, diferentes horários de pico e diferentes volumes de dados.
-6. Critérios de Aceitação:
-    - Critérios de aceitação claros e mensuráveis antes de iniciar os testes ajudam a determinar se o sistema atende aos requisitos de performance.
-7. Massa de Teste:
-    - Prepare a massa de dados para o teste.
-8. Resultados:
-    - Relatórios de teste claros e concisos que apresentem os resultados de forma objetiva e compreensível para visualizar os dados de performance.
-    - Discuta as ações necessárias para melhorar a performance do sistema.
+    - Make regular backups. This will allow you to restore your system to a previous state if something goes wrong during testing.
+4. Production-Like Environment:
+    - Create a test environment that is as close to the production environment as possible.
+5. Specific Test Scenarios:
+    - Define test scenarios with different types of users, different peak times, and different data volumes.
+6. Acceptance Criteria:
+    - Clear and measurable acceptance criteria before testing begins help determine whether the system meets performance requirements.
+7. Test Mass:
+    - Prepare the data set for testing.
+8. Results:
+    - Clear and concise test reports that present results in an objective and understandable way to visualize performance data.
+    - Discuss the actions needed to improve system performance.
 
-### Conceitos de teste de performance
+### Performance testing concepts
 
-**Requisições HTTP**
+**HTTP Requests**
 
-HTTP é um protocolo que define como as informações são trocadas entre um cliente e um servidor. As requisições HTTP são a base da comunicação entre clientes e servidores na web. Após receber um request, o servidor envia uma response. Essa resposta inclui um código de status que indica o resultado da requisição divididos em cinco classes:
+HTTP is a protocol that defines how information is exchanged between a client and a server. HTTP requests are the basis of communication between clients and servers on the web. After receiving a request, the server sends a response. This response includes a status code that indicates the result of the request, divided into five classes:
 
-- 1xx: Informativo (a requisição foi recebida e está sendo processada).
-- 2xx: Sucesso (a requisição foi recebida, compreendida e aceita).
-- 3xx: Redirecionamento (é necessário realizar ações adicionais para completar a requisição).
-- 4xx: Erro do cliente (a requisição contém erros de sintaxe ou não pode ser atendida).
-- 5xx: Erro do servidor (o servidor falhou ao processar uma requisição aparentemente válida).
+- 1xx: Informational (the request has been received and is being processed).
+- 2xx: Success (the request was received, understood and accepted).
+- 3xx: Redirection (additional actions are required to complete the request).
+- 4xx: Client error (the request contains syntax errors or cannot be fulfilled).
+- 5xx: Server error (the server failed to process an apparently valid request).
 
-**Modelos de Testes:**
+**Test Models:**
 
-- Teste de carga: Simula o uso normal do sistema para verificar se ele atende aos requisitos de performance.
-- Teste de estresse: Aumenta a carga além do normal para identificar o ponto de ruptura do sistema sob condições hostis.
-- Teste de pico: Simula picos para verificar se o sistema consegue lidar com aumentos repentinos de demanda.
-- Teste de continuidade: Simula uma carga próxima à esperada em produção, mantendo por um longo período de tempo.
+- Load testing: Simulates normal system usage to verify that it meets performance requirements.
+- Stress Testing: Increases the load beyond normal to identify the system's breaking point under hostile conditions.
+- Peak Testing: Simulates peaks to check whether the system can handle sudden increases in demand.
+- Continuity test: Simulates a load close to that expected in production, maintaining it for a long period of time.
 
-**Ambiente, Volume e Cenários**
+**Environment, Volume and Scenarios**
 
-- Cenários: Os cenários de teste devem ser pensados em situações similares às reais, representar as principais funcionalidades do sistema e os fluxos de trabalho mais comuns dos usuários.
-- Volumetria: A carga de teste deve simular o volume de tráfego esperado e pensado em produção em relação ao tempo.
-- Ambiente: O ambiente de teste deve ser o mais próximo possível do ambiente de produção. Se não for possível, pode aplicar o cálculo em escala: horizontalmente (adicionando novas máquinas) ou verticalmente (adicionando recursos como memória e CPU).
+- Scenarios: Test scenarios should be designed in situations similar to real ones, representing the main functionalities of the system and the most common user workflows.
+- Volumetry: The test load must simulate the expected and intended traffic volume in production in relation to time.
+- Environment: The test environment should be as close as possible to the production environment. If this is not possible, you can scale the calculation: horizontally (by adding new machines) or vertically (by adding resources such as memory and CPU).
 
-**Indicadores orientados a serviço:**
+**Service-oriented indicators:**
 
-- Tempo de Resposta: O tempo que o sistema leva para responder a uma requisição.
-- Disponibilidade: A capacidade do sistema de lidar com a carga de trabalho durante um período de tempo.
+- Response Time: The time it takes for the system to respond to a request.
+- Availability: The ability of the system to handle the workload over a period of time.
 
-**Indicadores orientados a eficiência:**
+**Efficiency-oriented indicators:**
 
-- Throughput (Vazão): O número de requisições que o sistema pode processar por unidade de tempo.
-- Utilização de Recursos: Otimização de infraestrutura e custos de escalabilidade horizontal e vertical.
+- Throughput: The number of requests the system can process per unit of time.
+- Resource Utilization: Optimization of infrastructure and horizontal and vertical scalability costs.
 
-**Terminologias Adicionais:**
+**Additional Terminologies:**
 
-- Baseline: Uma referência de desempenho que serve como base para comparação.
-- Benchmarking: Comparação do desempenho de um sistema com um padrão de referência.
-- Métricas: Valores mensuráveis que indicam o desempenho do sistema.
-- Saturação: Estado em que um sistema está operando em sua capacidade máxima e não consegue lidar com mais carga.
-- Workload: A quantidade de trabalho que um sistema precisa realizar.
-- Think Time: Tempo que um usuário real leva para pensar e interagir com o sistema entre ações.
-- Ramp Up: O processo de aumentar gradualmente a carga de trabalho em um teste de desempenho para simular o aumento do tráfego ao longo do tempo.
-- Steady State: O estado em que um sistema está operando sob uma carga constante por um período prolongado de tempo.
+- Baseline: A performance reference that serves as a basis for comparison.
+- Benchmarking: Comparing the performance of a system with a reference standard.
+- Metrics: Measurable values that indicate system performance.
+- Saturation: A state in which a system is operating at its maximum capacity and cannot handle any more load.
+- Workload: The amount of work a system needs to perform.
+- Think Time: Time it takes a real user to think and interact with the system between actions.
+- Ramp Up: The process of gradually increasing the workload in a performance test to simulate increased traffic over time.
+- Steady State: The state in which a system is operating under a constant load for an extended period of time.
 
-**Defeitos de Performance:**
+**Performance Defects:**
 
-- Timeouts: O sistema não responde a uma requisição dentro do tempo limite.
-- Tempo de resposta: O sistema leva muito tempo para responder a uma requisição.
+- Timeouts: The system does not respond to a request within the time limit.
+- Response time: The system takes a long time to respond to a request.
 
-**Defeitos Funcionais:**
+**Functional Defects:**
 
-- Falha de caching: O sistema não armazena em cache os dados corretamente.
+- Caching failure: The system does not cache data correctly.
 
-**Defeitos Estruturais:**
+**Structural Defects:**
 
-- Memory leak: O sistema não libera memória corretamente.
-- Corrupção de dados: O sistema armazena ou processa dados incorretamente.
-- Load balancer: Distribui o tráfego entre vários servidores para melhorar o desempenho e a escalabilidade.
+- Memory leak: The system does not release memory correctly.
+- Data corruption: The system stores or processes data incorrectly.
+- Load balancer: Distributes traffic across multiple servers to improve performance and scalability.
 
-**Defeitos de Segurança:**
+**Security Defects:**
 
-- Exposição de dados: O sistema expõe dados confidenciais sem autorização.
+- Data Exposure: The system exposes confidential data without authorization.
 
-**Defeitos de Infraestrutura de Rede:**
+**Network Infrastructure Defects:**
 
-- Latência: O tempo que um pacote de dados leva para viajar de um ponto a outro na rede.
-- Largura de banda: A quantidade de dados que pode ser transmitida por um canal de comunicação por unidade de tempo.
+- Latency: The time it takes for a data packet to travel from one point on the network to another.
+- Bandwidth: The amount of data that can be transmitted over a communication channel per unit of time.

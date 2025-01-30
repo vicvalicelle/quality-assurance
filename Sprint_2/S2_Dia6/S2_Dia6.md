@@ -1,94 +1,92 @@
-## Dia 6: MasterClass
+## Day 6: MasterClass
 
-- Introdução às atividades de análise de teste
-- Priorização em diferentes aplicações
-- Atividade
+- Introduction to Test Analysis Activities
+- Prioritization in different applications
+- Activity
 
-## Introdução às atividades de análise de teste
+## Introduction to Test Analysis Activities
 
-O analista de teste contribui significativamente para a qualidade e o sucesso do projeto de software e suas principais atividades envolvem:
+The test analyst contributes significantly to the quality and success of the software project and his main activities involve:
 
-- **Dominar a Arquitetura do Projeto:** Compreender a estrutura do software para identificar áreas críticas e planejar testes eficazes.
-- **Planejar a Estratégia de Testes:** Definir os tipos de testes necessários e os critérios de sucesso.
-- **Executar Testes:** Aplicar os testes planejados.
-- **Analisar Prós e Contras dos Planos de Teste:** Avaliar a eficácia dos testes e identificar pontos de melhoria para o futuro.
-- **Analisar e Revisar Códigos:** Examinar o código para encontrar erros e vulnerabilidades.
-- **Catalogar, Periciar e Documentar Evidências:** Registrar os resultados dos testes, os defeitos encontrados e as ações corretivas tomadas.
-- **Configurar e Criar Processos:** Estabelecer procedimentos padronizados para execução e análise de testes.
-- **Conhecimentos Técnicos da Infraestrutura:** Dominar as ferramentas e tecnologias utilizadas no desenvolvimento e teste do software.
-- **Analisar e Documentar Questões de Feedback:** Coletar e analisar o feedback dos usuários para identificar problemas e aprimorar o software.
+- **Master Project Architecture:** Understand the structure of the software to identify critical areas and plan effective tests.
+- **Plan the Testing Strategy:** Define the types of tests needed and the success criteria.
+- **Run Tests:** Apply the planned tests.
+- **Analyze Pros and Cons of Test Plans:** Evaluate the effectiveness of tests and identify points for improvement in the future.
+- **Analyze and Review Code:** Examine code to find errors and vulnerabilities.
+- **Catalog, Examine and Document Evidence:** Record test results, defects found and corrective actions taken.
+- **Configure and Create Processes:** Establish standardized procedures for test execution and analysis.
+- **Technical Knowledge of Infrastructure:** Master the tools and technologies used in software development and testing.
+- **Analyze and Document Feedback Issues:** Collect and analyze user feedback to identify issues and improve the software.
 
-## Priorização em diferentes aplicações
+## Prioritization in different applications
 
-Para cada fluxo de teste, você deve se perguntar:
+For each test flow, you should ask yourself:
 
-- **Qual é o principal objetivo da minha aplicação?**
-- **O fluxo que eu estou abordando bloqueia ou dificulta a realização do objetivo principal daquela aplicação?**
-    - Se a resposta for sim, esse fluxo deve ter alta prioridade nos testes. Se não, o fluxo tem uma prioridade menor.
-- **Considerações importantes:** Frequência de uso, impacto financeiro, complexidade.
+- **What is the main purpose of my application?**
+- **Does the flow I am addressing block or hinder the achievement of the main objective of that application?**
+    - If the answer is yes, this flow should have high priority in testing. If not, the flow has a lower priority.
+- **Important considerations:** Frequency of use, financial impact, complexity.
 
-**E-commerce de Varejo:**
+**Retail E-commerce:**
 
-- Objetivo principal: Venda de produtos, experiência de compra fluida.
-- Priorização: Fluxos críticos como finalização de compra, pagamento, cadastro, login, busca de produtos, carrinho de compras.
+- Main objective: Sale of products, smooth shopping experience.
+- Prioritization: Critical flows such as purchase completion, payment, registration, login, product search, shopping cart.
 
-**Programa de Pontos:**
+**Points Program:**
 
-- Objetivo principal: Compra, transferência, resgate e uso dos pontos.
-- Priorização: Fluxos de acúmulo e resgate de pontos, visualização do extrato, comunicação de promoções exclusivas, integração com o e-commerce.
+- Main purpose: Purchase, transfer, redemption and use of points.
+- Prioritization: Points accumulation and redemption flows, statement viewing, communication of exclusive promotions, integration with e-commerce.
 
-**Portal de Telefonia:**
+**Telephony Portal:**
 
-- Objetivo principal: Venda de planos, gerenciamento de serviços, suporte ao cliente.
-- Priorização: Fluxos de contratação e cancelamento de planos, recarga de créditos, consulta de saldo e consumo, emissão de segunda via de fatura, atendimento via chat ou telefone.
+- Main objective: Plan sales, service management, customer support.
+- Prioritization: Flows for contracting and canceling plans, recharging credits, checking balance and consumption, issuing second copies of invoices, support via chat or telephone.
 
-**Demandas:**
+**Demands:**
 
-- Priorização: Analisar o impacto da demanda no objetivo principal de cada aplicação.
+- Prioritization: Analyze the impact of demand on the main objective of each application.
 
-## Atividade
+## Activity
 
-Escolher segmento e aplicação na internet, e criar lista de fluxos prioritários para validação.
+Choose segment and application on the internet, and create a list of priority flows for validation.
 
-### Passo 1 - Apresentar a aplicação, o segmento e o objetivo principal do sistema;
+### Step 1 - Present the application, segment and main objective of the system;
 
-**Aplicação:** Uber
+**Application:** Uber
 
-**Segmento:** Mobilidade urbana, transporte individual como passageiro.
+**Segment:** Urban mobility, individual passenger transport.
 
-**Objetivo Principal:** Conectar passageiros a motoristas parceiros para viagens rápidas e seguras.
+**Main Objective:** Connect passengers with partner drivers for fast and safe trips.
 
-<figure>
-  <img src="https://th.bing.com/th/id/OIP.JdpTc06Cds9-I6JjbuwbpAHaEK?rs=1&pid=ImgDetMain" width="60%">
-</figure>
+<figure>   <img src="https://th.bing.com/th/id/OIP.JdpTc06Cds9-I6JjbuwbpAHaEK?rs=1&amp;pid=ImgDetMain" width="60%"> </figure>
 
-### Passo 2 - Elaborar lista de fluxos de validação prioritários no sistema escopo;
+### Step 2 - Create a list of priority validation flows in the scope system;
 
-- **Cadastro do Usuário:** Para identificação e cobrança.
-- **Solicitação de Viagem:** Solicitação do meio de transporte e endereço.
-- **Acompanhamento da Viagem:** Status da viagem e garantindo a segurança.
-- **Finalização da Viagem:** Conclui a transação e realiza o feedback.
-- **Recursos Adicionais:** Testa funcionalidades extras como agendamento de viagens, recursos de segurança e suporte ao cliente.
+- **User Registration:** For identification and billing.
+- **Travel Request:** Request for means of transport and address.
+- **Trip Tracking:** Trip status and ensuring safety.
+- **Trip Completion:** Completes the transaction and provides feedback.
+- **Additional Features:** Test extra features like travel scheduling, security features, and customer support.
 
-### Passo 3 - Ordenar a lista de forma lógica, para a realização de fluxos completos na aplicação.
+### Step 3 - Sort the list logically, to perform complete flows in the application.
 
-- **Cadastro do Usuário:**
-    - Criação de conta (nome, e-mail, telefone).
-    - Validação de e-mail e telefone.
-    - Login com credenciais válidas e recuperação de senha.
-    - Adição de forma de pagamento.
-- **Solicitação de Viagem:**
-    - Inserção de endereço de origem e destino.
-    - Seleção da categoria do veículo.
-    - Tempo e preço estimados da viagem.
-    - Confirmação da solicitação.
-- **Acompanhamento da Viagem:**
-    - Motorista designado e informações do veículo.
-    - Acompanhamento do motorista em tempo real no mapa.
-    - Comunicação com o motorista.
-    - Possibilidade de compartilhamento da viagem com contatos.
-- **Finalização da Viagem:**
-    - Confirmação da chegada ao destino.
-    - Avaliação do motorista.
-    - Pagamento da viagem.
-    - Emissão de recibo.
+- **User Registration:**
+    - Account creation (name, email, phone).
+    - Email and phone validation.
+    - Login with valid credentials and password recovery.
+    - Adding a payment method.
+- **Travel Request:**
+    - Insertion of source and destination address.
+    - Vehicle category selection.
+    - Estimated travel time and price.
+    - Request confirmation.
+- **Travel Monitoring:**
+    - Designated driver and vehicle information.
+    - Real-time driver tracking on the map.
+    - Communication with the driver.
+    - Possibility of sharing the trip with contacts.
+- **End of Trip:**
+    - Confirmation of arrival at destination.
+    - Driver evaluation.
+    - Payment for the trip.
+    - Issuance of receipt.

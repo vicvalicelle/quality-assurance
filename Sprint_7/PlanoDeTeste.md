@@ -1,176 +1,176 @@
-## Plano de Teste ServeRest:
+## ServeRest Test Plan:
 
-### Resumo:
+### Summary:
 
-O plano de teste da aplicação ServeRest abrange a validação da funcionalidade de login, gerenciamento de produtos, cadastro de vendedores e gerenciamento de carrinho da API do Marketplace ServeRest, garantindo que seja possível cadastrar e autenticar perfis dos vendedores, ter acesso a operações de gerenciamento de produtos e carrinhos.
+The ServeRest application test plan covers the validation of the login, product management, seller registration and cart management functionality of the ServeRest Marketplace API, ensuring that it is possible to register and authenticate seller profiles, have access to product and cart management operations.
 
-### Estratégia:
+### Strategy:
 
-- Análise dos Critérios e Criação de Casos de Teste: Uma lista de casos de teste que abrangem todos os critérios de aceitação e cenários além do Swagger. E entender o que será testado em performance, qual volumetria e quais métricas acompanhadas.
-- Preparação do Ambiente de Testes: Configurar o Postman, o banco de dados de testes, Swagger e o JMeter.
-- Execução dos Testes: Executar cada caso de teste no Postman, verificar as respostas da API, documentar resultados no Jira e testar performance no JMeter e documentar os resultados obtidos.
-- Análise dos Resultados e Relatório: Analisar os resultados dos testes e sugerir melhorias
+- Criteria Analysis and Test Case Creation: A list of test cases that cover all acceptance criteria and scenarios in addition to Swagger. And understand what will be tested in performance, what volume and which metrics will be monitored.
+- Test Environment Preparation: Configure Postman, test database, Swagger and JMeter.
+- Test Execution: Run each test case in Postman, check API responses, document results in Jira and test performance in JMeter and document the results obtained.
+- Results Analysis and Reporting: Analyze test results and suggest improvements
 
-### Análise da API pelas Rotas (/usuarios, /login, /produtos, /carrinhos):
+### API Analysis by Routes (/users, /login, /products, /carts):
 
-**Rotas de Usuários:**
+**User Routes:**
 
-- Cenário 1: Cadastro de Usuário (Vendedor)
-    - CT01: Cadastro de usuário com sucesso
-    - CT02: Cadastro de usuário com falha
-- Cenário 2: Atualização de Usuário
-    - CT03: Atualização de usuário existente com sucesso
-    - CT04: Atualização de usuário inexistente (criação de novo usuário)
-    - CT05: Atualização de usuário com falha
-- Cenário 3: Busca de Usuários
-    - CT06: Listagem dos usuários
-    - CT07: Busca de usuário por ID
-- Cenário 4: Exclusão de Usuário
-    - CT08: Exclusão de usuário existente com sucesso
-    - CT09: Exclusão de usuário inexistente
-    - CT010: Exclusão de usuário existente com carrinho
+- Scenario 1: User Registration (Seller)
+    - CT01: User registration successful
+    - CT02: User registration failed
+- Scenario 2: User Update
+    - CT03: Update existing user successfully
+    - CT04: Update of non-existent user (creating new user)
+    - CT05: User update failed
+- Scenario 3: User Search
+    - CT06: List of users
+    - CT07: User search by ID
+- Scenario 4: User Deletion
+    - CT08: Successful deletion of existing user
+    - CT09: Deletion of non-existent user
+    - CT010: Deleting existing user with cart
 
-**Rotas de Login:**
+**Login Routes:**
 
-- Cenário: Autenticação de Usuário
-    - CT01: Login com email e senha válidos
-    - CT02: Login com email válido e senha em branco
-    - CT03: Login com email válido e senha incorreta
-    - CT04: Login com email em branco e senha válida
-    - CT05: Login com email e senha em branco
-    - CT06: Login com email em formato inválido e senha válida
-    - CT07: Login com email válido e senha com menos de 5 caracteres
-    - CT08: Login com email válido e senha com mais de 10 caracteres
-    - CT09: Login com email de usuário não cadastrado
+- Scenario: User Authentication
+    - CT01: Login with valid email and password
+    - CT02: Login with valid email and blank password
+    - CT03: Login with valid email and incorrect password
+    - CT04: Login with blank email and valid password
+    - CT05: Login with blank email and password
+    - CT06: Login with invalid email format and valid password
+    - CT07: Login with valid email and password with less than 5 characters
+    - CT08: Login with valid email and password with more than 10 characters
+    - CT09: Login with email of unregistered user
 
-**Rotas de Produtos:**
+**Product Routes:**
 
-- Cenário 1: Cadastrar Produto
-    - CT01: Criar produto com sucesso (autenticado)
-    - CT02: Criar produto com nome duplicado (autenticado)
-    - CT03: Criar produto sem autenticação
-    - CT04: Criar produto com dados inválidos (autenticado)
-    - CT05: Criar produto não sendo administrador
-- Cenário 2: Atualizar Produto
-    - CT06: Atualizar produto existente com sucesso (autenticado)
-    - CT07: Atualizar produto inexistente (autenticado)
-    - CT08: Atualizar produto com nome duplicado (autenticado)
-    - CT09: Atualizar produto sem autenticação
-    - CT10: Atualizar produto com dados inválidos (autenticado)
-    - CT11: Atualizar produto não sendo administrador
-- Cenário 3: Listar Produtos
-    - CT12: Listar todos os produtos
-    - CT13: Listar produtos com ID válido
-    - CT14: Listar produtos com ID inválido
-- Cenário 4: Deletar Produto
-    - CT15: Deletar produto existente com sucesso (autenticado)
-    - CT16: Deletar produto inexistente (autenticado)
-    - CT17: Deletar produto em carrinho (autenticado)
-    - CT18: Deletar produto sem autenticação
-    - CT19: Deletar produto não sendo adminstrador
+- Scenario 1: Register Product
+    - CT01: Create product successfully (authenticated)
+    - CT02: Create product with duplicate name (authenticated)
+    - CT03: Create product without authentication
+    - CT04: Create product with invalid data (authenticated)
+    - CT05: Create a product without being an administrator
+- Scenario 2: Update Product
+    - CT06: Update existing product successfully (authenticated)
+    - CT07: Update non-existent product (authenticated)
+    - CT08: Update product with duplicate name (authenticated)
+    - CT09: Update product without authentication
+    - CT10: Update product with invalid data (authenticated)
+    - CT11: Update product without being an administrator
+- Scenario 3: List Products
+    - CT12: List all products
+    - CT13: List products with valid ID
+    - CT14: List products with invalid ID
+- Scenario 4: Delete Product
+    - CT15: Delete existing product successfully (authenticated)
+    - CT16: Delete non-existent product (authenticated)
+    - CT17: Delete product from cart (authenticated)
+    - CT18: Delete product without authentication
+    - CT19: Delete product without being an administrator
 
-**Rotas de Carrinhos:**
+**Cart Routes:**
 
-- Cenário 1: Cadastro de Carrinho
-    - CT01: Cadastro de carrinho com usuário autenticado
-    - CT02: Cadastro de carrinho com usuário não autenticado
-    - CT03: Cadastro de um segundo carrinho com o mesmo usuário
-    - CT04: Cadastro de produto inexistente
-    - CT05: Cadastro de produto em quantidade fora do estoque
-    - CT06: Cadastro de produto duplicado
-    - CT07: Cadastro de produto com dados incompletos (sem ID do produto)
-- Cenário 2: Listagem de Carrinho
-    - CT08: Listagem de carrinhos
-    - CT09: Listagem do usuário com carrinho vazio
-    - CT10: Listagem de carrinho por id
-- Cenário 3: Exclusão de Carrinho
-    - CT11: Exclusão de carrinho ao cancelar compra com sucesso
-    - CT12: Exclusão de carrinho sem token válido (cancela-compra)
-    - CT13: Exclusão de carrinho inexistente (cancela-compra)
-    - CT14: Exclusão de carrinho ao concluir compra com sucesso
-    - CT15: Exclusão de carrinho inexistente (concluir-compra)
-    - CT16: Exclusão de carrinho sem token válido (concluir-compra)
+- Scenario 1: Cart Registration
+    - CT01: Cart registration with authenticated user
+    - CT02: Cart registration with unauthenticated user
+    - CT03: Registering a second cart with the same user
+    - CT04: Non-existent product registration
+    - CT05: Product registration in quantity out of stock
+    - CT06: Duplicate product registration
+    - CT07: Product registration with incomplete data (no product ID)
+- Scenario 2: Cart Listing
+    - CT08: Cart Listing
+    - CT09: User listing with empty cart
+    - CT10: Cart listing by id
+- Scenario 3: Cart Deletion
+    - CT11: Cart deletion when successfully canceling purchase
+    - CT12: Cart deletion without valid token (cancel purchase)
+    - CT13: Deleting a non-existent cart (cancel purchase)
+    - CT14: Cart deletion after successful purchase completion
+    - CT15: Deleting a non-existent cart (checkout)
+    - CT16: Cart deletion without valid token (checkout)
 
-## **Plano de Teste de Performance**
+## **Performance Test Plan**
 
-**1. Objetivos:**
+**1. Objectives:**
 
-Avaliar o desempenho das API sob diferentes níveis de carga esperada para a aplicação, medir tempo de resposta, throughput, latência, identificar gargalos, problemas de escalabilidade e validar se atendem aos requisitos de desempenho estabelecidos. A API consiga lidar com ao menos 20 requisições simultâneas, considerando uma avaliação dentro de uma janela de 2-5 minutos para a avaliação.
+Evaluate API performance under different levels of expected load for the application, measure response time, throughput, latency, identify bottlenecks, scalability issues and validate whether they meet the established performance requirements. The API can handle at least 20 simultaneous requests, considering an evaluation within a 2-5 minute window for the evaluation.
 
-**2. Métricas:**
+**2. Metrics:**
 
-- Tempo de resposta.
-- Taxa máxima de erros toleráveis em condições críticas: 5%
+- Response time.
+- Maximum tolerable error rate under critical conditions: 5%
 - Throughput.
-- Latência.
-- Taxa de sucesso das requisições.
+- Latency.
+- Request success rate.
 
-**3. Tipos de Teste:**
+**3. Test Types:**
 
 ### Endpoint: `/usuarios`
 
-| Verbos  | Tipo de Teste  | Métrica | Cargas Sugeridas |
-|--------|----------------|---------|------------------|
-| POST   | Load          | Tempo de resposta, Throughput, Taxa de erro | `stages: [{ duration: '1m', target: 100 }, { duration: '1m', target: 100 }, { duration: '1m', target: 0 }],` |
-| GET  | Stress       | Tempo de resposta, Taxa de erro | `stages: [{ duration: '1m', target: 100 },{ duration: '1m', target: 200 },{ duration: '1m', target: 300 },{ duration: '1m', target: 500 },{ duration: '5m', target: 0 }],` |
-| DELETE  | Smoke | Taxa de sucesso, Tempo de resposta, Taxa de erro | `vus: 1, duration: '1s', iterations: 1, `  |
-| GET  | Spike           | Tempo de resposta, Taxa de erro | `stages: [{ duration: '10s', target: 50 }, { duration: '3s', target: 500 } { duration: '10s', target: 50 }],`|
-| PUT   | Soak    | Tempo de resposta, Taxa de erro | ` stages: [{{ duration: '2m', target: 300 }, { duration: '4m', target: 400 }, { duration: '2m', target: 0 },` |
+Verbs | Test Type | Metric | Suggested Loads
+--- | --- | --- | ---
+POST | Load | Response time, Throughput, Error rate | `stages: [{ duration: '1m', target: 100 }, { duration: '1m', target: 100 }, { duration: '1m', target: 0 }],`
+GET | Stress | Response time, Error rate | `stages: [{ duration: '1m', target: 100 },{ duration: '1m', target: 200 },{ duration: '1m', target: 300 },{ duration: '1m', target: 500 },{ duration: '5m', target: 0 }],`
+DELETE | Smoke | Success rate, Response time, Error rate | `vus: 1, duration: '1s', iterations: 1, `
+GET | Spike | Response time, Error rate | `stages: [{ duration: '10s', target: 50 }, { duration: '3s', target: 500 } { duration: '10s', target: 50 }],`
+PUT | Soak | Response time, Error rate | ` stages: [{{ duration: '2m', target: 300 }, { duration: '4m', target: 400 }, { duration: '2m', target: 0 },`
 
 ### Endpoint: `/login`
 
-| Verbos  | Tipo de Teste  | Métrica | Cargas Sugeridas |
-|--------|----------------|---------|------------------|
-| POST   | Load          | Tempo de resposta, Throughput, Taxa de erro | `stages: [{ duration: '1m', target: 100 }, { duration: '1m', target: 100 }, { duration: '1m', target: 0 }],` |
-| POST  | Stress       | Tempo de resposta, Taxa de erro | `stages: [{ duration: '1m', target: 100 },{ duration: '1m', target: 200 },{ duration: '1m', target: 300 },{ duration: '1m', target: 500 },{ duration: '5m', target: 0 }],` |
-| POST  | Smoke | Taxa de sucesso, Tempo de resposta, Taxa de erro | `vus: 1, duration: '1s', iterations: 1, `  |
-| POST  | Spike           | Tempo de resposta, Taxa de erro | `stages: [{ duration: '10s', target: 50 }, { duration: '3s', target: 500 } { duration: '10s', target: 50 }],`|
-| POST   | Soak    | Tempo de resposta, Taxa de erro | ` stages:{ duration: '2m', target: 300 }, { duration: '4m', target: 400 }, { duration: '2m', target: 0 },` |
+Verbs | Test Type | Metric | Suggested Loads
+--- | --- | --- | ---
+POST | Load | Response time, Throughput, Error rate | `stages: [{ duration: '1m', target: 100 }, { duration: '1m', target: 100 }, { duration: '1m', target: 0 }],`
+POST | Stress | Response time, Error rate | `stages: [{ duration: '1m', target: 100 },{ duration: '1m', target: 200 },{ duration: '1m', target: 300 },{ duration: '1m', target: 500 },{ duration: '5m', target: 0 }],`
+POST | Smoke | Success rate, Response time, Error rate | `vus: 1, duration: '1s', iterations: 1, `
+POST | Spike | Response time, Error rate | `stages: [{ duration: '10s', target: 50 }, { duration: '3s', target: 500 } { duration: '10s', target: 50 }],`
+POST | Soak | Response time, Error rate | ` stages:{ duration: '2m', target: 300 }, { duration: '4m', target: 400 }, { duration: '2m', target: 0 },`
 
 ### Endpoint: `/produtos`
 
-| Verbos  | Tipo de Teste  | Métrica | Cargas Sugeridas |
-|--------|----------------|---------|------------------|
-| POST   | Load          | Tempo de resposta, Throughput, Taxa de erro | `stages: [{ duration: '1m', target: 100 }, { duration: '1m', target: 100 }, { duration: '1m', target: 0 }],` |
-| GET  | Stress       | Tempo de resposta, Taxa de erro | `stages: [{ duration: '1m', target: 100 },{ duration: '1m', target: 200 },{ duration: '1m', target: 300 },{ duration: '1m', target: 500 },{ duration: '5m', target: 0 }],` |
-| PUT  | Smoke | Taxa de sucesso, Tempo de resposta, Taxa de erro | `vus: 1, duration: '1s', iterations: 1, `  |
-| GET  | Spike           | Tempo de resposta, Taxa de erro | `stages: [{ duration: '10s', target: 50 }, { duration: '3s', target: 500 } { duration: '10s', target: 50 }],`|
-| GET {_id}  | Soak    | Tempo de resposta, Taxa de erro | ` stages:{ duration: '2m', target: 300 }, { duration: '4m', target: 400 }, { duration: '2m', target: 0 },` |
+Verbs | Test Type | Metric | Suggested Loads
+--- | --- | --- | ---
+POST | Load | Response time, Throughput, Error rate | `stages: [{ duration: '1m', target: 100 }, { duration: '1m', target: 100 }, { duration: '1m', target: 0 }],`
+GET | Stress | Response time, Error rate | `stages: [{ duration: '1m', target: 100 },{ duration: '1m', target: 200 },{ duration: '1m', target: 300 },{ duration: '1m', target: 500 },{ duration: '5m', target: 0 }],`
+PUT | Smoke | Success rate, Response time, Error rate | `vus: 1, duration: '1s', iterations: 1, `
+GET | Spike | Response time, Error rate | `stages: [{ duration: '10s', target: 50 }, { duration: '3s', target: 500 } { duration: '10s', target: 50 }],`
+GET {_id} | Soak | Response time, Error rate | ` stages:{ duration: '2m', target: 300 }, { duration: '4m', target: 400 }, { duration: '2m', target: 0 },`
 
 ### Endpoint: `/carrinhos`
 
-| Verbos  | Tipo de Teste  | Métrica | Cargas Sugeridas |
-|--------|----------------|---------|------------------|
-| POST   | Load          | Tempo de resposta, Throughput, Taxa de erro | `stages: [{ duration: '1m', target: 100 }, { duration: '1m', target: 100 }, { duration: '1m', target: 0 }],` |
-| GET  | Stress       | Tempo de resposta, Taxa de erro | `stages: [{ duration: '1m', target: 100 },{ duration: '1m', target: 200 },{ duration: '1m', target: 300 },{ duration: '1m', target: 500 },{ duration: '5m', target: 0 }],` |
-| DELETE  | Smoke | Taxa de sucesso, Tempo de resposta, Taxa de erro | `vus: 1, duration: '1s', iterations: 1, `  |
-| GET  | Spike           | Tempo de resposta, Taxa de erro | `stages: [{ duration: '10s', target: 50 }, { duration: '3s', target: 500 } { duration: '10s', target: 50 }],`|
-| GET {_id}   | Soak    | Tempo de resposta, Taxa de erro | ` stages:{ duration: '2m', target: 300 }, { duration: '4m', target: 400 }, { duration: '2m', target: 0 },` |
+Verbs | Test Type | Metric | Suggested Loads
+--- | --- | --- | ---
+POST | Load | Response time, Throughput, Error rate | `stages: [{ duration: '1m', target: 100 }, { duration: '1m', target: 100 }, { duration: '1m', target: 0 }],`
+GET | Stress | Response time, Error rate | `stages: [{ duration: '1m', target: 100 },{ duration: '1m', target: 200 },{ duration: '1m', target: 300 },{ duration: '1m', target: 500 },{ duration: '5m', target: 0 }],`
+DELETE | Smoke | Success rate, Response time, Error rate | `vus: 1, duration: '1s', iterations: 1, `
+GET | Spike | Response time, Error rate | `stages: [{ duration: '10s', target: 50 }, { duration: '3s', target: 500 } { duration: '10s', target: 50 }],`
+GET {_id} | Soak | Response time, Error rate | ` stages:{ duration: '2m', target: 300 }, { duration: '4m', target: 400 }, { duration: '2m', target: 0 },`
 
-### Fluxos:
+### Flows:
 
-| Fluxo  | Tipo de Teste  | Métrica | Cargas Sugeridas |
-|--------|----------------|---------|------------------|
-| Criar usuário, realizar login, criar um produto, adicionar ao carrinho  | Smoke | Taxa de sucesso, Tempo de resposta, Taxa de erro | `vus: 1, iterations: 1, `  |
-| Login, editar produto, adicionar ao carrinho, excluir carrinho  | Smoke | Taxa de sucesso, Tempo de resposta, Taxa de erro | `vus: 1, iterations: 1, `  |
+Flow | Test Type | Metric | Suggested Loads
+--- | --- | --- | ---
+Create user, login, create a product, add to cart | Smoke | Success rate, Response time, Error rate | `vus: 1, iterations: 1, `
+Login, edit product, add to cart, delete cart | Smoke | Success rate, Response time, Error rate | `vus: 1, iterations: 1, `
 
-**Ferramentas:**
+**Tools:**
 
-- Postman: Para testes manuais exploratórios e criação de coleções de testes.
-- Swagger: Para gerar documentação como base para casos de teste iniciais.
-- Xmind: Para a criação de mapas mentais para análise
-- Jira: Para organização do planejamento de testes.
-- K6: Para testes de carga e performance.
+- Postman: For manual exploratory testing and creating test collections.
+- Swagger: To generate documentation as a basis for initial test cases.
+- Xmind: For creating mind maps for analysis
+- Jira: For organizing test planning.
+- K6: For load and performance testing.
 
-**Testes Candidatos à Automação:**
+**Candidate Tests for Automation:**
 
-Considerando custo-benefício, eficiência e cobertura de testes, a automação desses testes trará vantagens significativas em relação aos testes manuais:
+Considering cost-benefit, efficiency and test coverage, automating these tests will bring significant advantages over manual testing:
 
-- Teste de fluxo principal: Deve ser testado com frequência para garantir que essas funcionalidades básicas estejam funcionando corretamente a cada nova versão da API. Como CT01 (Login), CT01 (Produtos), CT01 (Usuários), CT01 (Carrinhos), entre outros.
-- Testes repetitivos: Casos que envolvem testar diversas combinações de dados inválidos. A automação permite executar esses testes de forma rápida e precisa, garantindo que todas as validações sejam testadas e que as regras de negócio sejam aplicadas corretamente. Como o CT02 e CT05 (Usuários) que envolvem testar diversas combinações de dados inválidos.
-- Testes com grande volume de dados: Os que podem envolver um grande volume de dados, tornando a verificação manual trabalhosa e demorada. Como CT06 (Usuários), CT08 (Carrinhos) e CT12 (Produtos).
-- Testes de performance: Garantindo que sejam executados de forma consistente e repetitiva, identificando problemas de desempenho de forma rápida e eficiente.
+- Core Flow Testing: Must be tested frequently to ensure that these core functionalities are working correctly with each new API version. Such as CT01 (Login), CT01 (Products), CT01 (Users), CT01 (Carts), among others.
+- Repetitive testing: Cases that involve testing several combinations of invalid data. Automation allows you to run these tests quickly and accurately, ensuring that all validations are tested and that business rules are applied correctly. Such as CT02 and CT05 (Users) that involve testing several combinations of invalid data.
+- Tests with large volumes of data: Those that may involve a large volume of data, making manual verification laborious and time-consuming. Such as CT06 (Users), CT08 (Carts) and CT12 (Products).
+- Performance testing: Ensuring that they are performed consistently and repeatedly, identifying performance issues quickly and efficiently.
 
-## [Mapa Mental](ServerRest.xmind) e [Jira](https://victoriavalicelle.atlassian.net/jira/software/projects/SCRUM/boards/1)
+## [Mind Map](ServerRest.xmind) and [Jira](https://victoriavalicelle.atlassian.net/jira/software/projects/SCRUM/boards/1)
 
 ![alt text](image.png)

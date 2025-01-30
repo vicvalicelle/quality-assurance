@@ -1,70 +1,64 @@
-# Dia 4: MasterClass
+# Day 4: MasterClass
 
-- Gestão de Issues
-- Dinâmica
+- Issue Management
+- Dynamics
 
-## Gestão de Issues
+## Issue Management
 
-### Report de Teste
+### Test Report
 
-#### Status de execução de um caso de teste
+#### Execution status of a test case
 
-- Aberto: ainda não foi executado.
-- Em execução: está sendo executado.
-- Passou: Foi executado e não possui bugs vinculados ao fluxo.
-- Falhou: Foi executado e possui bug no fluxo.
-- Bloqueado: Alguma ação externa bloqueou o fluxo.
-- Cancelado: Não será executado.
+- Open: Not yet executed.
+- Running: is running.
+- Passed: It has been executed and has no bugs linked to the flow.
+- Failed: It was executed and there is a bug in the flow.
+- Blocked: Some external action has blocked the flow.
+- Canceled: Will not be executed.
 
-#### **Tipos de Jira: Bug ou Issue de aceitação**
+#### **Jira Types: Bug or Acceptance Issue**
 
-Durante a etapa de aceite o cliente vai abrir as solicitações do tipo bug criadas durante a homologação do sistema para a verificação. Pode ser ativada no jira solicitações do cliente o tipo issue de aceitação, assim fica mais fácil a rastreabilidade do que foi aberto pela equipe interna ou cliente.
+During the acceptance stage, the client will open bug requests created during system approval for verification. The acceptance issue type can be activated in JIRA for client requests, thus making it easier to track what was opened by the internal team or client.
 
-#### **Como identificar uma solicitação do cliente:**
+#### **How to identify a customer request:**
 
-O problema encontrado é um bug ou uma melhoria?
+Is the problem you encountered a bug or an improvement?
 
-A melhoria surge para proporcionar algum benefício no software e passa pela gestão do projeto para verificação, enquanto o erro impactará na obtenção do resultado esperado, não funciona como definido pelo cliente.
+The improvement arises to provide some benefit in the software and goes through project management for verification, while the error will impact on obtaining the expected result, it does not work as defined by the client.
 
-#### **Como classificar bug em dev/análise/massa/ambiente**
+#### **How to classify bug in dev/analysis/mass/environment**
 
-**DEV:** Ocorre devido a uma falha no desenvolvimento.
+**DEV:** Occurs due to a development failure.
 
-**ANÁLISE:** Especificações funcionais e técnicas elaboradas erroneamente ou que não suprem a necessidade do cliente.
+**ANALYSIS:** Functional and technical specifications that were incorrectly prepared or that do not meet the customer's needs.
 
-**MASSA:** Inconsistência nos dados utilizados para testes.
+**MASS:** Inconsistency in data used for testing.
 
-**AMBIENTE:** Falha no ambiente que está sendo utilizado para testes.
+**ENVIRONMENT:** Failure in the environment being used for testing.
 
-#### Como criar issues?
+#### How to create issues?
 
-1. Projeto: Nome do projeto.
+1. Project: Name of the project.
 
-2. Tipo: A natureza da issue (bug, melhoria, tarefa, etc).
+2. Type: The nature of the issue (bug, enhancement, task, etc.).
 
-3. Resumo: Descreve a issue de forma concisa.
+3. Summary: Describes the issue concisely.
 
-4. Descrição e Passos: Detalha o problema ou tarefa, junto com contexto, passos para reprodução, comportamento esperado e o obtido, impacto e requisitos.
+4. Description and Steps: Details the problem or task, along with context, steps for reproduction, expected and achieved behavior, impact, and requirements.
 
-5. Relator: Quem está reportando a issue.
+5. Reporter: Who is reporting the issue.
 
-6. Prioridade: A urgência da issue (baixa, média, alta ou crítica).
+6. Priority: The urgency of the issue (low, medium, high, or critical).
 
-7. Categoria: Classificar a issue em grupos (como interface, backend, etc) para facilitar a organização e filtragem. 
+7. Category: Classify the issue into groups (such as interface, backend, etc.) to make organizing and filtering easier.
 
-## Dinâmica
+## Dynamics
 
-1. Crie um bug baseado em testes exploratórios da API ServeRest;
-2. Priorize o bug que foi criado;
-3. Faça o vínculo do bug no Epic e Story correspondentes;
-4. Faça a classificação da causa do bug em dev/análise/massa/ambiente.
+1. Create a bug based on exploratory tests of the ServeRest API;
+2. Prioritize the bug that was created;
+3. Link the bug to the corresponding Epic and Story;
+4. Classify the cause of the bug into dev/analysis/mass/environment.
 
-<figure>
-  <img src="image.png" width="80%">
-</figure>
-<figure>
-  <img src="image-1.png" width="50%">
-</figure>
-<figure>
-  <img src="image-2.png" width="50%">
-</figure>
+<figure>   <img src="image.png" width="80%"> </figure>
+<figure>   <img src="image-1.png" width="50%"> </figure>
+<figure>   <img src="image-2.png" width="50%"> </figure>

@@ -1,44 +1,54 @@
 # Sprint 2
 
-## Dia 1: MasterClass
-- User Stories & Issues: Definition of Ready (DoR)
-- Conceitos HTTP, API REST, JSON
-- Resumo do curso: Análise de Requisitos de Software com Histórias de Usuários
+## Day 1: MasterClass
 
-## Dia 2: MasterClass​​​​​​​
-- Testes Estáticos (Swagger)
+- User Stories &amp; Issues: Definition of Ready (DoR)
+- HTTP, REST API, JSON concepts
+- Course Summary: Software Requirements Analysis with User Stories
 
-## Dia 3: MasterClass
-- Validações e boas práticas em testes de API
-- Tipos de erros
+## Day 2: MasterClass​​​​​​​
 
-## Dia 4: MasterClass
-- Planejamento de testes
-- Workshop Diversidade e Inclusão
+- Static Testing (Swagger)
 
-## Dia 5: MasterClass
-- Cobertura de testes de APIs
-- Testes candidatos à automação
+## Day 3: MasterClass
 
-## Dia 6: MasterClass
-- Introdução às atividades de análise de teste
-- Priorização em diferentes aplicações
-- Atividade
+- Validations and best practices in API testing
+- Types of errors
 
-## Dia 7: MasterClass
-- Análise HTTP e API REST
-- Mapa Mental
-- Atividade Complementar
+## Day 4: MasterClass
 
-## Dia 8: MasterClass
-- Ferramentas para teste API
-- Curso Udemy: Introdução ao Postman
-- Atividade
+- Test Planning
+- Diversity and Inclusion Workshop
 
-## Dia 9: Evolução Challenge e Mentoria
-- Evolução Challenge
-- Mentoria
+## Day 5: MasterClass
 
-## Dia 10: Ágil
-- Apresentação Exercícios & Versionamento
+- API Test Coverage
+- Tests candidates for automation
+
+## Day 6: MasterClass
+
+- Introduction to Test Analysis Activities
+- Prioritization in different applications
+- Activity
+
+## Day 7: MasterClass
+
+- HTTP and REST API Analysis
+- Mind Map
+- Complementary Activity
+
+## Day 8: MasterClass
+
+- API Testing Tools
+- Udemy Course: Introduction to Postman
+- Activity
+
+## Day 9: Evolution Challenge and Mentoring
+
+- Evolution Challenge
+- Mentoring
+
+## Day 10: Agile
+
+- Presentation Exercises &amp; Versioning
 - Review Sprint 2

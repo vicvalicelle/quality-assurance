@@ -1,31 +1,31 @@
-# Dia 4: MasterClass
+# Day 4: MasterClass
 
-- Planejamento de testes
-- Workshop Diversidade e Inclusão
+- Test Planning
+- Diversity and Inclusion Workshop
 
-## Planejamento de testes 👩‍🔬
+## Test Planning 👩‍🔬
 
-**O Processo de Teste**
+**The Testing Process**
 
-Garante que o produto final seja confiável, funcional e atenda aos requisitos do usuário.
+Ensures that the final product is reliable, functional and meets user requirements.
 
-**O que é o Plano de Teste?**
+**What is Test Plan?**
 
-Documento essencial que serve como mapa para guiar o processo de teste para que eles sejam realizados de forma organizada e estruturada. Define o escopo, objetivos, estratégias e recursos necessários para realizar os testes.
+Essential document that serves as a map to guide the testing process so that they are carried out in an organized and structured manner. It defines the scope, objectives, strategies and resources needed to carry out the tests.
 
-**Por que Criar um Plano de Teste?**
+**Why Create a Test Plan?**
 
-Ele estabelece claramente o que será testado, define os objetivos dos testes, determina as abordagens e técnicas de teste que serão usadas, identifica os recursos necessários para realização, identifica os riscos potenciais que podem afetar o processo de teste e estabelece como os resultados serão documentados, analisados e comunicados.
+It clearly establishes what will be tested, defines the objectives of the tests, determines the testing approaches and techniques that will be used, identifies the resources needed to perform the test, identifies potential risks that could affect the testing process, and establishes how the results will be documented, analyzed, and communicated.
 
-**Estrutura de um Plano de Teste**
+**Structure of a Test Plan**
 
-- **Título:** [Nome do Plano de Teste]
-- **Resumo:** Uma breve descrição, seus objetivos e o propósito do plano de teste.
-- **Pessoas Envolvidas:** Uma lista dos membros da equipe de teste, seus papéis e responsabilidades e, quando necessário, o público alvo que foi envolvido no teste.
-- **Funcionalidades a Serem Testadas: L**ista detalhada das funcionalidades e requisitos que serão testados.
-- **Local dos Testes:** O ambiente em que os testes serão realizados.
-- **Recursos Necessários:** Uma lista dos recursos necessários, como hardware, software, ferramentas de teste e dados de teste, etc.
-- **Critérios Usados:** Os critérios que serão utilizados para avaliar o resultado dos testes.
-- **Riscos:** Uma lista dos riscos potenciais que podem afetar o processo de teste e estratégias para solucioná-los.
-- **Como os Resultados do Teste Serão Divulgados:** Os métodos que serão utilizados para documentar, analisar e comunicar os resultados dos testes.
-- **Cronograma:** Um cronograma detalhado das atividades de teste, como datas de início e término, marcos importantes, entre outros.
+- **Title:** [Test Plan Name]
+- **Summary:** A brief description, your goals, and the purpose of the test plan.
+- **People Involved:** A list of the test team members, their roles and responsibilities, and, where applicable, the target audience that was involved in the test.
+- **Features to be Tested:** Detailed list of features and requirements that will be tested.
+- **Test Location:** The environment in which the tests will be performed.
+- **Required Resources:** A list of required resources such as hardware, software, testing tools, and test data, etc.
+- **Criteria Used:** The criteria that will be used to evaluate the test results.
+- **Risks:** A list of potential risks that could affect the testing process and strategies to address them.
+- **How Test Results Will Be Reported:** The methods that will be used to document, analyze, and communicate test results.
+- **Schedule:** A detailed timeline of testing activities, such as start and end dates, important milestones, and more.

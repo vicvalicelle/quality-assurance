@@ -1,63 +1,79 @@
 # Sprint 4
 <details>
-<summary> Resumo dos dias </summary>
+<summary>Summary of days</summary>
 
-## Dia 1 e 2: MasterClass
+## Day 1 and 2: MasterClass
+
 - Planning Sprint 4
-- Curso de Testes Exploratórios da Udemy
+- Udemy Exploratory Testing Course
 
-## Dia 3: MasterClass
-- Linguagem de programação Javascript
-- Exercícios
+## Day 3: MasterClass
 
-## Dia 4 e 5: MasterClass
-- TDD com Mocha e Chai
+- Javascript programming language
+- Exercises
 
-## Dia 6 e 7: Exercícios e Challenge
-- Exercícios e Challenge
-- Planejamento de Teste, User Story e Execução
+## Day 4 and 5: MasterClass
 
-## Dia 8 e 9: MasterClass
+- TDD with Mocha and Chai
+
+## Day 6 and 7: Exercises and Challenge
+
+- Exercises and Challenge
+- Test Planning, User Story and Execution
+
+## Day 8 and 9: MasterClass
+
 - AWS Partner Acceditation (Business)
-
 
 </details>
 
-# Instalações
-Guia para auxiliar na configuração do ambiente para realizar o TDD (Test Driven Development), utilizando Node.js, Mocha (https://mochajs.org/) e Chai (https://www.chaijs.com/).
 
-**Pré-requisitos**
+Guide to help configure the environment to perform TDD (Test Driven Development), using Node.js, Mocha (https://mochajs.org/) and Chai (https://www.chaijs.com/).
 
-- **VS Code:** https://code.visualstudio.com/download (Editor de código)
-- **Node.js:** https://nodejs.org/en/download/ (Última versão LTS de preferência ou a partir da 14)
+**Prerequisites**
 
-### **Passos para instalação e configuração:**
+- **VS Code:** https://code.visualstudio.com/download (Code Editor)
+- **Node.js:** https://nodejs.org/en/download/ (Latest LTS version preferred or from 14 onwards)
 
-1. **Criar um projeto Node.js:**
-    - Crie uma pasta
-    - Abra o terminal na pasta onde deseja criar seu projeto.
-    - Execute o comando `npm init -y` para criar um arquivo `package.json` com as configurações básicas do projeto
+### **Steps for installation and configuration:**
 
-2. **Ativar o Modules:**
-    - No arquivo `package.json`, adicione a linha `"type": "module"`:
-    ``` JSON
+1. **Create a Node.js project:**
+
+    - Create a folder
+    - Open the terminal in the folder where you want to create your project.
+    - Run the `npm init -y` command to create a `package.json` file with the basic project settings
+
+2. **Activate Modules:**
+
+    - In the `package.json` file, add the line `"type": "module"` :
+
+    ```JSON
     {
       "type": "module",
     }
-3. **Instalar as dependências:**
-    - Instale o Mocha e o Chai como dependências de desenvolvimento:
-        
+    ```
+
+3. **Install the dependencies:**
+
+    - Install Mocha and Chai as development dependencies:
+
         `npm i -D mocha chai`
-        
-4. **Configurar o script de teste no package.json:**
-    - No arquivo `package.json`, adicione:
-    
-    ``` JSON
+
+4. **Configure the test script in package.json:**
+
+    - In the `package.json` file, add:
+
+    ```JSON
     "scripts": {
         "test": "mocha"
     }
-5. **Criar um arquivo de teste:**
-    - Crie uma pasta chamada `test` no seu projeto.
-    - Dentro da pasta, crie um arquivo com a extensão `.spec.js`
-6. **Executar os testes:**
-    - No terminal, execute o comando `npm test` onde os arquivos de teste na pasta `test` seram executados.
+    ```
+
+5. **Create a test file:**
+
+    - Create a folder called `test` in your project.
+    - Inside the folder, create a file with the extension `.spec.js`
+
+6. **Run the tests:**
+
+    - In the terminal, run the command `npm test` where the test files in the `test` folder will be executed.

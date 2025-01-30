@@ -1,12 +1,12 @@
-# Dia 10: Ágil
+# Day 10: Agile
 
-- **Apresentação Exercícios & Versionamento**
+- **Presentation Exercises &amp; Versioning**
 - **Review Sprint 1**
-    - O que funcionou?
-    - O que precisa mudar?
-    - Quais conteúdos teve mais dificuldade?
-    - O que pode ser melhorado?
+    - What worked?
+    - What needs to change?
+    - What content did you have the most difficulty with?
+    - What can be improved?
 - **Planning Sprint 2**
     - Challenge
-    - Entregáveis
-    - Orientações Gerais
+    - Deliverables
+    - General Guidelines

@@ -1,126 +1,127 @@
-# Dia 4: MasterClass
-- Vídeo: Conhecendo o K6 para os testes de carga
-- Vídeo: Como configurar uma rampa de VUs ( usuários simultâneos ) nos seus testes de carga na ferramenta k6?
-- Vídeo: Apreendendo a utilizar o K6 HTML Report Exporter em seus testes de carga
-- Vídeo: Apreendendo a utilizar os options em seus testes de carga - k6
-- Vídeo: Construindo uma pipeline de testes de carga com o k6 na plataforma Azure DevOps
-- Vídeo: COMO FAZER TESTES DE CARGA E DESEMPENHO COM K6?
+# Day 4: MasterClass
 
-## Conhecendo o K6 para os testes de carga
+- Video: Getting to know the K6 for load testing
+- Video: How to configure a VU (concurrent users) ramp in your load tests in the k6 tool?
+- Video: Learning how to use the K6 HTML Report Exporter in your load tests
+- Video: Learning how to use options in your load tests - k6
+- Video: Building a Load Testing Pipeline with k6 on the Azure DevOps Platform
+- Video: HOW TO DO LOAD AND PERFORMANCE TESTS WITH K6?
 
-**O que é Teste de Carga?**
+## Getting to know the K6 for load testing
 
-Teste de performance que avalia o comportamento de um sistema sob uma carga de trabalho específica.
+**What is Load Testing?**
 
-**O que é o k6?**
+Performance test that evaluates the behavior of a system under a specific workload.
 
-k6 é uma ferramenta de código aberto e linha de comando para testes de carga e performance, conhecido por sua alta performance, baixo consumo de recursos e integração com diversas ferramentas de monitoramento.
+**What is k6?**
 
-**Casos de Uso da Ferramenta k6**
+k6 is an open source, command-line tool for load and performance testing, known for its high performance, low resource consumption and integration with various monitoring tools.
 
-- **Testes de Carga**
-- **Testes de Stress**
-- **Testes de Spike**
-- **Testes de Soak**
-- **Testes de Smoke**
-- **Testes de Regressão de Performance**
-- **Testes de Capacidade**
+**k6 Tool Use Cases**
 
-**Exemplo Prático de Implementação de Teste de Carga no k6**
+- **Load Tests**
+- **Stress Tests**
+- **Spike Tests**
+- **Soak Tests**
+- **Smoke Tests**
+- **Performance Regression Testing**
+- **Capacity Tests**
 
-1. **Importar Módulo:** Importa o módulo `http` do k6 para fazer requisições HTTP.
-2. **Definir Opções:**
-    - `vus`: Define o número de usuários virtuais simultâneos
-    - `duration`: Define a duração do teste
-3. **Função Principal:**
-    - `http.get()`: Faz uma requisição GET para o site especificado.
+**Practical Example of Load Test Implementation in k6**
 
-**Execução do Teste:**
+1. **Import Module:** Imports the k6 `http` module to make HTTP requests.
+2. **Set Options:**
+    - `vus` : Defines the number of simultaneous virtual users
+    - `duration` : Sets the duration of the test
+3. **Main Function:**
+    - `http.get()` : Makes a GET request to the specified website.
 
-Salve o código em um arquivo .js e execute o seguinte comando no terminal:
+**Test Execution:**
+
+Save the code in a .js file and run the following command in the terminal:
 
 `k6 run teste.js`
 
-O k6 executará o teste e exibirá os resultados no console, incluindo tempo de resposta, taxa de requisições, erros, etc.
+k6 will run the test and display the results in the console, including response time, request rate, errors, etc.
 
-## Configurando Rampa de VUs em Testes de Carga com k6
+## Configuring VU Ramp in Load Tests with k6
 
-**O que é uma Rampa de VUs?**
+**What is a VU Ramp?**
 
-Uma rampa de Usuários Virtuais é uma estratégia que permite aumentar ou diminuir gradualmente o número de usuários virtuais que acessam o sistema durante o teste. Em vez de iniciar todos os VUs de uma vez, a rampa simula um aumento gradual de tráfego.
+A Virtual User ramp is a strategy that allows you to gradually increase or decrease the number of virtual users accessing the system during testing. Instead of starting all VUs at once, the ramp simulates a gradual increase in traffic.
 
-**Criação de um Arquivo de Configuração do Projeto de Testes de Carga**
+**Creating a Load Testing Project Configuration File**
 
-Embora o k6 permita configurar a rampa de VUs diretamente no script de teste, uma prática recomendada é criar um arquivo de configuração separado. Isso facilita a organização e reutilização das configurações em diferentes testes.
+Although k6 allows you to configure VU ramping directly in the test script, a best practice is to create a separate configuration file. This makes it easier to organize and reuse configurations across different tests.
 
-Você pode criar um arquivo de configuração com a extensão `.json` e definir as opções do teste, incluindo a rampa de VUs.
+You can create a configuration file with the `.json` extension and define the test options, including the VU ramp.
 
-**Configuração de uma Rampa de VUs nos Testes de Carga**
+**Configuring a VU Ramp in Load Tests**
 
-1. **Usando  `stages`:**
-    - No arquivo de configuração ou diretamente no script de teste, defina um array de objetos com as etapas da rampa:
-        - `duration`: Duração de cada etapa.
-        - `target`: Número de VUs desejado ao final de cada etapa.
-2. **Usando `ramping-vus`:**
-    - Essa opção você pode definir diferentes tipos de rampas e controlar o tempo de espera entre as etapas.
+1. **Using `stages` :**
+    - In the configuration file or directly in the test script, define an array of objects with the ramp steps:
+        - `duration` : Duration of each stage.
+        - `target` : Number of VUs desired at the end of each stage.
+2. **Using `ramping-vus` :**
+    - This option allows you to define different types of ramps and control the waiting time between steps.
 
 ## K6 HTML Report Exporter
 
-É uma extensão que permite gerar relatórios detalhados em formato HTML após a execução dos seus testes de carga. Esses relatórios facilitam a análise dos resultados, apresentando gráficos, tabelas e informações relevantes sobre o desempenho do sistema testado.
+It is an extension that allows you to generate detailed reports in HTML format after running your load tests. These reports make it easier to analyze the results, presenting graphs, tables and relevant information about the performance of the tested system.
 
-**Conteúdo do Relatório:**
+**Report Contents:**
 
-O relatório HTML gerado inclui informações como:
+The generated HTML report includes information such as:
 
-- **Resumo Executivo:** Visão geral do teste, incluindo data, duração, número de VUs, etc.
-- **Métricas:** Gráficos e tabelas com as principais métricas coletadas durante o teste (tempo de resposta, throughput, taxa de erro, etc.).
-- **Checks:** Resultado das verificações personalizadas definidas no script de teste.
-- **Thresholds:** Indicação de quais limites foram atingidos ou ultrapassados durante o teste.
-- **Logs:** Mensagens de log geradas pelo k6 durante a execução do teste.
+- **Executive Summary:** Overview of the test, including date, duration, number of VUs, etc.
+- **Metrics:** Graphs and tables with the main metrics collected during the test (response time, throughput, error rate, etc.).
+- **Checks:** Result of custom checks defined in the test script.
+- **Thresholds:** Indication of which limits were reached or exceeded during the test.
+- **Logs:** Log messages generated by k6 during test execution.
 
-## Dominando as Options em Seus Testes de Carga com K6
+## Mastering Options in Your Load Tests with K6
 
-Permitem personalizar e controlar a execução dos seus testes de carga. Elas definem desde o número de usuários virtuais até a forma como as métricas são coletadas e os thresholds são avaliados.
+They allow you to customize and control the execution of your load tests. They define everything from the number of virtual users to the way metrics are collected and thresholds are evaluated.
 
-**Estrutura Básica:**
+**Basic Structure:**
 
-As opções são definidas em um objeto JavaScript dentro do seu script de teste.
+Options are defined in a JavaScript object within your test script.
 
-**Principais Opções:**
+**Main Options:**
 
-- **`vus`:** Número de usuários virtuais (VUs) que executarão o teste simultaneamente.
-- **`duration`:** Duração total do teste.
-- **`iterations`:** Número total de iterações que cada VU deve executar.
-- **`stages`:** Define uma rampa de VUs, controlando o aumento e diminuição gradual da carga ao longo do tempo.
-- **`thresholds`:** Define limites aceitáveis para as métricas. O teste falha se os limites forem ultrapassados.
-- **`ext`:** Permite adicionar extensões ao k6 para funcionalidades extras.
-- **`tags`:** Adiciona tags aos resultados do teste para facilitar a organização e análise.
+- **`vus` :** Number of virtual users (VUs) that will run the test simultaneously.
+- **`duration` :** Total duration of the test.
+- **`iterations` :** Total number of iterations each VU should execute.
+- **`stages` :** Defines a ramp of VUs, controlling the gradual increase and decrease of load over time.
+- **`thresholds` :** Defines acceptable limits for the metrics. The test fails if the limits are exceeded.
+- **`ext` :** Allows you to add extensions to k6 for extra functionality.
+- **`tags` :** Add tags to your test results for easier organization and analysis.
 
-## Construindo uma Pipeline de Testes de Carga com k6 no Azure DevOps
+## Building a Load Testing Pipeline with k6 on Azure DevOps
 
-Criar uma pipeline de testes de carga com k6 no Azure DevOps permite automatizar a execução dos seus testes em cada etapa do desenvolvimento, garantindo a qualidade e performance do seu software.
+Creating a load testing pipeline with k6 in Azure DevOps allows you to automate the execution of your tests at each stage of development, ensuring the quality and performance of your software.
 
-## **Como Fazer Testes de Carga e Desempenho com k6**
+## **How to Perform Load and Performance Testing with k6**
 
-**1. Instalação:**
+**1. Installation:**
 
-- Baixe e instale o k6 de acordo com seu sistema operacional: https://k6.io/docs/getting-started/installation/
+- Download and install k6 according to your operating system: https://k6.io/docs/getting-started/installation/
 
-**2. Criação do Script de Teste:**
+**2. Creating the Test Script:**
 
-- Escreva um script em JavaScript usando a API do k6.
-- Defina o alvo, o número de usuários virtuais (`vus`), a duração do teste (`duration`) ou o número de iterações (`iterations`).
-- Utilize o módulo `http` para fazer requisições HTTP (GET, POST, etc.).
-- Utilize `check` para validar as respostas do servidor.
-- Utilize `group` para agrupar requisições em transações lógicas.
-- Utilize `sleep` para simular o tempo de pensamento do usuário entre as ações.
+- Write a JavaScript script using the k6 API.
+- Define the target, the number of virtual users ( `vus` ), the test duration ( `duration` ) or the number of iterations ( `iterations` ).
+- Use the `http` module to make HTTP requests (GET, POST, etc.).
+- Use `check` to validate server responses.
+- Use `group` to group requests into logical transactions.
+- Use `sleep` to simulate the user's thinking time between actions.
 
-**3. Execução do Teste:**
+**3. Test Execution:**
 
-- Execute o script usando o comando: `k6 run script.js`
-- O k6 exibirá os resultados no console em tempo real.
+- Run the script using the command: `k6 run script.js`
+- k6 will display the results on the console in real time.
 
-**4. Análise dos Resultados:**
+**4. Analysis of Results:**
 
-- O k6 gera métricas como tempo de resposta, throughput (requisições por segundo), taxa de erro, etc.
-- Identifique gargalos de desempenho, erros e pontos de melhoria no seu sistema.
+- k6 generates metrics such as response time, throughput (requests per second), error rate, etc.
+- Identify performance bottlenecks, errors and areas for improvement in your system.

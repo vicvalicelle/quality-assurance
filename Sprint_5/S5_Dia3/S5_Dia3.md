@@ -1,92 +1,94 @@
-# Dia 3: MasterClass
-- Princípios, tipos de testes, geração de carga e falhas comuns dos testes de performance
-- Curso da udemy: JMeter - Testes de performance
+# Day 3: MasterClass
 
-### Teste de performance
+- Principles, types of tests, load generation and common failures of performance tests
+- Udemy Course: JMeter - Performance Testing
+
+### Performance test
 <details>
-<summary> Syllabyus CT-PT </summary>
+<summary>CT-PT Syllabus</summary>
 
-## **1.1 Princípios do Teste de Performance**
+## **1.1 Principles of Performance Testing**
 
-A eficiência de performance é categorizada na ISO-25010 como uma característica de qualidade não funcional, que inclui três subcaracterísticas:
+Performance efficiency is categorized in ISO-25010 as a non-functional quality characteristic, which includes three sub-characteristics:
 
-- Comportamento do tempo: Avalia o tempo de resposta de um componente ou sistema às entradas do usuário ou do sistema.
-- Utilização de recursos: Investiga a alocação e utilização dos recursos do sistema, como a memória RAM.
-- Capacidade: Avalia o comportamento do sistema nos limites de sua capacidade, como número de usuários ou volumes de dados.
+- Time Behavior: Evaluates the response time of a component or system to user or system inputs.
+- Resource utilization: Investigates the allocation and utilization of system resources, such as RAM.
+- Capacity: Evaluates the behavior of the system within the limits of its capacity, such as number of users or data volumes.
 
-Os testes de performance assumem a forma de experimentação, podendo ser conduzidos iterativamente para suportar a análise, design e implementação do sistema.
+Performance testing takes the form of experimentation and can be conducted iteratively to support system analysis, design, and implementation.
 
-Os princípios importantes dos testes de performance são:
+The important principles of performance testing are:
 
-- Alinhamento com as expectativas dos stakeholders.
-- Reprodutibilidade dos testes.
-- Produção de resultados compreensíveis e comparáveis.
-- Execução em sistemas completos ou parciais ou em ambientes similares ao de produção.
-- Praticidade, acessibilidade e execução dentro do prazo do projeto.
+- Alignment with stakeholder expectations.
+- Test reproducibility.
+- Production of understandable and comparable results.
+- Execution on complete or partial systems or in production-like environments.
+- Practicality, accessibility and execution within the project deadline.
 
-## **1.2 Tipos de Teste de Performance**
+## **1.2 Types of Performance Test**
 
-- **Teste de Performance**: Qualquer tipo de teste focado na performance do sistema ou componente sob variados volumes de carga.
-- **Teste de Carga**: Habilidade do sistema de lidar com níveis crescentes de carga.
-- **Teste de Estresse**: Capacidade do sistema de lidar com picos de carga que ultrapassam os limites previstos de carga de trabalho. Ele também testa a resistência do sistema a uma diminuição de recursos disponíveis.
-- **Teste de Escalabilidade**: Capacidade de um sistema de atender a requisitos futuros de eficiência, incluindo expansão para mais usuários ou grandes quantidades de dados.
-- **Teste de Pico**: Avalia a capacidade do sistema de lidar com rajadas súbitas de cargas de pico e retornar a um estado estável.
-- **Teste de Resistência**: Estabilidade do sistema ao longo de um período específico, verificando se não há problemas que possam degradar a performance ou causar falhas ao longo do tempo.
-- **Teste de Concorrência**: Verifica o impacto de ações específicas que ocorrem simultaneamente, como quando muitos usuários fazem login ao mesmo tempo.
-- **Teste de Capacidade**: Determina o número de usuários e/ou transações que um sistema pode suportar, mantendo uma performance aceitável.
+- **Performance Test** : Any type of test focused on the performance of the system or component under varying load volumes.
+- **Load Testing** : Ability of the system to handle increasing levels of load.
+- **Stress Testing** : The ability of the system to handle load spikes that exceed expected workload limits. It also tests the system's resilience to a decrease in available resources.
+- **Scalability Testing** : Ability of a system to meet future efficiency requirements, including expansion to more users or large amounts of data.
+- **Peak Test** : Evaluates the system's ability to handle sudden bursts of peak loads and return to a steady state.
+- **Stress Testing** : System stability over a specific period, checking that there are no issues that could degrade performance or cause failures over time.
+- **Concurrency Testing** : Checks the impact of specific actions that occur simultaneously, such as when many users log in at the same time.
+- **Capacity Testing** : Determines the number of users and/or transactions a system can support while maintaining acceptable performance.
 
-## **1.3 Testando os tipos do Teste de Performance**
+## **1.3 Testing Performance Test Types**
 
-- **Testes Estáticos**: Envolvem a análise da performance do sistema sem executar o programa. Eles são especialmente úteis para detectar problemas de performance que podem ocorrer durante a modelagem e arquitetura do sistema. Os testes estáticos incluem revisões de requisitos, análise do banco de dados e esquemas de redes, e revisões do código do sistema.
-- **Testes Dinâmicos**: Estes são conduzidos enquanto o sistema está em execução. Podem ser realizados em vários estágios do ciclo de vida do desenvolvimento do software, incluindo o teste de unidade, teste de integração de componentes, teste de sistema e teste de integração do sistema. É importante para os testes de performance serem incorporados ao ciclo de vida iterativo do desenvolvimento do software desde o início. O teste de performance dinâmico também pode ser realizado usando simuladores, embora seja ideal testar o hardware real o mais cedo possível.
+- **Static Testing** : This involves analyzing the system's performance without running the program. It is especially useful for detecting performance problems that may occur during system design and architecture. Static testing includes requirements reviews, analysis of database and network schemas, and system code reviews.
+- **Dynamic Testing** : These are conducted while the system is running. They can be performed at various stages of the software development life cycle, including unit testing, component integration testing, system testing, and system integration testing. It is important for performance testing to be incorporated into the iterative software development life cycle from the beginning. Dynamic performance testing can also be performed using simulators, although it is ideal to test on real hardware as early as possible.
 
-**Geração de Carga**: Para a realização de vários tipos de testes de performance, é necessário modelar, gerar e submeter cargas representativas ao sistema em teste. As cargas podem ser geradas de várias maneiras:
+**Load Generation** : To perform various types of performance tests, it is necessary to model, generate, and apply representative loads to the system under test. Loads can be generated in several ways:
 
-- **Geração de Carga através da Interface do Usuário**: Adequada quando apenas um pequeno número de usuários precisa ser representado.
-- **Geração de Carga usando Grupos**: Envolve muitos testadores que representam usuários reais. Essa abordagem é útil para testar aplicações acessíveis globalmente, mas a carga gerada pode não ser tão precisa ou reprodutível.
-- **Geração de Carga por meio de API (Application Programming Interface)**: Permite simular a interação do usuário com o sistema em teste de uma maneira menos sensível a alterações na interface do usuário. Scripts dedicados podem ser criados para chamar rotinas API específicas.
-- **Geração de Carga usando Protocolos de Comunicação Capturados**: Involui a captura da interação do usuário com o sistema em teste no nível do protocolo de comunicação e reprodução desses scripts para simular um grande número de usuários.
+- **Load Generation via User Interface** : Suitable when only a small number of users need to be represented.
+- **Load Generation Using Groups** : Involves many testers representing real users. This approach is useful for testing globally accessible applications, but the generated load may not be as accurate or reproducible.
+- **Load Generation via API (Application Programming Interface)** : Allows you to simulate user interaction with the system under test in a way that is less sensitive to changes in the user interface. Dedicated scripts can be created to call specific API routines.
+- **Load Generation using Captured Communication Protocols** : Involves capturing user interaction with the system under test at the communication protocol level and replaying these scripts to simulate a large number of users.
 
-Esses testes são fundamentais para garantir que o sistema pode lidar com diferentes cargas e condições enquanto mantém uma performance consistente e estável.
+These tests are essential to ensure that the system can handle different loads and conditions while maintaining consistent and stable performance.
 
-## **1.4 Modos comuns de falha de eficiência de performance e suas causas**
+## **1.4 Common performance efficiency failure modes and their causes**
 
-**Resposta lenta em todas as cargas**: Pode ser causado por problemas subjacentes como modelagem inadequada do banco de dados, latência de rede e outras cargas de fundo.
+**Slow response under all loads** : It can be caused by underlying issues like improper database modeling, network latency, and other background loads.
 
-**Resposta lenta sob carga moderada a pesada**: A resposta pode se degradar de forma inaceitável com cargas dentro dos limites permitidos. A causa geralmente é a saturação dos recursos ou variações de cargas pesadas.
+**Slow response under moderate to heavy load** : Response may degrade unacceptably at loads within allowable limits. This is usually caused by resource saturation or heavy load variations.
 
-**Resposta degradada ao longo do tempo**: Este é um problema em que a resposta se degrada gradualmente com o tempo. Causas típicas incluem vazamentos de memória, fragmentação de disco, aumento da carga de rede, crescimento do repositório de arquivos e crescimento inesperado do banco de dados.
+**Degraded response over time** : This is a problem where response gradually degrades over time. Typical causes include memory leaks, disk fragmentation, increased network load, file repository growth, and unexpected database growth.
 
-**Tratamento inadequado de erros sob alta carga ou além do limite**: Aqui, o tempo de resposta é aceitável, mas o tratamento de erros é inadequado em altos níveis de carga. Defeitos subjacentes comuns incluem recursos insuficientes, filas e pilhas pequenas e configurações de tempo limite muito rápidas.
+**Inadequate error handling under high load or overshoot** : Here, the response time is acceptable, but error handling is inadequate at high load levels. Common underlying defects include insufficient resources, small queues and stacks, and timeout settings that are too fast.
 
-Exemplos específicos desses problemas incluem um aplicativo web que não responde dentro de um prazo aceitável, um sistema que falha sob uma grande quantidade súbita de solicitações, sistemas que apresentam resposta lenta quando lidam com grandes volumes de dados, processamento em lote que não pode ser concluído a tempo e sistemas em tempo real que ficam sem memória suficiente ao lidar com grandes demandas de memória dinâmica.
+Specific examples of these problems include a web application that does not respond within an acceptable time frame, a system that fails under a sudden large number of requests, systems that are slow to respond when dealing with large volumes of data, batch processing that cannot complete in a timely manner, and real-time systems that run out of memory when dealing with large dynamic memory demands.
 
-[Syllabyus CT-PT](https://bstqb.online/docs/syllabus_ct-pt_1.0br.pdf)
+[CT-PT Syllabus](https://bstqb.online/docs/syllabus_ct-pt_1.0br.pdf)
 
 </details>
 
+
 ## **JMeter**
 
-É uma ferramenta de teste de carga e desempenho de código aberto, permite criar e executar testes de carga complexos para avaliar o desempenho do sistema sob diferentes condições e identificar gargalos.
+It is an open source load and performance testing tool, allows you to create and run complex load tests to evaluate system performance under different conditions and identify bottlenecks.
 
-**Componentes do JMeter:**
+**JMeter Components:**
 
-- Controladores Lógicos: Controlam a ordem de execução dos samplers, permitindo criar fluxos de trabalho complexos.
-- Grupo de Usuários: Representa um grupo de usuários virtuais que executam o mesmo plano de teste.
-- Amostradores: Enviam requisições ao sistema que está sendo testado, como requisições HTTP, FTP, JDBC, etc.
-- Ouvintes: Capturam e exibem os resultados dos testes, como tempos de resposta, códigos de status e erros.
-- Temporizadores: Adicionam pausas entre as requisições para simular o comportamento real do usuário.
-- Asserções: Verificam se as respostas do sistema atendem às expectativas, como validar o conteúdo da resposta ou o tempo de resposta.
-- Elementos de Configuração: Configurações globais para o plano de teste, como cabeçalhos HTTP, variáveis e parâmetros.
-- Elementos Pré-processadores: Executam ações antes da requisição ser enviada, como obter dados de um arquivo CSV ou gerar dados aleatórios.
-- Elementos Pós-processadores: Executam ações após a requisição ser enviada, como extrair dados da resposta ou armazenar dados em um arquivo.
+- Logic Controllers: Control the execution order of samplers, allowing you to create complex workflows.
+- User Group: Represents a group of virtual users executing the same test plan.
+- Samplers: Send requests to the system being tested, such as HTTP, FTP, JDBC requests, etc.
+- Listeners: Capture and display test results, such as response times, status codes, and errors.
+- Timers: Add pauses between requests to simulate real user behavior.
+- Assertions: Verify whether the system's responses meet expectations, such as validating the response content or response time.
+- Configuration Elements: Global settings for the test plan, such as HTTP headers, variables, and parameters.
+- Preprocessor Elements: Perform actions before the request is sent, such as obtaining data from a CSV file or generating random data.
+- Post-processor elements: Perform actions after the request is sent, such as extracting data from the response or storing data in a file.
 
-**Ordem de Execução dos Componentes**
+**Component Execution Order**
 
-1. Configuration Elements: Configurações globais são aplicadas a todo o plano de teste.
-2. Pre-Processors: Executados antes de cada sampler.
-3. Timers: Adicionam pausas antes de cada sampler.
-4. Samplers: Enviam a requisição ao sistema.
-5. Post-Processors: Executados após cada sampler.
-6. Assertions: Verificam as respostas do sistema.
-7. Listeners: Capturam e exibem os resultados.
+1. Configuration Elements: Global configurations are applied to the entire test plan.
+2. Pre-Processors: Executed before each sampler.
+3. Timers: Add pauses before each sampler.
+4. Samplers: Send the request to the system.
+5. Post-Processors: Executed after each sampler.
+6. Assertions: Verify system responses.
+7. Listeners: Capture and display the results.
