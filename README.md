@@ -1,38 +1,92 @@
-05/13/2024
+# Quality Assurance (QA) Course
 
-# Day 6: MasterClass
+This repository contains the concepts, practices, and examples acquired during the Quality Assurance (QA) course sprints.
 
-- Fundamentals of Software Testing (Back-End)
+## Topics:
+
+- Introduction to QA and its importance.
+- Manual and automated testing.
+- QA tools like K6, Postman and JMeter.
+- Agile methodologies (Scrum and QA).
+
+## Repository Structure
+
+### Sprint 1:
+
+- Communication in projects
+- How to create good READMEs for versioned repositories
+- Eisenhower Matrix
+- Agility Fundamentals
+- Organization in teams
+- Agile QA
+- Testing Fundamentals (Backend)
 - Test pyramid
+- Myers and the Pareto Principle
+- CyberSecurity Fundamentals
 
-### Fundamentals of Back-end Software Testing:
+### Sprint 2:
 
-- Back-end software testing is crucial to ensuring the quality and robustness of applications.
-- It occurs in parallel with the development cycle, anticipating errors and increasing the quality of the final product.
+- User Stories &amp; Issues
+- Basic concepts for API testing
+- Static Testing
+- Common error types
+- API validations
+- Good practices
+- Test Planning
+- Test coverage
+- Test analysis
+- Mind maps and tests
+- Introduction to Postman
+- QA support tools
 
-## Test Pyramid:
+### Sprint 3:
 
-<figure>   <img src="https://1ee1ed924b.cbaul-cdnwnd.com/e5c4fe4592bf06fe7ef86a0e80f403f0/200000021-8d3c58d3c8/700/Test-Pyramid-Eximia-1024x765.png?ph=1ee1ed924b" width="50%"> </figure>
+- Test Planning and Analysis
+- REST API Test Planning
+- Definition of Done, Definition of Ready &amp; Acceptance Criteria
+- Issue Management
+- Test Management
+- Running and Creating Tests: Moving Forward in Postman
 
-The testing pyramid is a strategy for distributing the different types of tests in relation to their quantity and complexity. It defines testing levels and how many tests should be performed in each one. The base of the pyramid consists of unit tests, followed by integration tests and, at the top, end-to-end (E2E) tests.
+### Sprint 4:
 
-1. **Unit Tests** :
+- Exploratory Tests
+- Javascript programming language
+- Test Driven Development
+- Mocha and Chai Libraries
 
-    - Performed in the smallest testable unit of code in the application, regardless of integration.
-    - They are small, quick and simple to make and maintain.
-    - They use "fake" objects to isolate the unit of code under test.
-    - They are important because they are quick to run and clearly identify where the problems are if they fail.
+### Sprint 5:
 
-2. **Integration Tests** :
+- Concepts about Performance Testing
+- Types of performance testing - frontend/backend and their differences
+- Static and dynamic testing
+- Load generation, common failures and planning
+- Fundamentals of performance measurement
+- Introduction to Jmeter
 
-    - They test integrated modules to ensure they work correctly together.
-    - They are more time-consuming and complex than unit tests, but simpler and faster than E2E tests.
-    - Ensure that integrated functionality is still operating as expected.
+### Sprint 6:
 
-3. **End-to-End (E2E) Testing** :
+- First contact with K6
+- Thresholds
+- Validations with K6
+- K6 CLI
 
-    - They simulate the complete application environment and verify that the expected behavior occurs.
-    - They run in controlled environments and can be difficult to write and time-consuming to run.
-    - They cover the main flows of the application and can identify not-so-trivial failures.
+### Sprint 7:
 
-A solid foundation of unit tests is crucial to ensure system stability and maintainability, while user interface tests should be used sparingly due to their fragility and maintenance cost, as well as the need for different types of tests to achieve comprehensive and effective coverage.
+- Project structure with K6
+- Testing Life Cycle
+- Services Layer (BaseService, BaseRest)
+- Centralizing Checks
+- Constants with constants.js
+
+### Sprint 8:
+
+- Docker
+- CI/CD (Continuous Integration/Continuous Deployment)
+- EC2 (Elastic Compute Cloud)
+- Integration between Docker, CI/CD and EC2
+- T_Final
+
+### T_Final
+
+The final assignment consisted of performing a complete analysis and testing of an API, including both **manual** and **automated tests** . The API was provided as part of the course and had several functionalities and endpoints that needed to be validated to ensure its correct functioning.
